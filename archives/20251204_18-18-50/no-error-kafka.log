@@ -1,366 +1,0 @@
-[2025-12-04 18:18:50] Fetching latest build environment...
-[2025-12-04 18:18:50] Docker image digest: sha256:008ba7f4223f1e26c11df9575283491b620074fa96da6961e0dcde47fb757014
-[2025-12-04 18:18:52] ====>> Spin up environment
-[2025-12-04 18:18:52] Build-agent version  ()
-[2025-12-04 18:18:52] System information:
-[2025-12-04 18:18:52]  Server Version: 28.3.3
-[2025-12-04 18:18:52]  Storage Driver: overlay2
-[2025-12-04 18:18:52]   Backing Filesystem: extfs
-[2025-12-04 18:18:52]  Cgroup Driver: systemd
-[2025-12-04 18:18:52]  Cgroup Version: 2
-[2025-12-04 18:18:52]  Kernel Version: 6.11.0-29-generic
-[2025-12-04 18:18:52]  Operating System: Ubuntu 24.04.2 LTS
-[2025-12-04 18:18:52]  OSType: linux
-[2025-12-04 18:18:52]  Architecture: x86_64
-[2025-12-04 18:18:52] 
-[2025-12-04 18:18:52] Starting container cimg/openjdk:21.0.6
-[2025-12-04 18:18:53] Warning: No authentication provided, using CircleCI credentials for pulls from Docker Hub.
-[2025-12-04 18:18:53]   image is cached as cimg/openjdk:21.0.6, but refreshing...
-[2025-12-04 18:18:53] cimg/openjdk:21.0.6:
-[2025-12-04 18:18:53]   using image cimg/openjdk@sha256:14ffa54987ca7dd86fc656614c0a287854712e9eb533b26bc5c27dfef7f66b61
-[2025-12-04 18:18:53]   pull stats: Image was already available so the image was not pulled
-[2025-12-04 18:18:53]   time to create container: 119ms
-[2025-12-04 18:18:53] Creating Docker containers in parallel 
-[2025-12-04 18:18:53] 21.0.6: Pulling from cimg/openjdk
-[2025-12-04 18:18:53] Digest: sha256:14ffa54987ca7dd86fc656614c0a287854712e9eb533b26bc5c27dfef7f66b61
-[2025-12-04 18:18:53] Status: Image is up to date for cimg/openjdk:21.0.6
-[2025-12-04 18:18:53] Time to upload agent and config: 216.614881ms
-[2025-12-04 18:18:54] Time to start containers: 187.635539ms
-[2025-12-04 18:18:54] ====>> Preparing environment variables
-[2025-12-04 18:18:54] Using build environment variables:
-[2025-12-04 18:18:54]   BASH_ENV=/tmp/.bash_env-localbuild-1764868731
-[2025-12-04 18:18:54]   CI=true
-[2025-12-04 18:18:54]   CIRCLECI=true
-[2025-12-04 18:18:54]   CIRCLE_BRANCH=
-[2025-12-04 18:18:54]   CIRCLE_BUILD_NUM=
-[2025-12-04 18:18:54]   CIRCLE_JOB=no-error-kafka
-[2025-12-04 18:18:54]   CIRCLE_NODE_INDEX=0
-[2025-12-04 18:18:54]   CIRCLE_NODE_TOTAL=1
-[2025-12-04 18:18:54]   CIRCLE_REPOSITORY_URL=
-[2025-12-04 18:18:54]   CIRCLE_SHA1=
-[2025-12-04 18:18:54]   CIRCLE_SHELL_ENV=/tmp/.bash_env-localbuild-1764868731
-[2025-12-04 18:18:54]   CIRCLE_WORKING_DIRECTORY=~/project
-[2025-12-04 18:18:54] 
-[2025-12-04 18:18:54] 
-[2025-12-04 18:18:54] The redacted variables listed above will be masked in run step output.====>> Checkout code
-[2025-12-04 18:18:54] Making checkout directory "/home/circleci/project"
-[2025-12-04 18:18:54] Copying files from "/tmp/_circleci_local_build_repo" to "/home/circleci/project"
-[2025-12-04 18:18:55] ====>> ./.ci/no-error-kafka.sh
-[2025-12-04 18:18:55]   #!/bin/bash -eo pipefail
-[2025-12-04 18:18:55] ./.ci/no-error-kafka.sh
-[2025-12-04 18:19:56] [0mCS_version: 12.2.1-SNAPSHOT
-[2025-12-04 18:19:57] [[1;34mINFO[m] Error stacktraces are turned on.
-[2025-12-04 18:19:57] [[1;34mINFO[m] Scanning for projects...
-[2025-12-04 18:19:57] [[1;34mINFO[m] Inspecting build with total of 1 modules
-[2025-12-04 18:19:57] [[1;34mINFO[m] Installing Central Publishing features
-[2025-12-04 18:19:57] [[1;34mINFO[m] 
-[2025-12-04 18:19:57] [[1;34mINFO[m] [1m------------------< [0;36mcom.puppycrawl.tools:checkstyle[0;1m >-------------------[m
-[2025-12-04 18:19:57] [[1;34mINFO[m] [1mBuilding checkstyle 12.2.1-SNAPSHOT[m
-[2025-12-04 18:19:57] [[1;34mINFO[m]   from pom.xml
-[2025-12-04 18:19:57] [[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
-[2025-12-04 18:20:13] [[1;34mINFO[m] 
-[2025-12-04 18:20:13] [[1;34mINFO[m] [1m--- [0;32mclean:3.5.0:clean[m [1m(default-clean)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:13] [[1;34mINFO[m] 
-[2025-12-04 18:20:13] [[1;34mINFO[m] [1m--- [0;32mtidy:1.4.0:check[m [1m(validate)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:15] [[1;34mINFO[m] Tidy is skipped.
-[2025-12-04 18:20:15] [[1;34mINFO[m] 
-[2025-12-04 18:20:15] [[1;34mINFO[m] [1m--- [0;32menforcer:3.6.2:enforce[m [1m(enforce-maven)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:20] [[1;34mINFO[m] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
-[2025-12-04 18:20:20] [[1;34mINFO[m] 
-[2025-12-04 18:20:20] [[1;34mINFO[m] [1m--- [0;32menforcer:3.6.2:enforce[m [1m(enforce-versions)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:20] [[1;34mINFO[m] Rule 0: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
-[2025-12-04 18:20:20] [[1;34mINFO[m] Rule 1: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
-[2025-12-04 18:20:20] [[1;34mINFO[m] Rule 2: org.apache.maven.enforcer.rules.dependency.DependencyConvergence passed
-[2025-12-04 18:20:20] [[1;34mINFO[m] 
-[2025-12-04 18:20:20] [[1;34mINFO[m] [1m--- [0;32mxml:1.2.0:check-format[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:22] [[1;34mINFO[m] 
-[2025-12-04 18:20:22] [[1;34mINFO[m] [1m--- [0;32mantlr4:4.13.2:antlr4[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:27] [[1;34mINFO[m] ANTLR 4: Processing source directory /home/circleci/project/src/main/resources
-[2025-12-04 18:20:27] [[1;34mINFO[m] Processing grammar: com/puppycrawl/tools/checkstyle/grammar/javadoc/JavadocCommentsLexer.g4
-[2025-12-04 18:20:27] [[1;34mINFO[m] Processing grammar: com/puppycrawl/tools/checkstyle/grammar/javadoc/JavadocCommentsParser.g4
-[2025-12-04 18:20:28] [[1;34mINFO[m] Processing grammar: com/puppycrawl/tools/checkstyle/grammar/java/JavaLanguageLexer.g4
-[2025-12-04 18:20:28] [[1;34mINFO[m] Processing grammar: com/puppycrawl/tools/checkstyle/grammar/java/JavaLanguageParser.g4
-[2025-12-04 18:20:28] [[1;34mINFO[m] 
-[2025-12-04 18:20:28] [[1;34mINFO[m] [1m--- [0;32mbuild-helper:3.6.1:add-source[m [1m(add-source)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:29] [[1;34mINFO[m] Source directory: /home/circleci/project/target/generated-sources/antlr added.
-[2025-12-04 18:20:29] [[1;34mINFO[m] 
-[2025-12-04 18:20:29] [[1;34mINFO[m] [1m--- [0;32mresources:3.4.0:resources[m [1m(default-resources)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:31] [[1;34mINFO[m] Copying 400 resources from src/main/resources to target/classes
-[2025-12-04 18:20:31] [[1;34mINFO[m] 
-[2025-12-04 18:20:31] [[1;34mINFO[m] [1m--- [0;32mbuild-helper:3.6.1:add-test-source[m [1m(add-test-source)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:31] [[1;34mINFO[m] Skipping plugin execution!
-[2025-12-04 18:20:31] [[1;34mINFO[m] 
-[2025-12-04 18:20:31] [[1;34mINFO[m] [1m--- [0;32mbuild-helper:3.6.1:add-test-source[m [1m(add-it-test-source)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:31] [[1;34mINFO[m] Test Source directory: /home/circleci/project/src/it/java added.
-[2025-12-04 18:20:31] [[1;34mINFO[m] 
-[2025-12-04 18:20:31] [[1;34mINFO[m] [1m--- [0;32mbuild-helper:3.6.1:add-test-source[m [1m(add-it-test-resource)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:31] [[1;34mINFO[m] Skipping plugin execution!
-[2025-12-04 18:20:31] [[1;34mINFO[m] 
-[2025-12-04 18:20:31] [[1;34mINFO[m] [1m--- [0;32mbuild-helper:3.6.1:add-test-source[m [1m(add-xdocs-examples-source)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:31] [[1;34mINFO[m] Test Source directory: /home/circleci/project/src/xdocs-examples/java added.
-[2025-12-04 18:20:31] [[1;34mINFO[m] 
-[2025-12-04 18:20:31] [[1;34mINFO[m] [1m--- [0;32mbuild-helper:3.6.1:add-test-source[m [1m(add-xdocs-examples-resource)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:31] [[1;34mINFO[m] Skipping plugin execution!
-[2025-12-04 18:20:31] [[1;34mINFO[m] 
-[2025-12-04 18:20:31] [[1;34mINFO[m] [1m--- [0;32mcompiler:3.14.1:compile[m [1m(default-compile)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:34] [[1;34mINFO[m] Recompiling the module because of [1mchanged source code[m.
-[2025-12-04 18:20:34] [[1;34mINFO[m] Compiling 471 source files with javac [debug release 17] to target/classes
-[2025-12-04 18:20:39] [[1;34mINFO[m] /home/circleci/project/src/main/java/com/puppycrawl/tools/checkstyle/DefaultConfiguration.java: Some input files use or override a deprecated API.
-[2025-12-04 18:20:39] [[1;34mINFO[m] /home/circleci/project/src/main/java/com/puppycrawl/tools/checkstyle/DefaultConfiguration.java: Recompile with -Xlint:deprecation for details.
-[2025-12-04 18:20:39] [[1;34mINFO[m] /home/circleci/project/src/main/java/com/puppycrawl/tools/checkstyle/AbstractAutomaticBean.java: /home/circleci/project/src/main/java/com/puppycrawl/tools/checkstyle/AbstractAutomaticBean.java uses unchecked or unsafe operations.
-[2025-12-04 18:20:39] [[1;34mINFO[m] /home/circleci/project/src/main/java/com/puppycrawl/tools/checkstyle/AbstractAutomaticBean.java: Recompile with -Xlint:unchecked for details.
-[2025-12-04 18:20:39] [[1;34mINFO[m] 
-[2025-12-04 18:20:39] [[1;34mINFO[m] [1m--- [0;32mplexus-component-metadata:2.2.0:generate-metadata[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:42] [[1;34mINFO[m] Discovered 10 component descriptor(s)
-[2025-12-04 18:20:42] [[1;34mINFO[m] 
-[2025-12-04 18:20:42] [[1;34mINFO[m] [1m--- [0;32mexec:3.6.2:java[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:45] [[1;34mINFO[m] 
-[2025-12-04 18:20:45] [[1;34mINFO[m] [1m--- [0;32mresources:3.4.0:testResources[m [1m(default-testResources)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:45] [[1;34mINFO[m] Copying 3281 resources from src/test/resources to target/test-classes
-[2025-12-04 18:20:45] [[1;34mINFO[m] 
-[2025-12-04 18:20:45] [[1;34mINFO[m] [1m--- [0;32mcompiler:3.14.1:testCompile[m [1m(default-testCompile)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:45] [[1;34mINFO[m] Recompiling the module because of [1mchanged dependency[m.
-[2025-12-04 18:20:45] [[1;34mINFO[m] Compiling 826 source files with javac [debug release 17] to target/test-classes
-[2025-12-04 18:20:49] [[1;34mINFO[m] /home/circleci/project/src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java: Some input files use or override a deprecated API.
-[2025-12-04 18:20:49] [[1;34mINFO[m] /home/circleci/project/src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java: Recompile with -Xlint:deprecation for details.
-[2025-12-04 18:20:49] [[1;34mINFO[m] /home/circleci/project/src/test/java/com/puppycrawl/tools/checkstyle/AbstractGuiTestSupport.java: Some input files use unchecked or unsafe operations.
-[2025-12-04 18:20:49] [[1;34mINFO[m] /home/circleci/project/src/test/java/com/puppycrawl/tools/checkstyle/AbstractGuiTestSupport.java: Recompile with -Xlint:unchecked for details.
-[2025-12-04 18:20:49] [[1;34mINFO[m] 
-[2025-12-04 18:20:49] [[1;34mINFO[m] [1m--- [0;32mjacoco:0.8.14:instrument[m [1m(default-instrument)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:50] [[1;34mINFO[m] Skipping JaCoCo execution because property jacoco.skip is set.
-[2025-12-04 18:20:50] [[1;34mINFO[m] 
-[2025-12-04 18:20:50] [[1;34mINFO[m] [1m--- [0;32msurefire:3.5.4:test[m [1m(default-test)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:54] [[1;34mINFO[m] Tests are skipped.
-[2025-12-04 18:20:54] [[1;34mINFO[m] 
-[2025-12-04 18:20:54] [[1;34mINFO[m] [1m--- [0;32mxml:1.2.0:validate[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:54] [[1;34mINFO[m] 
-[2025-12-04 18:20:54] [[1;34mINFO[m] [1m--- [0;32mjacoco:0.8.14:restore-instrumented-classes[m [1m(default-restore-instrumented-classes)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:54] [[1;34mINFO[m] Skipping JaCoCo execution because property jacoco.skip is set.
-[2025-12-04 18:20:54] [[1;34mINFO[m] 
-[2025-12-04 18:20:54] [[1;34mINFO[m] [1m--- [0;32mjar:3.5.0:jar[m [1m(default-jar)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:58] [[1;34mINFO[m] Building jar: /home/circleci/project/target/checkstyle-12.2.1-SNAPSHOT.jar
-[2025-12-04 18:20:58] [[1;34mINFO[m] 
-[2025-12-04 18:20:58] [[1;34mINFO[m] [1m--- [0;32mjar:3.5.0:test-jar[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:58] [[1;34mINFO[m] Building jar: /home/circleci/project/target/checkstyle-12.2.1-SNAPSHOT-tests.jar
-[2025-12-04 18:20:58] [[1;34mINFO[m] 
-[2025-12-04 18:20:58] [[1;34mINFO[m] [1m>>> [0;32msource:3.4.0:test-jar[m [1m(attach-sources)[0;1m > [0;1mgenerate-sources[m @ [36mcheckstyle[0;1m >>>[m
-[2025-12-04 18:20:58] [[1;34mINFO[m] 
-[2025-12-04 18:20:58] [[1;34mINFO[m] [1m--- [0;32mtidy:1.4.0:check[m [1m(validate)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:58] [[1;34mINFO[m] Tidy is skipped.
-[2025-12-04 18:20:58] [[1;34mINFO[m] 
-[2025-12-04 18:20:58] [[1;34mINFO[m] [1m--- [0;32menforcer:3.6.2:enforce[m [1m(enforce-maven)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:58] [[1;34mINFO[m] 
-[2025-12-04 18:20:58] [[1;34mINFO[m] [1m--- [0;32menforcer:3.6.2:enforce[m [1m(enforce-versions)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:58] [[1;34mINFO[m] Rule 2: org.apache.maven.enforcer.rules.dependency.DependencyConvergence passed
-[2025-12-04 18:20:58] [[1;34mINFO[m] 
-[2025-12-04 18:20:58] [[1;34mINFO[m] [1m--- [0;32mxml:1.2.0:check-format[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:58] [[1;34mINFO[m] 
-[2025-12-04 18:20:58] [[1;34mINFO[m] [1m--- [0;32mantlr4:4.13.2:antlr4[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:58] [[1;34mINFO[m] No grammars to process
-[2025-12-04 18:20:58] [[1;34mINFO[m] ANTLR 4: Processing source directory /home/circleci/project/src/main/resources
-[2025-12-04 18:20:58] [[1;34mINFO[m] 
-[2025-12-04 18:20:58] [[1;34mINFO[m] [1m--- [0;32mbuild-helper:3.6.1:add-source[m [1m(add-source)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:58] [[1;34mINFO[m] Source directory: /home/circleci/project/target/generated-sources/antlr added.
-[2025-12-04 18:20:58] [[1;34mINFO[m] 
-[2025-12-04 18:20:58] [[1;34mINFO[m] [1m<<< [0;32msource:3.4.0:test-jar[m [1m(attach-sources)[0;1m < [0;1mgenerate-sources[m @ [36mcheckstyle[0;1m <<<[m
-[2025-12-04 18:20:58] [[1;34mINFO[m] 
-[2025-12-04 18:20:58] [[1;34mINFO[m] 
-[2025-12-04 18:20:58] [[1;34mINFO[m] [1m--- [0;32msource:3.4.0:test-jar[m [1m(attach-sources)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:59] [[1;34mINFO[m] Building jar: /home/circleci/project/target/checkstyle-12.2.1-SNAPSHOT-test-sources.jar
-[2025-12-04 18:20:59] [[1;34mINFO[m] 
-[2025-12-04 18:20:59] [[1;34mINFO[m] [1m>>> [0;32msource:3.4.0:jar[m [1m(attach-sources)[0;1m > [0;1mgenerate-sources[m @ [36mcheckstyle[0;1m >>>[m
-[2025-12-04 18:20:59] [[1;34mINFO[m] 
-[2025-12-04 18:20:59] [[1;34mINFO[m] [1m--- [0;32mtidy:1.4.0:check[m [1m(validate)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:59] [[1;34mINFO[m] Tidy is skipped.
-[2025-12-04 18:20:59] [[1;34mINFO[m] 
-[2025-12-04 18:20:59] [[1;34mINFO[m] [1m--- [0;32menforcer:3.6.2:enforce[m [1m(enforce-maven)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:59] [[1;34mINFO[m] 
-[2025-12-04 18:20:59] [[1;34mINFO[m] [1m--- [0;32menforcer:3.6.2:enforce[m [1m(enforce-versions)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:59] [[1;34mINFO[m] Rule 2: org.apache.maven.enforcer.rules.dependency.DependencyConvergence passed
-[2025-12-04 18:20:59] [[1;34mINFO[m] 
-[2025-12-04 18:20:59] [[1;34mINFO[m] [1m--- [0;32mxml:1.2.0:check-format[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:59] [[1;34mINFO[m] 
-[2025-12-04 18:20:59] [[1;34mINFO[m] [1m--- [0;32mantlr4:4.13.2:antlr4[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:59] [[1;34mINFO[m] No grammars to process
-[2025-12-04 18:20:59] [[1;34mINFO[m] ANTLR 4: Processing source directory /home/circleci/project/src/main/resources
-[2025-12-04 18:20:59] [[1;34mINFO[m] 
-[2025-12-04 18:20:59] [[1;34mINFO[m] [1m--- [0;32mbuild-helper:3.6.1:add-source[m [1m(add-source)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:59] [[1;34mINFO[m] Source directory: /home/circleci/project/target/generated-sources/antlr added.
-[2025-12-04 18:20:59] [[1;34mINFO[m] 
-[2025-12-04 18:20:59] [[1;34mINFO[m] [1m<<< [0;32msource:3.4.0:jar[m [1m(attach-sources)[0;1m < [0;1mgenerate-sources[m @ [36mcheckstyle[0;1m <<<[m
-[2025-12-04 18:20:59] [[1;34mINFO[m] 
-[2025-12-04 18:20:59] [[1;34mINFO[m] 
-[2025-12-04 18:20:59] [[1;34mINFO[m] [1m--- [0;32msource:3.4.0:jar[m [1m(attach-sources)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:59] [[1;34mINFO[m] Building jar: /home/circleci/project/target/checkstyle-12.2.1-SNAPSHOT-sources.jar
-[2025-12-04 18:20:59] [[1;34mINFO[m] 
-[2025-12-04 18:20:59] [[1;34mINFO[m] [1m--- [0;32mfailsafe:3.5.4:integration-test[m [1m(integration-test)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:20:59] [[1;34mINFO[m] Tests are skipped.
-[2025-12-04 18:20:59] [[1;34mINFO[m] 
-[2025-12-04 18:20:59] [[1;34mINFO[m] [1m--- [0;32mmodernizer:3.2.0:modernizer[m [1m(modernizer)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:21:01] [[1;34mINFO[m] Skipping modernizer execution!
-[2025-12-04 18:21:01] [[1;34mINFO[m] 
-[2025-12-04 18:21:01] [[1;34mINFO[m] [1m--- [0;32mjacoco:0.8.14:check[m [1m(default-check)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:21:01] [[1;34mINFO[m] Skipping JaCoCo execution because property jacoco.skip is set.
-[2025-12-04 18:21:01] [[1;34mINFO[m] 
-[2025-12-04 18:21:01] [[1;34mINFO[m] [1m--- [0;32mfailsafe:3.5.4:verify[m [1m(verify)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:21:01] [[1;34mINFO[m] Tests are skipped.
-[2025-12-04 18:21:01] [[1;34mINFO[m] 
-[2025-12-04 18:21:01] [[1;34mINFO[m] [1m--- [0;32mantrun:3.2.0:run[m [1m(ant-phase-verify)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:21:01] [[1;34mINFO[m] Executing tasks
-[2025-12-04 18:21:01] [[1;34mINFO[m] Executed tasks
-[2025-12-04 18:21:01] [[1;34mINFO[m] 
-[2025-12-04 18:21:01] [[1;34mINFO[m] [1m>>> [0;32mpmd:3.28.0:check[m [1m(default)[0;1m > [0;1m:pmd[m @ [36mcheckstyle[0;1m >>>[m
-[2025-12-04 18:21:01] [[1;34mINFO[m] 
-[2025-12-04 18:21:01] [[1;34mINFO[m] [1m--- [0;32mpmd:3.28.0:pmd[m [1m(pmd)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:21:19] [[1;34mINFO[m] Skipping org.apache.maven.plugins:maven-pmd-plugin:3.28.0:pmd report goal
-[2025-12-04 18:21:19] [[1;34mINFO[m] 
-[2025-12-04 18:21:19] [[1;34mINFO[m] [1m<<< [0;32mpmd:3.28.0:check[m [1m(default)[0;1m < [0;1m:pmd[m @ [36mcheckstyle[0;1m <<<[m
-[2025-12-04 18:21:19] [[1;34mINFO[m] 
-[2025-12-04 18:21:19] [[1;34mINFO[m] 
-[2025-12-04 18:21:19] [[1;34mINFO[m] [1m--- [0;32mpmd:3.28.0:check[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:21:19] [[1;34mINFO[m] Skipping PMD execution
-[2025-12-04 18:21:19] [[1;34mINFO[m] 
-[2025-12-04 18:21:19] [[1;34mINFO[m] [1m>>> [0;32mspotbugs:4.9.8.2:check[m [1m(default)[0;1m > [0;1m:spotbugs[m @ [36mcheckstyle[0;1m >>>[m
-[2025-12-04 18:21:19] [[1;34mINFO[m] 
-[2025-12-04 18:21:19] [[1;34mINFO[m] [1m--- [0;32mspotbugs:4.9.8.2:spotbugs[m [1m(spotbugs)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:21:38] [[1;34mINFO[m] Spotbugs plugin skipped
-[2025-12-04 18:21:38] [[1;34mINFO[m] Skipping com.github.spotbugs:spotbugs-maven-plugin:4.9.8.2:spotbugs report goal
-[2025-12-04 18:21:38] [[1;34mINFO[m] 
-[2025-12-04 18:21:38] [[1;34mINFO[m] [1m<<< [0;32mspotbugs:4.9.8.2:check[m [1m(default)[0;1m < [0;1m:spotbugs[m @ [36mcheckstyle[0;1m <<<[m
-[2025-12-04 18:21:38] [[1;34mINFO[m] 
-[2025-12-04 18:21:38] [[1;34mINFO[m] 
-[2025-12-04 18:21:38] [[1;34mINFO[m] [1m--- [0;32mspotbugs:4.9.8.2:check[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:21:38] [[1;34mINFO[m] Spotbugs plugin skipped
-[2025-12-04 18:21:38] [[1;34mINFO[m] 
-[2025-12-04 18:21:38] [[1;34mINFO[m] [1m--- [0;32mforbiddenapis:3.10:check[m [1m(forbiddenapis-main)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:21:38] [[1;34mINFO[m] Skipping forbidden-apis checks.
-[2025-12-04 18:21:38] [[1;34mINFO[m] 
-[2025-12-04 18:21:38] [[1;34mINFO[m] [1m--- [0;32mforbiddenapis:3.10:testCheck[m [1m(forbiddenapis-test)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:21:38] [[1;34mINFO[m] Skipping forbidden-apis checks.
-[2025-12-04 18:21:38] [[1;34mINFO[m] 
-[2025-12-04 18:21:38] [[1;34mINFO[m] [1m--- [0;32minstall:3.1.4:install[m [1m(default-install)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 18:21:39] [[1;34mINFO[m] Installing /home/circleci/project/pom.xml to /home/circleci/.m2/repository/com/puppycrawl/tools/checkstyle/12.2.1-SNAPSHOT/checkstyle-12.2.1-SNAPSHOT.pom
-[2025-12-04 18:21:39] [[1;34mINFO[m] Installing /home/circleci/project/target/checkstyle-12.2.1-SNAPSHOT.jar to /home/circleci/.m2/repository/com/puppycrawl/tools/checkstyle/12.2.1-SNAPSHOT/checkstyle-12.2.1-SNAPSHOT.jar
-[2025-12-04 18:21:39] [[1;34mINFO[m] Installing /home/circleci/project/target/checkstyle-12.2.1-SNAPSHOT-tests.jar to /home/circleci/.m2/repository/com/puppycrawl/tools/checkstyle/12.2.1-SNAPSHOT/checkstyle-12.2.1-SNAPSHOT-tests.jar
-[2025-12-04 18:21:39] [[1;34mINFO[m] Installing /home/circleci/project/target/checkstyle-12.2.1-SNAPSHOT-test-sources.jar to /home/circleci/.m2/repository/com/puppycrawl/tools/checkstyle/12.2.1-SNAPSHOT/checkstyle-12.2.1-SNAPSHOT-test-sources.jar
-[2025-12-04 18:21:39] [[1;34mINFO[m] Installing /home/circleci/project/target/checkstyle-12.2.1-SNAPSHOT-sources.jar to /home/circleci/.m2/repository/com/puppycrawl/tools/checkstyle/12.2.1-SNAPSHOT/checkstyle-12.2.1-SNAPSHOT-sources.jar
-[2025-12-04 18:21:39] [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[2025-12-04 18:21:39] [[1;34mINFO[m] [1;32mBUILD SUCCESS[m
-[2025-12-04 18:21:39] [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[2025-12-04 18:21:39] [[1;34mINFO[m] Total time:  01:42 min
-[2025-12-04 18:21:39] [[1;34mINFO[m] Finished at: 2025-12-04T17:21:39Z
-[2025-12-04 18:21:39] [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[2025-12-04 18:21:39] [0m[0mCheckout Apache Kafka sources ...
-[2025-12-04 18:21:39] Cloning into 'kafka'...
-[2025-12-04 18:21:40] remote: Enumerating objects: 8531, done.        
-[2025-12-04 18:21:40] remote: Counting objects:   0% (1/8531)        remote: Counting objects:   1% (86/8531)        remote: Counting objects:   2% (171/8531)        remote: Counting objects:   3% (256/8531)        remote: Counting objects:   4% (342/8531)        remote: Counting objects:   5% (427/8531)        remote: Counting objects:   6% (512/8531)        remote: Counting objects:   7% (598/8531)        remote: Counting objects:   8% (683/8531)        remote: Counting objects:   9% (768/8531)        remote: Counting objects:  10% (854/8531)        remote: Counting objects:  11% (939/8531)        remote: Counting objects:  12% (1024/8531)        remote: Counting objects:  13% (1110/8531)        remote: Counting objects:  14% (1195/8531)        remote: Counting objects:  15% (1280/8531)        remote: Counting objects:  16% (1365/8531)        remote: Counting objects:  17% (1451/8531)        remote: Counting objects:  18% (1536/8531)        remote: Counting objects:  19% (1621/8531)        remote: Counting objects:  20% (1707/8531)        remote: Counting objects:  21% (1792/8531)        remote: Counting objects:  22% (1877/8531)        remote: Counting objects:  23% (1963/8531)        remote: Counting objects:  24% (2048/8531)        remote: Counting objects:  25% (2133/8531)        remote: Counting objects:  26% (2219/8531)        remote: Counting objects:  27% (2304/8531)        remote: Counting objects:  28% (2389/8531)        remote: Counting objects:  29% (2474/8531)        remote: Counting objects:  30% (2560/8531)        remote: Counting objects:  31% (2645/8531)        remote: Counting objects:  32% (2730/8531)        remote: Counting objects:  33% (2816/8531)        remote: Counting objects:  34% (2901/8531)        remote: Counting objects:  35% (2986/8531)        remote: Counting objects:  36% (3072/8531)        remote: Counting objects:  37% (3157/8531)        remote: Counting objects:  38% (3242/8531)        remote: Counting objects:  39% (3328/8531)        remote: Counting objects:  40% (3413/8531)        remote: Counting objects:  41% (3498/8531)        remote: Counting objects:  42% (3584/8531)        remote: Counting objects:  43% (3669/8531)        remote: Counting objects:  44% (3754/8531)        remote: Counting objects:  45% (3839/8531)        remote: Counting objects:  46% (3925/8531)        remote: Counting objects:  47% (4010/8531)        remote: Counting objects:  48% (4095/8531)        remote: Counting objects:  49% (4181/8531)        remote: Counting objects:  50% (4266/8531)        remote: Counting objects:  51% (4351/8531)        remote: Counting objects:  52% (4437/8531)        remote: Counting objects:  53% (4522/8531)        remote: Counting objects:  54% (4607/8531)        remote: Counting objects:  55% (4693/8531)        remote: Counting objects:  56% (4778/8531)        remote: Counting objects:  57% (4863/8531)        remote: Counting objects:  58% (4948/8531)        remote: Counting objects:  59% (5034/8531)        remote: Counting objects:  60% (5119/8531)        remote: Counting objects:  61% (5204/8531)        remote: Counting objects:  62% (5290/8531)        remote: Counting objects:  63% (5375/8531)        remote: Counting objects:  64% (5460/8531)        remote: Counting objects:  65% (5546/8531)        remote: Counting objects:  66% (5631/8531)        remote: Counting objects:  67% (5716/8531)        remote: Counting objects:  68% (5802/8531)        remote: Counting objects:  69% (5887/8531)        remote: Counting objects:  70% (5972/8531)        remote: Counting objects:  71% (6058/8531)        remote: Counting objects:  72% (6143/8531)        remote: Counting objects:  73% (6228/8531)        remote: Counting objects:  74% (6313/8531)        remote: Counting objects:  75% (6399/8531)        remote: Counting objects:  76% (6484/8531)        remote: Counting objects:  77% (6569/8531)        remote: Counting objects:  78% (6655/8531)        remote: Counting objects:  79% (6740/8531)        remote: Counting objects:  80% (6825/8531)        remote: Counting objects:  81% (6911/8531)        remote: Counting objects:  82% (6996/8531)        remote: Counting objects:  83% (7081/8531)        remote: Counting objects:  84% (7167/8531)        remote: Counting objects:  85% (7252/8531)        remote: Counting objects:  86% (7337/8531)        remote: Counting objects:  87% (7422/8531)        remote: Counting objects:  88% (7508/8531)        remote: Counting objects:  89% (7593/8531)        remote: Counting objects:  90% (7678/8531)        remote: Counting objects:  91% (7764/8531)        remote: Counting objects:  92% (7849/8531)        remote: Counting objects:  93% (7934/8531)        remote: Counting objects:  94% (8020/8531)        remote: Counting objects:  95% (8105/8531)        remote: Counting objects:  96% (8190/8531)        remote: Counting objects:  97% (8276/8531)        remote: Counting objects:  98% (8361/8531)        remote: Counting objects:  99% (8446/8531)        remote: Counting objects: 100% (8531/8531)        remote: Counting objects: 100% (8531/8531), done.        
-[2025-12-04 18:21:43] remote: Compressing objects:   0% (1/6411)        remote: Compressing objects:   1% (65/6411)        remote: Compressing objects:   2% (129/6411)        remote: Compressing objects:   3% (193/6411)        remote: Compressing objects:   4% (257/6411)        remote: Compressing objects:   5% (321/6411)        remote: Compressing objects:   6% (385/6411)        remote: Compressing objects:   7% (449/6411)        remote: Compressing objects:   8% (513/6411)        remote: Compressing objects:   9% (577/6411)        remote: Compressing objects:  10% (642/6411)        remote: Compressing objects:  11% (706/6411)        remote: Compressing objects:  12% (770/6411)        remote: Compressing objects:  13% (834/6411)        remote: Compressing objects:  14% (898/6411)        remote: Compressing objects:  15% (962/6411)        remote: Compressing objects:  16% (1026/6411)        remote: Compressing objects:  17% (1090/6411)        remote: Compressing objects:  18% (1154/6411)        remote: Compressing objects:  19% (1219/6411)        remote: Compressing objects:  20% (1283/6411)        remote: Compressing objects:  21% (1347/6411)        remote: Compressing objects:  22% (1411/6411)        remote: Compressing objects:  23% (1475/6411)        remote: Compressing objects:  24% (1539/6411)        remote: Compressing objects:  25% (1603/6411)        remote: Compressing objects:  26% (1667/6411)        remote: Compressing objects:  27% (1731/6411)        remote: Compressing objects:  28% (1796/6411)        remote: Compressing objects:  29% (1860/6411)        remote: Compressing objects:  29% (1921/6411)        remote: Compressing objects:  30% (1924/6411)        remote: Compressing objects:  31% (1988/6411)        remote: Compressing objects:  32% (2052/6411)        remote: Compressing objects:  33% (2116/6411)        remote: Compressing objects:  34% (2180/6411)        remote: Compressing objects:  35% (2244/6411)        remote: Compressing objects:  36% (2308/6411)        remote: Compressing objects:  37% (2373/6411)        remote: Compressing objects:  38% (2437/6411)        remote: Compressing objects:  39% (2501/6411)        remote: Compressing objects:  40% (2565/6411)        remote: Compressing objects:  41% (2629/6411)        remote: Compressing objects:  42% (2693/6411)        remote: Compressing objects:  43% (2757/6411)        remote: Compressing objects:  44% (2821/6411)        remote: Compressing objects:  45% (2885/6411)        remote: Compressing objects:  46% (2950/6411)        remote: Compressing objects:  47% (3014/6411)        remote: Compressing objects:  48% (3078/6411)        remote: Compressing objects:  49% (3142/6411)        remote: Compressing objects:  50% (3206/6411)        remote: Compressing objects:  51% (3270/6411)        remote: Compressing objects:  52% (3334/6411)        remote: Compressing objects:  53% (3398/6411)        remote: Compressing objects:  54% (3462/6411)        remote: Compressing objects:  55% (3527/6411)        remote: Compressing objects:  56% (3591/6411)        remote: Compressing objects:  57% (3655/6411)        remote: Compressing objects:  58% (3719/6411)        remote: Compressing objects:  59% (3783/6411)        remote: Compressing objects:  60% (3847/6411)        remote: Compressing objects:  61% (3911/6411)        remote: Compressing objects:  62% (3975/6411)        remote: Compressing objects:  63% (4039/6411)        remote: Compressing objects:  64% (4104/6411)        remote: Compressing objects:  65% (4168/6411)        remote: Compressing objects:  66% (4232/6411)        remote: Compressing objects:  67% (4296/6411)        remote: Compressing objects:  68% (4360/6411)        remote: Compressing objects:  69% (4424/6411)        remote: Compressing objects:  70% (4488/6411)        remote: Compressing objects:  70% (4531/6411)        remote: Compressing objects:  71% (4552/6411)        remote: Compressing objects:  72% (4616/6411)        remote: Compressing objects:  73% (4681/6411)        remote: Compressing objects:  74% (4745/6411)        remote: Compressing objects:  75% (4809/6411)        remote: Compressing objects:  76% (4873/6411)        remote: Compressing objects:  77% (4937/6411)        remote: Compressing objects:  78% (5001/6411)        remote: Compressing objects:  79% (5065/6411)        remote: Compressing objects:  80% (5129/6411)        remote: Compressing objects:  81% (5193/6411)        remote: Compressing objects:  82% (5258/6411)        remote: Compressing objects:  83% (5322/6411)        remote: Compressing objects:  84% (5386/6411)        remote: Compressing objects:  85% (5450/6411)        remote: Compressing objects:  86% (5514/6411)        remote: Compressing objects:  87% (5578/6411)        remote: Compressing objects:  88% (5642/6411)        remote: Compressing objects:  89% (5706/6411)        remote: Compressing objects:  90% (5770/6411)        remote: Compressing objects:  91% (5835/6411)        remote: Compressing objects:  92% (5899/6411)        remote: Compressing objects:  93% (5963/6411)        remote: Compressing objects:  94% (6027/6411)        remote: Compressing objects:  95% (6091/6411)        remote: Compressing objects:  96% (6155/6411)        remote: Compressing objects:  97% (6219/6411)        remote: Compressing objects:  98% (6283/6411)        remote: Compressing objects:  99% (6347/6411)        remote: Compressing objects: 100% (6411/6411)        remote: Compressing objects: 100% (6411/6411), done.        
-[2025-12-04 18:22:03] Receiving objects:   0% (1/8531)Receiving objects:   1% (86/8531)Receiving objects:   2% (171/8531), 140.00 KiB | 260.00 KiB/sReceiving objects:   2% (212/8531), 268.00 KiB | 249.00 KiB/sReceiving objects:   3% (256/8531), 324.00 KiB | 181.00 KiB/sReceiving objects:   3% (270/8531), 324.00 KiB | 181.00 KiB/sReceiving objects:   4% (342/8531), 396.00 KiB | 166.00 KiB/sReceiving objects:   5% (427/8531), 396.00 KiB | 166.00 KiB/sReceiving objects:   5% (482/8531), 588.00 KiB | 203.00 KiB/sReceiving objects:   6% (512/8531), 588.00 KiB | 203.00 KiB/sReceiving objects:   6% (564/8531), 732.00 KiB | 200.00 KiB/sReceiving objects:   7% (598/8531), 908.00 KiB | 218.00 KiB/sReceiving objects:   8% (683/8531), 908.00 KiB | 218.00 KiB/sReceiving objects:   9% (768/8531), 1.07 MiB | 236.00 KiB/s  Receiving objects:   9% (773/8531), 1.07 MiB | 236.00 KiB/sReceiving objects:  10% (854/8531), 1.29 MiB | 255.00 KiB/sReceiving objects:  11% (939/8531), 1.29 MiB | 255.00 KiB/sReceiving objects:  12% (1024/8531), 1.29 MiB | 255.00 KiB/sReceiving objects:  12% (1080/8531), 1.46 MiB | 232.00 KiB/sReceiving objects:  12% (1100/8531), 1.49 MiB | 217.00 KiB/sReceiving objects:  13% (1110/8531), 1.49 MiB | 217.00 KiB/sReceiving objects:  14% (1195/8531), 1.61 MiB | 229.00 KiB/sReceiving objects:  14% (1259/8531), 1.61 MiB | 229.00 KiB/sReceiving objects:  15% (1280/8531), 1.61 MiB | 229.00 KiB/sReceiving objects:  16% (1365/8531), 1.75 MiB | 221.00 KiB/sReceiving objects:  16% (1423/8531), 1.86 MiB | 171.00 KiB/sReceiving objects:  17% (1451/8531), 1.86 MiB | 171.00 KiB/sReceiving objects:  18% (1536/8531), 1.86 MiB | 171.00 KiB/sReceiving objects:  18% (1583/8531), 2.02 MiB | 169.00 KiB/sReceiving objects:  19% (1621/8531), 2.07 MiB | 147.00 KiB/sReceiving objects:  19% (1642/8531), 2.07 MiB | 147.00 KiB/sReceiving objects:  20% (1707/8531), 2.17 MiB | 129.00 KiB/sReceiving objects:  21% (1792/8531), 2.17 MiB | 129.00 KiB/sReceiving objects:  22% (1877/8531), 2.17 MiB | 129.00 KiB/sReceiving objects:  22% (1947/8531), 2.43 MiB | 148.00 KiB/sReceiving objects:  23% (1963/8531), 2.46 MiB | 150.00 KiB/sReceiving objects:  24% (2048/8531), 2.46 MiB | 150.00 KiB/sReceiving objects:  25% (2133/8531), 2.46 MiB | 150.00 KiB/sReceiving objects:  26% (2219/8531), 2.46 MiB | 150.00 KiB/sReceiving objects:  27% (2304/8531), 3.21 MiB | 278.00 KiB/sReceiving objects:  28% (2389/8531), 3.21 MiB | 278.00 KiB/sReceiving objects:  29% (2474/8531), 3.21 MiB | 278.00 KiB/sReceiving objects:  30% (2560/8531), 3.21 MiB | 278.00 KiB/sReceiving objects:  31% (2645/8531), 3.21 MiB | 278.00 KiB/sReceiving objects:  32% (2730/8531), 3.21 MiB | 278.00 KiB/sReceiving objects:  33% (2816/8531), 3.21 MiB | 278.00 KiB/sReceiving objects:  34% (2901/8531), 3.21 MiB | 278.00 KiB/sReceiving objects:  35% (2986/8531), 3.21 MiB | 278.00 KiB/sReceiving objects:  36% (3072/8531), 3.21 MiB | 278.00 KiB/sReceiving objects:  37% (3157/8531), 3.21 MiB | 278.00 KiB/sReceiving objects:  38% (3242/8531), 3.21 MiB | 278.00 KiB/sReceiving objects:  39% (3328/8531), 3.21 MiB | 278.00 KiB/sReceiving objects:  40% (3413/8531), 3.21 MiB | 278.00 KiB/sReceiving objects:  41% (3498/8531), 3.21 MiB | 278.00 KiB/sReceiving objects:  42% (3584/8531), 3.21 MiB | 278.00 KiB/sReceiving objects:  42% (3657/8531), 3.21 MiB | 278.00 KiB/sReceiving objects:  43% (3669/8531), 3.21 MiB | 278.00 KiB/sReceiving objects:  44% (3754/8531), 3.21 MiB | 278.00 KiB/sReceiving objects:  45% (3839/8531), 5.71 MiB | 661.00 KiB/sReceiving objects:  46% (3925/8531), 5.71 MiB | 661.00 KiB/sReceiving objects:  47% (4010/8531), 5.71 MiB | 661.00 KiB/sReceiving objects:  48% (4095/8531), 5.71 MiB | 661.00 KiB/sReceiving objects:  49% (4181/8531), 5.71 MiB | 661.00 KiB/sReceiving objects:  50% (4266/8531), 8.87 MiB | 1.12 MiB/s  Receiving objects:  50% (4305/8531), 8.87 MiB | 1.12 MiB/sReceiving objects:  51% (4351/8531), 8.87 MiB | 1.12 MiB/sReceiving objects:  52% (4437/8531), 10.11 MiB | 1.67 MiB/sReceiving objects:  53% (4522/8531), 10.11 MiB | 1.67 MiB/sReceiving objects:  53% (4563/8531), 10.41 MiB | 1.71 MiB/sReceiving objects:  54% (4607/8531), 10.41 MiB | 1.71 MiB/sReceiving objects:  55% (4693/8531), 10.62 MiB | 1.78 MiB/sReceiving objects:  56% (4778/8531), 10.62 MiB | 1.78 MiB/sReceiving objects:  57% (4863/8531), 10.62 MiB | 1.78 MiB/sReceiving objects:  58% (4948/8531), 10.96 MiB | 1.84 MiB/sReceiving objects:  58% (5032/8531), 10.96 MiB | 1.84 MiB/sReceiving objects:  59% (5034/8531), 10.96 MiB | 1.84 MiB/sReceiving objects:  60% (5119/8531), 10.96 MiB | 1.84 MiB/sReceiving objects:  61% (5204/8531), 10.96 MiB | 1.84 MiB/sReceiving objects:  62% (5290/8531), 10.96 MiB | 1.84 MiB/sReceiving objects:  63% (5375/8531), 10.96 MiB | 1.84 MiB/sReceiving objects:  64% (5460/8531), 11.68 MiB | 1.94 MiB/sReceiving objects:  65% (5546/8531), 11.68 MiB | 1.94 MiB/sReceiving objects:  66% (5631/8531), 11.68 MiB | 1.94 MiB/sReceiving objects:  67% (5716/8531), 11.68 MiB | 1.94 MiB/sReceiving objects:  68% (5802/8531), 11.68 MiB | 1.94 MiB/sReceiving objects:  69% (5887/8531), 12.12 MiB | 2.03 MiB/sReceiving objects:  69% (5918/8531), 12.12 MiB | 2.03 MiB/sReceiving objects:  70% (5972/8531), 12.12 MiB | 2.03 MiB/sReceiving objects:  71% (6058/8531), 12.12 MiB | 2.03 MiB/sReceiving objects:  72% (6143/8531), 12.12 MiB | 2.03 MiB/sReceiving objects:  73% (6228/8531), 12.65 MiB | 1.98 MiB/sReceiving objects:  74% (6313/8531), 12.65 MiB | 1.98 MiB/sReceiving objects:  75% (6399/8531), 12.65 MiB | 1.98 MiB/sReceiving objects:  76% (6484/8531), 12.65 MiB | 1.98 MiB/sReceiving objects:  77% (6569/8531), 12.65 MiB | 1.98 MiB/sReceiving objects:  78% (6655/8531), 12.65 MiB | 1.98 MiB/sReceiving objects:  79% (6740/8531), 12.65 MiB | 1.98 MiB/sReceiving objects:  80% (6825/8531), 12.65 MiB | 1.98 MiB/sReceiving objects:  81% (6911/8531), 12.65 MiB | 1.98 MiB/sReceiving objects:  82% (6996/8531), 12.65 MiB | 1.98 MiB/sReceiving objects:  83% (7081/8531), 13.91 MiB | 1.72 MiB/sReceiving objects:  84% (7167/8531), 13.91 MiB | 1.72 MiB/sReceiving objects:  84% (7243/8531), 13.91 MiB | 1.72 MiB/sReceiving objects:  85% (7252/8531), 13.91 MiB | 1.72 MiB/sReceiving objects:  86% (7337/8531), 13.91 MiB | 1.72 MiB/sReceiving objects:  87% (7422/8531), 13.91 MiB | 1.72 MiB/sReceiving objects:  88% (7508/8531), 13.91 MiB | 1.72 MiB/sReceiving objects:  89% (7593/8531), 13.91 MiB | 1.72 MiB/sReceiving objects:  90% (7678/8531), 13.91 MiB | 1.72 MiB/sReceiving objects:  91% (7764/8531), 13.91 MiB | 1.72 MiB/sReceiving objects:  92% (7849/8531), 13.91 MiB | 1.72 MiB/sReceiving objects:  93% (7934/8531), 13.91 MiB | 1.72 MiB/sReceiving objects:  94% (8020/8531), 13.91 MiB | 1.72 MiB/sReceiving objects:  95% (8105/8531), 13.91 MiB | 1.72 MiB/sReceiving objects:  96% (8190/8531), 15.34 MiB | 1.35 MiB/sReceiving objects:  97% (8276/8531), 15.34 MiB | 1.35 MiB/sReceiving objects:  98% (8361/8531), 15.34 MiB | 1.35 MiB/sReceiving objects:  99% (8446/8531), 15.34 MiB | 1.35 MiB/sremote: Total 8531 (delta 3277), reused 3023 (delta 1376), pack-reused 0 (from 0)        
-[2025-12-04 18:22:03] Receiving objects: 100% (8531/8531), 15.34 MiB | 1.35 MiB/sReceiving objects: 100% (8531/8531), 15.80 MiB | 820.00 KiB/s, done.
-[2025-12-04 18:22:03] Resolving deltas:   0% (0/3277)Resolving deltas:   1% (33/3277)Resolving deltas:   2% (66/3277)Resolving deltas:   3% (99/3277)Resolving deltas:   4% (132/3277)Resolving deltas:   5% (164/3277)Resolving deltas:   6% (197/3277)Resolving deltas:   7% (231/3277)Resolving deltas:   8% (264/3277)Resolving deltas:   9% (295/3277)Resolving deltas:  10% (328/3277)Resolving deltas:  11% (361/3277)Resolving deltas:  12% (394/3277)Resolving deltas:  13% (428/3277)Resolving deltas:  14% (459/3277)Resolving deltas:  15% (493/3277)Resolving deltas:  16% (525/3277)Resolving deltas:  17% (560/3277)Resolving deltas:  18% (590/3277)Resolving deltas:  19% (623/3277)Resolving deltas:  20% (656/3277)Resolving deltas:  21% (689/3277)Resolving deltas:  22% (721/3277)Resolving deltas:  23% (755/3277)Resolving deltas:  24% (787/3277)Resolving deltas:  25% (820/3277)Resolving deltas:  26% (854/3277)Resolving deltas:  27% (885/3277)Resolving deltas:  28% (920/3277)Resolving deltas:  29% (951/3277)Resolving deltas:  30% (985/3277)Resolving deltas:  31% (1016/3277)Resolving deltas:  32% (1049/3277)Resolving deltas:  33% (1082/3277)Resolving deltas:  34% (1115/3277)Resolving deltas:  35% (1147/3277)Resolving deltas:  36% (1180/3277)Resolving deltas:  37% (1213/3277)Resolving deltas:  38% (1246/3277)Resolving deltas:  39% (1279/3277)Resolving deltas:  40% (1311/3277)Resolving deltas:  41% (1344/3277)Resolving deltas:  42% (1377/3277)Resolving deltas:  43% (1410/3277)Resolving deltas:  44% (1442/3277)Resolving deltas:  45% (1478/3277)Resolving deltas:  46% (1508/3277)Resolving deltas:  47% (1541/3277)Resolving deltas:  48% (1573/3277)Resolving deltas:  49% (1607/3277)Resolving deltas:  50% (1639/3277)Resolving deltas:  51% (1672/3277)Resolving deltas:  52% (1705/3277)Resolving deltas:  53% (1737/3277)Resolving deltas:  54% (1770/3277)Resolving deltas:  55% (1803/3277)Resolving deltas:  56% (1836/3277)Resolving deltas:  57% (1868/3277)Resolving deltas:  58% (1901/3277)Resolving deltas:  59% (1934/3277)Resolving deltas:  60% (1967/3277)Resolving deltas:  61% (2001/3277)Resolving deltas:  62% (2033/3277)Resolving deltas:  63% (2065/3277)Resolving deltas:  64% (2098/3277)Resolving deltas:  65% (2131/3277)Resolving deltas:  66% (2164/3277)Resolving deltas:  67% (2197/3277)Resolving deltas:  68% (2229/3277)Resolving deltas:  69% (2262/3277)Resolving deltas:  70% (2294/3277)Resolving deltas:  71% (2327/3277)Resolving deltas:  72% (2361/3277)Resolving deltas:  73% (2393/3277)Resolving deltas:  74% (2425/3277)Resolving deltas:  75% (2458/3277)Resolving deltas:  76% (2491/3277)Resolving deltas:  77% (2524/3277)Resolving deltas:  78% (2557/3277)Resolving deltas:  79% (2590/3277)Resolving deltas:  80% (2622/3277)Resolving deltas:  81% (2655/3277)Resolving deltas:  82% (2689/3277)Resolving deltas:  83% (2720/3277)Resolving deltas:  84% (2753/3277)Resolving deltas:  85% (2786/3277)Resolving deltas:  86% (2819/3277)Resolving deltas:  87% (2851/3277)Resolving deltas:  88% (2884/3277)Resolving deltas:  89% (2919/3277)Resolving deltas:  90% (2950/3277)Resolving deltas:  91% (2983/3277)Resolving deltas:  92% (3017/3277)Resolving deltas:  93% (3048/3277)Resolving deltas:  94% (3081/3277)Resolving deltas:  95% (3116/3277)Resolving deltas:  96% (3146/3277)Resolving deltas:  97% (3179/3277)Resolving deltas:  98% (3213/3277)Resolving deltas:  99% (3245/3277)Resolving deltas: 100% (3277/3277)Resolving deltas: 100% (3277/3277), done.
-[2025-12-04 18:22:04] Downloading https://services.gradle.org/distributions/gradle-9.2.1-bin.zip
-[2025-12-04 18:23:03] ............10%.............20%.............30%.............40%.............50%.............60%.............70%.............80%.............90%.............100%
-[2025-12-04 18:23:04] 
-[2025-12-04 18:23:04] Welcome to Gradle 9.2.1!
-[2025-12-04 18:23:04] 
-[2025-12-04 18:23:04] Here are the highlights of this release:
-[2025-12-04 18:23:04]  - Windows ARM support
-[2025-12-04 18:23:04]  - Improved publishing APIs
-[2025-12-04 18:23:04]  - Better guidance for dependency verification failures
-[2025-12-04 18:23:04] 
-[2025-12-04 18:23:04] For more details see https://docs.gradle.org/9.2.1/release-notes.html
-[2025-12-04 18:23:04] 
-[2025-12-04 18:23:04] Starting a Gradle Daemon (subsequent builds will be faster)
-[2025-12-04 18:23:56] 
-[2025-12-04 18:23:56] > Configure project :
-[2025-12-04 18:23:56] Starting build with version 4.3.0-SNAPSHOT (commit id a8b1fb92) using Gradle 9.2.1, Java 21 and Scala 2.13.17
-[2025-12-04 18:23:56] Build properties: ignoreFailures=false, maxParallelForks=16, maxScalacThreads=8, maxTestRetries=0
-[2025-12-04 18:24:16] 
-[2025-12-04 18:24:16] > Task :generator:compileJava
-[2025-12-04 18:24:16] > Task :generator:processResources NO-SOURCE
-[2025-12-04 18:24:16] > Task :generator:classes
-[2025-12-04 18:24:16] > Task :generator:jar
-[2025-12-04 18:24:17] 
-[2025-12-04 18:24:17] > Task :clients:processMessages
-[2025-12-04 18:24:17] MessageGenerator: processed 197 Kafka message JSON file(s).
-[2025-12-04 18:24:26] 
-[2025-12-04 18:24:26] > Task :clients:compileJava
-[2025-12-04 18:24:26] > Task :clients:processResources
-[2025-12-04 18:24:26] > Task :clients:classes
-[2025-12-04 18:24:27] > Task :connect:compileJava NO-SOURCE
-[2025-12-04 18:24:27] > Task :connect:processResources NO-SOURCE
-[2025-12-04 18:24:27] > Task :connect:classes UP-TO-DATE
-[2025-12-04 18:24:27] > Task :connect:checkstyleMain NO-SOURCE
-[2025-12-04 18:24:28] 
-[2025-12-04 18:24:28] > Task :metadata:processMessages
-[2025-12-04 18:24:28] MessageGenerator: processed 26 Kafka message JSON file(s).
-[2025-12-04 18:24:28] 
-[2025-12-04 18:24:28] > Task :raft:processMessages
-[2025-12-04 18:24:28] MessageGenerator: processed 1 Kafka message JSON file(s).
-[2025-12-04 18:24:32] 
-[2025-12-04 18:24:32] > Task :server-common:compileJava
-[2025-12-04 18:24:33] > Task :raft:compileJava
-[2025-12-04 18:24:34] > Task :metadata:compileJava
-[2025-12-04 18:24:34] 
-[2025-12-04 18:24:34] > Task :storage:processMessages
-[2025-12-04 18:24:34] MessageGenerator: processed 5 Kafka message JSON file(s).
-[2025-12-04 18:24:34] 
-[2025-12-04 18:24:34] > Task :storage:storage-api:compileJava
-[2025-12-04 18:24:36] > Task :storage:compileJava
-[2025-12-04 18:24:37] > Task :coordinator-common:compileJava
-[2025-12-04 18:24:37] > Task :coordinator-common:processResources NO-SOURCE
-[2025-12-04 18:24:37] > Task :coordinator-common:classes
-[2025-12-04 18:24:38] 
-[2025-12-04 18:24:38] > Task :group-coordinator:processMessages
-[2025-12-04 18:24:38] MessageGenerator: processed 44 Kafka message JSON file(s).
-[2025-12-04 18:24:38] 
-[2025-12-04 18:24:38] > Task :group-coordinator:group-coordinator-api:compileJava
-[2025-12-04 18:24:40] > Task :group-coordinator:compileJava
-[2025-12-04 18:24:41] > Task :coordinator-common:checkstyleMain
-[2025-12-04 18:24:41] 
-[2025-12-04 18:24:41] > Task :share-coordinator:processMessages
-[2025-12-04 18:24:41] MessageGenerator: processed 4 Kafka message JSON file(s).
-[2025-12-04 18:24:41] 
-[2025-12-04 18:24:41] > Task :share-coordinator:compileJava
-[2025-12-04 18:24:42] 
-[2025-12-04 18:24:42] > Task :transaction-coordinator:processMessages
-[2025-12-04 18:24:42] MessageGenerator: processed 2 Kafka message JSON file(s).
-[2025-12-04 18:24:42] 
-[2025-12-04 18:24:42] > Task :transaction-coordinator:compileJava
-[2025-12-04 18:24:46] > Task :server:compileJava
-[2025-12-04 18:24:46] > Task :tools:tools-api:compileJava
-[2025-12-04 18:24:46] > Task :core:compileJava NO-SOURCE
-[2025-12-04 18:24:56] 
-[2025-12-04 18:24:56] > Task :clients:checkstyleMain
-[2025-12-04 18:24:56] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/clients/src/main/java/org/apache/kafka/common/requests/TxnOffsetCommitRequest.java:99:17: 'new' child has incorrect indentation level 16, expected level should be 20. [Indentation]
-[2025-12-04 18:24:56] 
-[2025-12-04 18:24:56] > Task :clients:checkstyleMain FAILED
-[2025-12-04 18:25:16] > Task :core:compileScala
-[2025-12-04 18:25:23] 
-[2025-12-04 18:25:23] [Incubating] Problems report is available at: file:///home/circleci/project/.ci-temp/kafka/build/reports/problems/problems-report.html
-[2025-12-04 18:25:23] 
-[2025-12-04 18:25:23] FAILURE: Build failed with an exception.
-[2025-12-04 18:25:23] 
-[2025-12-04 18:25:23] * What went wrong:
-[2025-12-04 18:25:23] Execution failed for task ':clients:checkstyleMain'.
-[2025-12-04 18:25:23] > A failure occurred while executing org.gradle.api.plugins.quality.internal.CheckstyleAction
-[2025-12-04 18:25:23]    > Checkstyle rule violations were found. See the report at: file:///home/circleci/project/.ci-temp/kafka/clients/build/reports/checkstyle/main.html
-[2025-12-04 18:25:23]      Checkstyle files with violations: 1
-[2025-12-04 18:25:23]      Checkstyle violations by severity: [error:1]
-[2025-12-04 18:25:23] 
-[2025-12-04 18:25:23] 
-[2025-12-04 18:25:23] Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
-[2025-12-04 18:25:23] 
-[2025-12-04 18:25:23] You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
-[2025-12-04 18:25:23] 
-[2025-12-04 18:25:23] For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
-[2025-12-04 18:25:23] 
-[2025-12-04 18:25:23] BUILD FAILED in 3m 18s
-[2025-12-04 18:25:23] 26 actionable tasks: 26 executed
-[2025-12-04 18:25:23] Error: 
-[2025-12-04 18:25:23] Exited with code exit status 1
-[2025-12-04 18:25:23] 
-[2025-12-04 18:25:23] Step failed
-[2025-12-04 18:25:23] Error: runner failed (exited with 101)
-[2025-12-04 18:25:23] Task failed
-[2025-12-04 18:25:25] Error: task failed

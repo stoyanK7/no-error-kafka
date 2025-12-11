@@ -24,18 +24,18 @@ echo "Creating archive directory '$archive_dir'."
 mkdir -p "$archive_dir"
 
 echo "Copying Bash script to archive directory."
-cp "$checkstyle/.ci/no-error-kafka.sh" "$archive_dir/"
+cp "$checkstyle/.ci/validation.sh" "$archive_dir/"
 
 echo "Starting CircleCI '$job' job in local Docker container."
 gnome-terminal -- bash -c \
   "cd \"$checkstyle\"; circleci local execute -c \"$exp_cci_config\" \"$job\" 2>&1 \
     | ts '[%Y-%m-%d %H:%M:%S]' \
-    | tee \"$archive_dir/no-error-kafka.log\""
+    | tee \"$archive_dir/no-error-kafka.log\"; exec bash"
 
 container_id=""
 while [ -z "$container_id" ]; do
   echo "Waiting for Docker container to start."
-  container_id="$(docker container ls --quiet --filter "ancestor=cimg/openjdk:21.0.6")"
+  container_id="$(docker container ls --quiet --filter "ancestor=cimg/openjdk:25.0")"
   sleep 1
 done
 

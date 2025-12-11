@@ -1,685 +1,0 @@
-[2025-12-04 21:12:42] Fetching latest build environment...
-[2025-12-04 21:12:42] Docker image digest: sha256:008ba7f4223f1e26c11df9575283491b620074fa96da6961e0dcde47fb757014
-[2025-12-04 21:12:44] ====>> Spin up environment
-[2025-12-04 21:12:44] Build-agent version  ()
-[2025-12-04 21:12:44] System information:
-[2025-12-04 21:12:44]  Server Version: 28.3.3
-[2025-12-04 21:12:44]  Storage Driver: overlay2
-[2025-12-04 21:12:44]   Backing Filesystem: extfs
-[2025-12-04 21:12:44]  Cgroup Driver: systemd
-[2025-12-04 21:12:44]  Cgroup Version: 2
-[2025-12-04 21:12:44]  Kernel Version: 6.11.0-29-generic
-[2025-12-04 21:12:44]  Operating System: Ubuntu 24.04.2 LTS
-[2025-12-04 21:12:44]  OSType: linux
-[2025-12-04 21:12:44]  Architecture: x86_64
-[2025-12-04 21:12:44] 
-[2025-12-04 21:12:44] Starting container cimg/openjdk:21.0.6
-[2025-12-04 21:12:44] Warning: No authentication provided, using CircleCI credentials for pulls from Docker Hub.
-[2025-12-04 21:12:44]   image is cached as cimg/openjdk:21.0.6, but refreshing...
-[2025-12-04 21:12:45] 21.0.6: Pulling from cimg/openjdk
-[2025-12-04 21:12:45] Digest: sha256:14ffa54987ca7dd86fc656614c0a287854712e9eb533b26bc5c27dfef7f66b61
-[2025-12-04 21:12:45] Status: Image is up to date for cimg/openjdk:21.0.6
-[2025-12-04 21:12:45] cimg/openjdk:21.0.6:
-[2025-12-04 21:12:45]   using image cimg/openjdk@sha256:14ffa54987ca7dd86fc656614c0a287854712e9eb533b26bc5c27dfef7f66b61
-[2025-12-04 21:12:45]   pull stats: Image was already available so the image was not pulled
-[2025-12-04 21:12:45]   time to create container: 80ms
-[2025-12-04 21:12:45] Creating Docker containers in parallel 
-[2025-12-04 21:12:45] Time to upload agent and config: 201.721299ms
-[2025-12-04 21:12:45] Time to start containers: 187.45426ms
-[2025-12-04 21:12:46] ====>> Preparing environment variables
-[2025-12-04 21:12:46] Using build environment variables:
-[2025-12-04 21:12:46]   BASH_ENV=/tmp/.bash_env-localbuild-1764879162
-[2025-12-04 21:12:46]   CI=true
-[2025-12-04 21:12:46]   CIRCLECI=true
-[2025-12-04 21:12:46]   CIRCLE_BRANCH=
-[2025-12-04 21:12:46]   CIRCLE_BUILD_NUM=
-[2025-12-04 21:12:46]   CIRCLE_JOB=no-error-kafka
-[2025-12-04 21:12:46]   CIRCLE_NODE_INDEX=0
-[2025-12-04 21:12:46]   CIRCLE_NODE_TOTAL=1
-[2025-12-04 21:12:46]   CIRCLE_REPOSITORY_URL=
-[2025-12-04 21:12:46]   CIRCLE_SHA1=
-[2025-12-04 21:12:46]   CIRCLE_SHELL_ENV=/tmp/.bash_env-localbuild-1764879162
-[2025-12-04 21:12:46]   CIRCLE_WORKING_DIRECTORY=~/project
-[2025-12-04 21:12:46] 
-[2025-12-04 21:12:46] 
-[2025-12-04 21:12:46] The redacted variables listed above will be masked in run step output.====>> Checkout code
-[2025-12-04 21:12:46] Making checkout directory "/home/circleci/project"
-[2025-12-04 21:12:46] Copying files from "/tmp/_circleci_local_build_repo" to "/home/circleci/project"
-[2025-12-04 21:12:47] ====>> ./.ci/no-error-kafka.sh
-[2025-12-04 21:12:47]   #!/bin/bash -eo pipefail
-[2025-12-04 21:12:47] ./.ci/no-error-kafka.sh
-[2025-12-04 21:13:37] [0mCS_version: 12.2.1-SNAPSHOT
-[2025-12-04 21:13:38] [[1;34mINFO[m] Error stacktraces are turned on.
-[2025-12-04 21:13:38] [[1;34mINFO[m] Scanning for projects...
-[2025-12-04 21:13:38] [[1;34mINFO[m] Inspecting build with total of 1 modules
-[2025-12-04 21:13:38] [[1;34mINFO[m] Installing Central Publishing features
-[2025-12-04 21:13:38] [[1;34mINFO[m] 
-[2025-12-04 21:13:38] [[1;34mINFO[m] [1m------------------< [0;36mcom.puppycrawl.tools:checkstyle[0;1m >-------------------[m
-[2025-12-04 21:13:38] [[1;34mINFO[m] [1mBuilding checkstyle 12.2.1-SNAPSHOT[m
-[2025-12-04 21:13:38] [[1;34mINFO[m]   from pom.xml
-[2025-12-04 21:13:38] [[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
-[2025-12-04 21:13:49] [[1;34mINFO[m] 
-[2025-12-04 21:13:49] [[1;34mINFO[m] [1m--- [0;32mclean:3.5.0:clean[m [1m(default-clean)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:13:49] [[1;34mINFO[m] 
-[2025-12-04 21:13:49] [[1;34mINFO[m] [1m--- [0;32mtidy:1.4.0:check[m [1m(validate)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:13:50] [[1;34mINFO[m] Tidy is skipped.
-[2025-12-04 21:13:50] [[1;34mINFO[m] 
-[2025-12-04 21:13:50] [[1;34mINFO[m] [1m--- [0;32menforcer:3.6.2:enforce[m [1m(enforce-maven)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:13:53] [[1;34mINFO[m] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
-[2025-12-04 21:13:53] [[1;34mINFO[m] 
-[2025-12-04 21:13:53] [[1;34mINFO[m] [1m--- [0;32menforcer:3.6.2:enforce[m [1m(enforce-versions)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:13:53] [[1;34mINFO[m] Rule 0: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
-[2025-12-04 21:13:53] [[1;34mINFO[m] Rule 1: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
-[2025-12-04 21:13:53] [[1;34mINFO[m] Rule 2: org.apache.maven.enforcer.rules.dependency.DependencyConvergence passed
-[2025-12-04 21:13:53] [[1;34mINFO[m] 
-[2025-12-04 21:13:53] [[1;34mINFO[m] [1m--- [0;32mxml:1.2.0:check-format[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:13:54] [[1;34mINFO[m] 
-[2025-12-04 21:13:54] [[1;34mINFO[m] [1m--- [0;32mantlr4:4.13.2:antlr4[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:13:58] [[1;34mINFO[m] ANTLR 4: Processing source directory /home/circleci/project/src/main/resources
-[2025-12-04 21:13:58] [[1;34mINFO[m] Processing grammar: com/puppycrawl/tools/checkstyle/grammar/javadoc/JavadocCommentsLexer.g4
-[2025-12-04 21:13:58] [[1;34mINFO[m] Processing grammar: com/puppycrawl/tools/checkstyle/grammar/javadoc/JavadocCommentsParser.g4
-[2025-12-04 21:13:59] [[1;34mINFO[m] Processing grammar: com/puppycrawl/tools/checkstyle/grammar/java/JavaLanguageLexer.g4
-[2025-12-04 21:13:59] [[1;34mINFO[m] Processing grammar: com/puppycrawl/tools/checkstyle/grammar/java/JavaLanguageParser.g4
-[2025-12-04 21:13:59] [[1;34mINFO[m] 
-[2025-12-04 21:13:59] [[1;34mINFO[m] [1m--- [0;32mbuild-helper:3.6.1:add-source[m [1m(add-source)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:00] [[1;34mINFO[m] Source directory: /home/circleci/project/target/generated-sources/antlr added.
-[2025-12-04 21:14:00] [[1;34mINFO[m] 
-[2025-12-04 21:14:00] [[1;34mINFO[m] [1m--- [0;32mresources:3.4.0:resources[m [1m(default-resources)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:02] [[1;34mINFO[m] Copying 400 resources from src/main/resources to target/classes
-[2025-12-04 21:14:02] [[1;34mINFO[m] 
-[2025-12-04 21:14:02] [[1;34mINFO[m] [1m--- [0;32mbuild-helper:3.6.1:add-test-source[m [1m(add-test-source)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:02] [[1;34mINFO[m] Skipping plugin execution!
-[2025-12-04 21:14:02] [[1;34mINFO[m] 
-[2025-12-04 21:14:02] [[1;34mINFO[m] [1m--- [0;32mbuild-helper:3.6.1:add-test-source[m [1m(add-it-test-source)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:02] [[1;34mINFO[m] Test Source directory: /home/circleci/project/src/it/java added.
-[2025-12-04 21:14:02] [[1;34mINFO[m] 
-[2025-12-04 21:14:02] [[1;34mINFO[m] [1m--- [0;32mbuild-helper:3.6.1:add-test-source[m [1m(add-it-test-resource)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:02] [[1;34mINFO[m] Skipping plugin execution!
-[2025-12-04 21:14:02] [[1;34mINFO[m] 
-[2025-12-04 21:14:02] [[1;34mINFO[m] [1m--- [0;32mbuild-helper:3.6.1:add-test-source[m [1m(add-xdocs-examples-source)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:02] [[1;34mINFO[m] Test Source directory: /home/circleci/project/src/xdocs-examples/java added.
-[2025-12-04 21:14:02] [[1;34mINFO[m] 
-[2025-12-04 21:14:02] [[1;34mINFO[m] [1m--- [0;32mbuild-helper:3.6.1:add-test-source[m [1m(add-xdocs-examples-resource)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:02] [[1;34mINFO[m] Skipping plugin execution!
-[2025-12-04 21:14:02] [[1;34mINFO[m] 
-[2025-12-04 21:14:02] [[1;34mINFO[m] [1m--- [0;32mcompiler:3.14.1:compile[m [1m(default-compile)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:05] [[1;34mINFO[m] Recompiling the module because of [1mchanged source code[m.
-[2025-12-04 21:14:05] [[1;34mINFO[m] Compiling 471 source files with javac [debug release 17] to target/classes
-[2025-12-04 21:14:10] [[1;34mINFO[m] /home/circleci/project/src/main/java/com/puppycrawl/tools/checkstyle/DefaultConfiguration.java: Some input files use or override a deprecated API.
-[2025-12-04 21:14:10] [[1;34mINFO[m] /home/circleci/project/src/main/java/com/puppycrawl/tools/checkstyle/DefaultConfiguration.java: Recompile with -Xlint:deprecation for details.
-[2025-12-04 21:14:10] [[1;34mINFO[m] /home/circleci/project/src/main/java/com/puppycrawl/tools/checkstyle/AbstractAutomaticBean.java: /home/circleci/project/src/main/java/com/puppycrawl/tools/checkstyle/AbstractAutomaticBean.java uses unchecked or unsafe operations.
-[2025-12-04 21:14:10] [[1;34mINFO[m] /home/circleci/project/src/main/java/com/puppycrawl/tools/checkstyle/AbstractAutomaticBean.java: Recompile with -Xlint:unchecked for details.
-[2025-12-04 21:14:10] [[1;34mINFO[m] 
-[2025-12-04 21:14:10] [[1;34mINFO[m] [1m--- [0;32mplexus-component-metadata:2.2.0:generate-metadata[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:12] [[1;34mINFO[m] Discovered 10 component descriptor(s)
-[2025-12-04 21:14:12] [[1;34mINFO[m] 
-[2025-12-04 21:14:12] [[1;34mINFO[m] [1m--- [0;32mexec:3.6.2:java[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:14] [[1;34mINFO[m] 
-[2025-12-04 21:14:14] [[1;34mINFO[m] [1m--- [0;32mresources:3.4.0:testResources[m [1m(default-testResources)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:14] [[1;34mINFO[m] Copying 3281 resources from src/test/resources to target/test-classes
-[2025-12-04 21:14:15] [[1;34mINFO[m] 
-[2025-12-04 21:14:15] [[1;34mINFO[m] [1m--- [0;32mcompiler:3.14.1:testCompile[m [1m(default-testCompile)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:15] [[1;34mINFO[m] Recompiling the module because of [1mchanged dependency[m.
-[2025-12-04 21:14:15] [[1;34mINFO[m] Compiling 826 source files with javac [debug release 17] to target/test-classes
-[2025-12-04 21:14:18] [[1;34mINFO[m] /home/circleci/project/src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java: Some input files use or override a deprecated API.
-[2025-12-04 21:14:18] [[1;34mINFO[m] /home/circleci/project/src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java: Recompile with -Xlint:deprecation for details.
-[2025-12-04 21:14:18] [[1;34mINFO[m] /home/circleci/project/src/test/java/com/puppycrawl/tools/checkstyle/AbstractGuiTestSupport.java: Some input files use unchecked or unsafe operations.
-[2025-12-04 21:14:18] [[1;34mINFO[m] /home/circleci/project/src/test/java/com/puppycrawl/tools/checkstyle/AbstractGuiTestSupport.java: Recompile with -Xlint:unchecked for details.
-[2025-12-04 21:14:18] [[1;34mINFO[m] 
-[2025-12-04 21:14:18] [[1;34mINFO[m] [1m--- [0;32mjacoco:0.8.14:instrument[m [1m(default-instrument)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:19] [[1;34mINFO[m] Skipping JaCoCo execution because property jacoco.skip is set.
-[2025-12-04 21:14:19] [[1;34mINFO[m] 
-[2025-12-04 21:14:19] [[1;34mINFO[m] [1m--- [0;32msurefire:3.5.4:test[m [1m(default-test)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:22] [[1;34mINFO[m] Tests are skipped.
-[2025-12-04 21:14:22] [[1;34mINFO[m] 
-[2025-12-04 21:14:22] [[1;34mINFO[m] [1m--- [0;32mxml:1.2.0:validate[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:22] [[1;34mINFO[m] 
-[2025-12-04 21:14:22] [[1;34mINFO[m] [1m--- [0;32mjacoco:0.8.14:restore-instrumented-classes[m [1m(default-restore-instrumented-classes)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:22] [[1;34mINFO[m] Skipping JaCoCo execution because property jacoco.skip is set.
-[2025-12-04 21:14:22] [[1;34mINFO[m] 
-[2025-12-04 21:14:22] [[1;34mINFO[m] [1m--- [0;32mjar:3.5.0:jar[m [1m(default-jar)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:25] [[1;34mINFO[m] Building jar: /home/circleci/project/target/checkstyle-12.2.1-SNAPSHOT.jar
-[2025-12-04 21:14:26] [[1;34mINFO[m] 
-[2025-12-04 21:14:26] [[1;34mINFO[m] [1m--- [0;32mjar:3.5.0:test-jar[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:26] [[1;34mINFO[m] Building jar: /home/circleci/project/target/checkstyle-12.2.1-SNAPSHOT-tests.jar
-[2025-12-04 21:14:26] [[1;34mINFO[m] 
-[2025-12-04 21:14:26] [[1;34mINFO[m] [1m>>> [0;32msource:3.4.0:test-jar[m [1m(attach-sources)[0;1m > [0;1mgenerate-sources[m @ [36mcheckstyle[0;1m >>>[m
-[2025-12-04 21:14:26] [[1;34mINFO[m] 
-[2025-12-04 21:14:26] [[1;34mINFO[m] [1m--- [0;32mtidy:1.4.0:check[m [1m(validate)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:26] [[1;34mINFO[m] Tidy is skipped.
-[2025-12-04 21:14:26] [[1;34mINFO[m] 
-[2025-12-04 21:14:26] [[1;34mINFO[m] [1m--- [0;32menforcer:3.6.2:enforce[m [1m(enforce-maven)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:26] [[1;34mINFO[m] 
-[2025-12-04 21:14:26] [[1;34mINFO[m] [1m--- [0;32menforcer:3.6.2:enforce[m [1m(enforce-versions)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:26] [[1;34mINFO[m] Rule 2: org.apache.maven.enforcer.rules.dependency.DependencyConvergence passed
-[2025-12-04 21:14:26] [[1;34mINFO[m] 
-[2025-12-04 21:14:26] [[1;34mINFO[m] [1m--- [0;32mxml:1.2.0:check-format[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:26] [[1;34mINFO[m] 
-[2025-12-04 21:14:26] [[1;34mINFO[m] [1m--- [0;32mantlr4:4.13.2:antlr4[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:26] [[1;34mINFO[m] No grammars to process
-[2025-12-04 21:14:26] [[1;34mINFO[m] ANTLR 4: Processing source directory /home/circleci/project/src/main/resources
-[2025-12-04 21:14:26] [[1;34mINFO[m] 
-[2025-12-04 21:14:26] [[1;34mINFO[m] [1m--- [0;32mbuild-helper:3.6.1:add-source[m [1m(add-source)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:26] [[1;34mINFO[m] Source directory: /home/circleci/project/target/generated-sources/antlr added.
-[2025-12-04 21:14:26] [[1;34mINFO[m] 
-[2025-12-04 21:14:26] [[1;34mINFO[m] [1m<<< [0;32msource:3.4.0:test-jar[m [1m(attach-sources)[0;1m < [0;1mgenerate-sources[m @ [36mcheckstyle[0;1m <<<[m
-[2025-12-04 21:14:26] [[1;34mINFO[m] 
-[2025-12-04 21:14:26] [[1;34mINFO[m] 
-[2025-12-04 21:14:26] [[1;34mINFO[m] [1m--- [0;32msource:3.4.0:test-jar[m [1m(attach-sources)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:26] [[1;34mINFO[m] Building jar: /home/circleci/project/target/checkstyle-12.2.1-SNAPSHOT-test-sources.jar
-[2025-12-04 21:14:26] [[1;34mINFO[m] 
-[2025-12-04 21:14:26] [[1;34mINFO[m] [1m>>> [0;32msource:3.4.0:jar[m [1m(attach-sources)[0;1m > [0;1mgenerate-sources[m @ [36mcheckstyle[0;1m >>>[m
-[2025-12-04 21:14:26] [[1;34mINFO[m] 
-[2025-12-04 21:14:26] [[1;34mINFO[m] [1m--- [0;32mtidy:1.4.0:check[m [1m(validate)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:26] [[1;34mINFO[m] Tidy is skipped.
-[2025-12-04 21:14:26] [[1;34mINFO[m] 
-[2025-12-04 21:14:26] [[1;34mINFO[m] [1m--- [0;32menforcer:3.6.2:enforce[m [1m(enforce-maven)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:26] [[1;34mINFO[m] 
-[2025-12-04 21:14:26] [[1;34mINFO[m] [1m--- [0;32menforcer:3.6.2:enforce[m [1m(enforce-versions)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:26] [[1;34mINFO[m] Rule 2: org.apache.maven.enforcer.rules.dependency.DependencyConvergence passed
-[2025-12-04 21:14:26] [[1;34mINFO[m] 
-[2025-12-04 21:14:26] [[1;34mINFO[m] [1m--- [0;32mxml:1.2.0:check-format[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:26] [[1;34mINFO[m] 
-[2025-12-04 21:14:26] [[1;34mINFO[m] [1m--- [0;32mantlr4:4.13.2:antlr4[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:26] [[1;34mINFO[m] No grammars to process
-[2025-12-04 21:14:26] [[1;34mINFO[m] ANTLR 4: Processing source directory /home/circleci/project/src/main/resources
-[2025-12-04 21:14:26] [[1;34mINFO[m] 
-[2025-12-04 21:14:26] [[1;34mINFO[m] [1m--- [0;32mbuild-helper:3.6.1:add-source[m [1m(add-source)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:26] [[1;34mINFO[m] Source directory: /home/circleci/project/target/generated-sources/antlr added.
-[2025-12-04 21:14:26] [[1;34mINFO[m] 
-[2025-12-04 21:14:26] [[1;34mINFO[m] [1m<<< [0;32msource:3.4.0:jar[m [1m(attach-sources)[0;1m < [0;1mgenerate-sources[m @ [36mcheckstyle[0;1m <<<[m
-[2025-12-04 21:14:26] [[1;34mINFO[m] 
-[2025-12-04 21:14:26] [[1;34mINFO[m] 
-[2025-12-04 21:14:26] [[1;34mINFO[m] [1m--- [0;32msource:3.4.0:jar[m [1m(attach-sources)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:26] [[1;34mINFO[m] Building jar: /home/circleci/project/target/checkstyle-12.2.1-SNAPSHOT-sources.jar
-[2025-12-04 21:14:26] [[1;34mINFO[m] 
-[2025-12-04 21:14:26] [[1;34mINFO[m] [1m--- [0;32mfailsafe:3.5.4:integration-test[m [1m(integration-test)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:26] [[1;34mINFO[m] Tests are skipped.
-[2025-12-04 21:14:26] [[1;34mINFO[m] 
-[2025-12-04 21:14:26] [[1;34mINFO[m] [1m--- [0;32mmodernizer:3.2.0:modernizer[m [1m(modernizer)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:28] [[1;34mINFO[m] Skipping modernizer execution!
-[2025-12-04 21:14:28] [[1;34mINFO[m] 
-[2025-12-04 21:14:28] [[1;34mINFO[m] [1m--- [0;32mjacoco:0.8.14:check[m [1m(default-check)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:28] [[1;34mINFO[m] Skipping JaCoCo execution because property jacoco.skip is set.
-[2025-12-04 21:14:28] [[1;34mINFO[m] 
-[2025-12-04 21:14:28] [[1;34mINFO[m] [1m--- [0;32mfailsafe:3.5.4:verify[m [1m(verify)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:28] [[1;34mINFO[m] Tests are skipped.
-[2025-12-04 21:14:28] [[1;34mINFO[m] 
-[2025-12-04 21:14:28] [[1;34mINFO[m] [1m--- [0;32mantrun:3.2.0:run[m [1m(ant-phase-verify)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:28] [[1;34mINFO[m] Executing tasks
-[2025-12-04 21:14:28] [[1;34mINFO[m] Executed tasks
-[2025-12-04 21:14:28] [[1;34mINFO[m] 
-[2025-12-04 21:14:28] [[1;34mINFO[m] [1m>>> [0;32mpmd:3.28.0:check[m [1m(default)[0;1m > [0;1m:pmd[m @ [36mcheckstyle[0;1m >>>[m
-[2025-12-04 21:14:28] [[1;34mINFO[m] 
-[2025-12-04 21:14:28] [[1;34mINFO[m] [1m--- [0;32mpmd:3.28.0:pmd[m [1m(pmd)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:42] [[1;34mINFO[m] Skipping org.apache.maven.plugins:maven-pmd-plugin:3.28.0:pmd report goal
-[2025-12-04 21:14:42] [[1;34mINFO[m] 
-[2025-12-04 21:14:42] [[1;34mINFO[m] [1m<<< [0;32mpmd:3.28.0:check[m [1m(default)[0;1m < [0;1m:pmd[m @ [36mcheckstyle[0;1m <<<[m
-[2025-12-04 21:14:42] [[1;34mINFO[m] 
-[2025-12-04 21:14:42] [[1;34mINFO[m] 
-[2025-12-04 21:14:42] [[1;34mINFO[m] [1m--- [0;32mpmd:3.28.0:check[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:42] [[1;34mINFO[m] Skipping PMD execution
-[2025-12-04 21:14:42] [[1;34mINFO[m] 
-[2025-12-04 21:14:42] [[1;34mINFO[m] [1m>>> [0;32mspotbugs:4.9.8.2:check[m [1m(default)[0;1m > [0;1m:spotbugs[m @ [36mcheckstyle[0;1m >>>[m
-[2025-12-04 21:14:42] [[1;34mINFO[m] 
-[2025-12-04 21:14:42] [[1;34mINFO[m] [1m--- [0;32mspotbugs:4.9.8.2:spotbugs[m [1m(spotbugs)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:51] [[1;34mINFO[m] Spotbugs plugin skipped
-[2025-12-04 21:14:51] [[1;34mINFO[m] Skipping com.github.spotbugs:spotbugs-maven-plugin:4.9.8.2:spotbugs report goal
-[2025-12-04 21:14:51] [[1;34mINFO[m] 
-[2025-12-04 21:14:51] [[1;34mINFO[m] [1m<<< [0;32mspotbugs:4.9.8.2:check[m [1m(default)[0;1m < [0;1m:spotbugs[m @ [36mcheckstyle[0;1m <<<[m
-[2025-12-04 21:14:51] [[1;34mINFO[m] 
-[2025-12-04 21:14:51] [[1;34mINFO[m] 
-[2025-12-04 21:14:51] [[1;34mINFO[m] [1m--- [0;32mspotbugs:4.9.8.2:check[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:51] [[1;34mINFO[m] Spotbugs plugin skipped
-[2025-12-04 21:14:51] [[1;34mINFO[m] 
-[2025-12-04 21:14:51] [[1;34mINFO[m] [1m--- [0;32mforbiddenapis:3.10:check[m [1m(forbiddenapis-main)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:51] [[1;34mINFO[m] Skipping forbidden-apis checks.
-[2025-12-04 21:14:51] [[1;34mINFO[m] 
-[2025-12-04 21:14:51] [[1;34mINFO[m] [1m--- [0;32mforbiddenapis:3.10:testCheck[m [1m(forbiddenapis-test)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:51] [[1;34mINFO[m] Skipping forbidden-apis checks.
-[2025-12-04 21:14:51] [[1;34mINFO[m] 
-[2025-12-04 21:14:51] [[1;34mINFO[m] [1m--- [0;32minstall:3.1.4:install[m [1m(default-install)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:14:52] [[1;34mINFO[m] Installing /home/circleci/project/pom.xml to /home/circleci/.m2/repository/com/puppycrawl/tools/checkstyle/12.2.1-SNAPSHOT/checkstyle-12.2.1-SNAPSHOT.pom
-[2025-12-04 21:14:52] [[1;34mINFO[m] Installing /home/circleci/project/target/checkstyle-12.2.1-SNAPSHOT.jar to /home/circleci/.m2/repository/com/puppycrawl/tools/checkstyle/12.2.1-SNAPSHOT/checkstyle-12.2.1-SNAPSHOT.jar
-[2025-12-04 21:14:52] [[1;34mINFO[m] Installing /home/circleci/project/target/checkstyle-12.2.1-SNAPSHOT-tests.jar to /home/circleci/.m2/repository/com/puppycrawl/tools/checkstyle/12.2.1-SNAPSHOT/checkstyle-12.2.1-SNAPSHOT-tests.jar
-[2025-12-04 21:14:52] [[1;34mINFO[m] Installing /home/circleci/project/target/checkstyle-12.2.1-SNAPSHOT-test-sources.jar to /home/circleci/.m2/repository/com/puppycrawl/tools/checkstyle/12.2.1-SNAPSHOT/checkstyle-12.2.1-SNAPSHOT-test-sources.jar
-[2025-12-04 21:14:52] [[1;34mINFO[m] Installing /home/circleci/project/target/checkstyle-12.2.1-SNAPSHOT-sources.jar to /home/circleci/.m2/repository/com/puppycrawl/tools/checkstyle/12.2.1-SNAPSHOT/checkstyle-12.2.1-SNAPSHOT-sources.jar
-[2025-12-04 21:14:52] [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[2025-12-04 21:14:52] [[1;34mINFO[m] [1;32mBUILD SUCCESS[m
-[2025-12-04 21:14:52] [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[2025-12-04 21:14:52] [[1;34mINFO[m] Total time:  01:13 min
-[2025-12-04 21:14:52] [[1;34mINFO[m] Finished at: 2025-12-04T20:14:51Z
-[2025-12-04 21:14:52] [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[2025-12-04 21:14:52] [0m[0mCheckout Apache Kafka sources ...
-[2025-12-04 21:14:52] Cloning into 'kafka'...
-[2025-12-04 21:14:53] remote: Enumerating objects: 8531, done.        
-[2025-12-04 21:14:53] remote: Counting objects:   0% (1/8531)        remote: Counting objects:   1% (86/8531)        remote: Counting objects:   2% (171/8531)        remote: Counting objects:   3% (256/8531)        remote: Counting objects:   4% (342/8531)        remote: Counting objects:   5% (427/8531)        remote: Counting objects:   6% (512/8531)        remote: Counting objects:   7% (598/8531)        remote: Counting objects:   8% (683/8531)        remote: Counting objects:   9% (768/8531)        remote: Counting objects:  10% (854/8531)        remote: Counting objects:  11% (939/8531)        remote: Counting objects:  12% (1024/8531)        remote: Counting objects:  13% (1110/8531)        remote: Counting objects:  14% (1195/8531)        remote: Counting objects:  15% (1280/8531)        remote: Counting objects:  16% (1365/8531)        remote: Counting objects:  17% (1451/8531)        remote: Counting objects:  18% (1536/8531)        remote: Counting objects:  19% (1621/8531)        remote: Counting objects:  20% (1707/8531)        remote: Counting objects:  21% (1792/8531)        remote: Counting objects:  22% (1877/8531)        remote: Counting objects:  23% (1963/8531)        remote: Counting objects:  24% (2048/8531)        remote: Counting objects:  25% (2133/8531)        remote: Counting objects:  26% (2219/8531)        remote: Counting objects:  27% (2304/8531)        remote: Counting objects:  28% (2389/8531)        remote: Counting objects:  29% (2474/8531)        remote: Counting objects:  30% (2560/8531)        remote: Counting objects:  31% (2645/8531)        remote: Counting objects:  32% (2730/8531)        remote: Counting objects:  33% (2816/8531)        remote: Counting objects:  34% (2901/8531)        remote: Counting objects:  35% (2986/8531)        remote: Counting objects:  36% (3072/8531)        remote: Counting objects:  37% (3157/8531)        remote: Counting objects:  38% (3242/8531)        remote: Counting objects:  39% (3328/8531)        remote: Counting objects:  40% (3413/8531)        remote: Counting objects:  41% (3498/8531)        remote: Counting objects:  42% (3584/8531)        remote: Counting objects:  43% (3669/8531)        remote: Counting objects:  44% (3754/8531)        remote: Counting objects:  45% (3839/8531)        remote: Counting objects:  46% (3925/8531)        remote: Counting objects:  47% (4010/8531)        remote: Counting objects:  48% (4095/8531)        remote: Counting objects:  49% (4181/8531)        remote: Counting objects:  50% (4266/8531)        remote: Counting objects:  51% (4351/8531)        remote: Counting objects:  52% (4437/8531)        remote: Counting objects:  53% (4522/8531)        remote: Counting objects:  54% (4607/8531)        remote: Counting objects:  55% (4693/8531)        remote: Counting objects:  56% (4778/8531)        remote: Counting objects:  57% (4863/8531)        remote: Counting objects:  58% (4948/8531)        remote: Counting objects:  59% (5034/8531)        remote: Counting objects:  60% (5119/8531)        remote: Counting objects:  61% (5204/8531)        remote: Counting objects:  62% (5290/8531)        remote: Counting objects:  63% (5375/8531)        remote: Counting objects:  64% (5460/8531)        remote: Counting objects:  65% (5546/8531)        remote: Counting objects:  66% (5631/8531)        remote: Counting objects:  67% (5716/8531)        remote: Counting objects:  68% (5802/8531)        remote: Counting objects:  69% (5887/8531)        remote: Counting objects:  70% (5972/8531)        remote: Counting objects:  71% (6058/8531)        remote: Counting objects:  72% (6143/8531)        remote: Counting objects:  73% (6228/8531)        remote: Counting objects:  74% (6313/8531)        remote: Counting objects:  75% (6399/8531)        remote: Counting objects:  76% (6484/8531)        remote: Counting objects:  77% (6569/8531)        remote: Counting objects:  78% (6655/8531)        remote: Counting objects:  79% (6740/8531)        remote: Counting objects:  80% (6825/8531)        remote: Counting objects:  81% (6911/8531)        remote: Counting objects:  82% (6996/8531)        remote: Counting objects:  83% (7081/8531)        remote: Counting objects:  84% (7167/8531)        remote: Counting objects:  85% (7252/8531)        remote: Counting objects:  86% (7337/8531)        remote: Counting objects:  87% (7422/8531)        remote: Counting objects:  88% (7508/8531)        remote: Counting objects:  89% (7593/8531)        remote: Counting objects:  90% (7678/8531)        remote: Counting objects:  91% (7764/8531)        remote: Counting objects:  92% (7849/8531)        remote: Counting objects:  93% (7934/8531)        remote: Counting objects:  94% (8020/8531)        remote: Counting objects:  95% (8105/8531)        remote: Counting objects:  96% (8190/8531)        remote: Counting objects:  97% (8276/8531)        remote: Counting objects:  98% (8361/8531)        remote: Counting objects:  99% (8446/8531)        remote: Counting objects: 100% (8531/8531)        remote: Counting objects: 100% (8531/8531), done.        
-[2025-12-04 21:14:56] remote: Compressing objects:   0% (1/6413)        remote: Compressing objects:   1% (65/6413)        remote: Compressing objects:   2% (129/6413)        remote: Compressing objects:   3% (193/6413)        remote: Compressing objects:   4% (257/6413)        remote: Compressing objects:   5% (321/6413)        remote: Compressing objects:   6% (385/6413)        remote: Compressing objects:   7% (449/6413)        remote: Compressing objects:   8% (514/6413)        remote: Compressing objects:   9% (578/6413)        remote: Compressing objects:  10% (642/6413)        remote: Compressing objects:  11% (706/6413)        remote: Compressing objects:  12% (770/6413)        remote: Compressing objects:  13% (834/6413)        remote: Compressing objects:  14% (898/6413)        remote: Compressing objects:  15% (962/6413)        remote: Compressing objects:  16% (1027/6413)        remote: Compressing objects:  17% (1091/6413)        remote: Compressing objects:  18% (1155/6413)        remote: Compressing objects:  19% (1219/6413)        remote: Compressing objects:  20% (1283/6413)        remote: Compressing objects:  21% (1347/6413)        remote: Compressing objects:  22% (1411/6413)        remote: Compressing objects:  23% (1475/6413)        remote: Compressing objects:  24% (1540/6413)        remote: Compressing objects:  25% (1604/6413)        remote: Compressing objects:  26% (1668/6413)        remote: Compressing objects:  27% (1732/6413)        remote: Compressing objects:  27% (1738/6413)        remote: Compressing objects:  28% (1796/6413)        remote: Compressing objects:  29% (1860/6413)        remote: Compressing objects:  30% (1924/6413)        remote: Compressing objects:  31% (1989/6413)        remote: Compressing objects:  32% (2053/6413)        remote: Compressing objects:  33% (2117/6413)        remote: Compressing objects:  34% (2181/6413)        remote: Compressing objects:  35% (2245/6413)        remote: Compressing objects:  36% (2309/6413)        remote: Compressing objects:  37% (2373/6413)        remote: Compressing objects:  38% (2437/6413)        remote: Compressing objects:  39% (2502/6413)        remote: Compressing objects:  40% (2566/6413)        remote: Compressing objects:  41% (2630/6413)        remote: Compressing objects:  42% (2694/6413)        remote: Compressing objects:  43% (2758/6413)        remote: Compressing objects:  44% (2822/6413)        remote: Compressing objects:  45% (2886/6413)        remote: Compressing objects:  46% (2950/6413)        remote: Compressing objects:  47% (3015/6413)        remote: Compressing objects:  48% (3079/6413)        remote: Compressing objects:  49% (3143/6413)        remote: Compressing objects:  50% (3207/6413)        remote: Compressing objects:  51% (3271/6413)        remote: Compressing objects:  52% (3335/6413)        remote: Compressing objects:  53% (3399/6413)        remote: Compressing objects:  54% (3464/6413)        remote: Compressing objects:  55% (3528/6413)        remote: Compressing objects:  56% (3592/6413)        remote: Compressing objects:  56% (3597/6413)        remote: Compressing objects:  57% (3656/6413)        remote: Compressing objects:  58% (3720/6413)        remote: Compressing objects:  59% (3784/6413)        remote: Compressing objects:  60% (3848/6413)        remote: Compressing objects:  61% (3912/6413)        remote: Compressing objects:  62% (3977/6413)        remote: Compressing objects:  63% (4041/6413)        remote: Compressing objects:  64% (4105/6413)        remote: Compressing objects:  65% (4169/6413)        remote: Compressing objects:  66% (4233/6413)        remote: Compressing objects:  67% (4297/6413)        remote: Compressing objects:  68% (4361/6413)        remote: Compressing objects:  69% (4425/6413)        remote: Compressing objects:  70% (4490/6413)        remote: Compressing objects:  71% (4554/6413)        remote: Compressing objects:  72% (4618/6413)        remote: Compressing objects:  73% (4682/6413)        remote: Compressing objects:  74% (4746/6413)        remote: Compressing objects:  75% (4810/6413)        remote: Compressing objects:  76% (4874/6413)        remote: Compressing objects:  77% (4939/6413)        remote: Compressing objects:  78% (5003/6413)        remote: Compressing objects:  79% (5067/6413)        remote: Compressing objects:  80% (5131/6413)        remote: Compressing objects:  81% (5195/6413)        remote: Compressing objects:  82% (5259/6413)        remote: Compressing objects:  83% (5323/6413)        remote: Compressing objects:  84% (5387/6413)        remote: Compressing objects:  85% (5452/6413)        remote: Compressing objects:  86% (5516/6413)        remote: Compressing objects:  87% (5580/6413)        remote: Compressing objects:  88% (5644/6413)        remote: Compressing objects:  89% (5708/6413)        remote: Compressing objects:  90% (5772/6413)        remote: Compressing objects:  91% (5836/6413)        remote: Compressing objects:  92% (5900/6413)        remote: Compressing objects:  93% (5965/6413)        remote: Compressing objects:  94% (6029/6413)        remote: Compressing objects:  95% (6093/6413)        remote: Compressing objects:  96% (6157/6413)        remote: Compressing objects:  97% (6221/6413)        remote: Compressing objects:  98% (6285/6413)        remote: Compressing objects:  99% (6349/6413)        remote: Compressing objects: 100% (6413/6413)        remote: Compressing objects: 100% (6413/6413), done.        
-[2025-12-04 21:15:02] Receiving objects:   0% (1/8531)Receiving objects:   1% (86/8531)Receiving objects:   2% (171/8531)Receiving objects:   3% (256/8531)Receiving objects:   4% (342/8531)Receiving objects:   5% (427/8531)Receiving objects:   6% (512/8531)Receiving objects:   7% (598/8531)Receiving objects:   8% (683/8531)Receiving objects:   9% (768/8531)Receiving objects:  10% (854/8531)Receiving objects:  11% (939/8531)Receiving objects:  12% (1024/8531)Receiving objects:  13% (1110/8531)Receiving objects:  14% (1195/8531)Receiving objects:  15% (1280/8531)Receiving objects:  16% (1365/8531)Receiving objects:  17% (1451/8531)Receiving objects:  18% (1536/8531)Receiving objects:  19% (1621/8531)Receiving objects:  20% (1707/8531)Receiving objects:  21% (1792/8531)Receiving objects:  22% (1877/8531)Receiving objects:  23% (1963/8531), 2.29 MiB | 4.57 MiB/sReceiving objects:  24% (2048/8531), 2.29 MiB | 4.57 MiB/sReceiving objects:  25% (2133/8531), 2.29 MiB | 4.57 MiB/sReceiving objects:  26% (2219/8531), 2.29 MiB | 4.57 MiB/sReceiving objects:  27% (2304/8531), 2.29 MiB | 4.57 MiB/sReceiving objects:  28% (2389/8531), 2.29 MiB | 4.57 MiB/sReceiving objects:  29% (2474/8531), 2.29 MiB | 4.57 MiB/sReceiving objects:  30% (2560/8531), 2.29 MiB | 4.57 MiB/sReceiving objects:  31% (2645/8531), 2.29 MiB | 4.57 MiB/sReceiving objects:  32% (2730/8531), 2.29 MiB | 4.57 MiB/sReceiving objects:  33% (2816/8531), 2.29 MiB | 4.57 MiB/sReceiving objects:  34% (2901/8531), 2.29 MiB | 4.57 MiB/sReceiving objects:  35% (2986/8531), 2.29 MiB | 4.57 MiB/sReceiving objects:  36% (3072/8531), 2.29 MiB | 4.57 MiB/sReceiving objects:  37% (3157/8531), 2.29 MiB | 4.57 MiB/sReceiving objects:  38% (3242/8531), 2.29 MiB | 4.57 MiB/sReceiving objects:  39% (3328/8531), 2.29 MiB | 4.57 MiB/sReceiving objects:  40% (3413/8531), 2.29 MiB | 4.57 MiB/sReceiving objects:  41% (3498/8531), 2.29 MiB | 4.57 MiB/sReceiving objects:  42% (3584/8531), 2.29 MiB | 4.57 MiB/sReceiving objects:  43% (3669/8531), 2.29 MiB | 4.57 MiB/sReceiving objects:  44% (3754/8531), 2.29 MiB | 4.57 MiB/sReceiving objects:  45% (3839/8531), 2.29 MiB | 4.57 MiB/sReceiving objects:  46% (3925/8531), 2.29 MiB | 4.57 MiB/sReceiving objects:  47% (4010/8531), 2.29 MiB | 4.57 MiB/sReceiving objects:  48% (4095/8531), 2.29 MiB | 4.57 MiB/sReceiving objects:  49% (4181/8531), 2.29 MiB | 4.57 MiB/sReceiving objects:  49% (4198/8531), 7.35 MiB | 7.34 MiB/sReceiving objects:  50% (4266/8531), 7.35 MiB | 7.34 MiB/sReceiving objects:  51% (4351/8531), 7.35 MiB | 7.34 MiB/sReceiving objects:  52% (4437/8531), 7.35 MiB | 7.34 MiB/sReceiving objects:  53% (4522/8531), 7.35 MiB | 7.34 MiB/sReceiving objects:  54% (4607/8531), 7.35 MiB | 7.34 MiB/sReceiving objects:  55% (4693/8531), 10.67 MiB | 7.11 MiB/sReceiving objects:  56% (4778/8531), 10.67 MiB | 7.11 MiB/sReceiving objects:  57% (4863/8531), 10.67 MiB | 7.11 MiB/sReceiving objects:  58% (4948/8531), 10.67 MiB | 7.11 MiB/sReceiving objects:  59% (5034/8531), 10.67 MiB | 7.11 MiB/sReceiving objects:  60% (5119/8531), 10.67 MiB | 7.11 MiB/sReceiving objects:  61% (5204/8531), 10.67 MiB | 7.11 MiB/sReceiving objects:  62% (5290/8531), 10.67 MiB | 7.11 MiB/sReceiving objects:  63% (5375/8531), 10.67 MiB | 7.11 MiB/sReceiving objects:  64% (5460/8531), 10.67 MiB | 7.11 MiB/sReceiving objects:  65% (5546/8531), 10.67 MiB | 7.11 MiB/sReceiving objects:  66% (5631/8531), 10.67 MiB | 7.11 MiB/sReceiving objects:  67% (5716/8531), 10.67 MiB | 7.11 MiB/sReceiving objects:  67% (5727/8531), 12.01 MiB | 5.98 MiB/sReceiving objects:  68% (5802/8531), 12.01 MiB | 5.98 MiB/sReceiving objects:  69% (5887/8531), 12.01 MiB | 5.98 MiB/sReceiving objects:  70% (5972/8531), 12.01 MiB | 5.98 MiB/sReceiving objects:  71% (6058/8531), 12.40 MiB | 4.94 MiB/sReceiving objects:  71% (6104/8531), 12.40 MiB | 4.94 MiB/sReceiving objects:  72% (6143/8531), 12.56 MiB | 4.14 MiB/sReceiving objects:  73% (6228/8531), 12.56 MiB | 4.14 MiB/sReceiving objects:  73% (6259/8531), 12.69 MiB | 3.58 MiB/sReceiving objects:  74% (6313/8531), 12.88 MiB | 2.82 MiB/sReceiving objects:  75% (6399/8531), 12.88 MiB | 2.82 MiB/sReceiving objects:  76% (6484/8531), 12.88 MiB | 2.82 MiB/sReceiving objects:  76% (6512/8531), 12.88 MiB | 2.82 MiB/sReceiving objects:  77% (6569/8531), 12.88 MiB | 2.82 MiB/sReceiving objects:  78% (6655/8531), 13.23 MiB | 2.40 MiB/sReceiving objects:  79% (6740/8531), 13.23 MiB | 2.40 MiB/sReceiving objects:  80% (6825/8531), 13.23 MiB | 2.40 MiB/sReceiving objects:  81% (6911/8531), 13.23 MiB | 2.40 MiB/sReceiving objects:  82% (6996/8531), 13.23 MiB | 2.40 MiB/sReceiving objects:  83% (7081/8531), 13.23 MiB | 2.40 MiB/sReceiving objects:  84% (7167/8531), 14.06 MiB | 1.47 MiB/sReceiving objects:  85% (7252/8531), 14.06 MiB | 1.47 MiB/sReceiving objects:  86% (7337/8531), 14.06 MiB | 1.47 MiB/sReceiving objects:  87% (7422/8531), 14.06 MiB | 1.47 MiB/sReceiving objects:  88% (7508/8531), 14.06 MiB | 1.47 MiB/sReceiving objects:  89% (7593/8531), 14.06 MiB | 1.47 MiB/sReceiving objects:  90% (7678/8531), 14.06 MiB | 1.47 MiB/sReceiving objects:  91% (7764/8531), 14.06 MiB | 1.47 MiB/sReceiving objects:  92% (7849/8531), 14.06 MiB | 1.47 MiB/sReceiving objects:  93% (7934/8531), 14.06 MiB | 1.47 MiB/sReceiving objects:  94% (8020/8531), 14.06 MiB | 1.47 MiB/sReceiving objects:  94% (8073/8531), 14.06 MiB | 1.47 MiB/sReceiving objects:  95% (8105/8531), 14.06 MiB | 1.47 MiB/sReceiving objects:  96% (8190/8531), 15.37 MiB | 1.03 MiB/sReceiving objects:  97% (8276/8531), 15.37 MiB | 1.03 MiB/sReceiving objects:  98% (8361/8531), 15.37 MiB | 1.03 MiB/sReceiving objects:  99% (8446/8531), 15.37 MiB | 1.03 MiB/sremote: Total 8531 (delta 3278), reused 3018 (delta 1374), pack-reused 0 (from 0)        
-[2025-12-04 21:15:02] Receiving objects: 100% (8531/8531), 15.37 MiB | 1.03 MiB/sReceiving objects: 100% (8531/8531), 15.80 MiB | 2.54 MiB/s, done.
-[2025-12-04 21:15:02] Resolving deltas:   0% (0/3278)Resolving deltas:   1% (33/3278)Resolving deltas:   2% (68/3278)Resolving deltas:   3% (99/3278)Resolving deltas:   4% (132/3278)Resolving deltas:   5% (164/3278)Resolving deltas:   6% (197/3278)Resolving deltas:   7% (230/3278)Resolving deltas:   8% (263/3278)Resolving deltas:   9% (296/3278)Resolving deltas:  10% (328/3278)Resolving deltas:  11% (361/3278)Resolving deltas:  12% (394/3278)Resolving deltas:  13% (427/3278)Resolving deltas:  14% (459/3278)Resolving deltas:  15% (492/3278)Resolving deltas:  16% (526/3278)Resolving deltas:  17% (558/3278)Resolving deltas:  18% (591/3278)Resolving deltas:  19% (623/3278)Resolving deltas:  20% (656/3278)Resolving deltas:  21% (689/3278)Resolving deltas:  22% (722/3278)Resolving deltas:  23% (755/3278)Resolving deltas:  24% (787/3278)Resolving deltas:  25% (820/3278)Resolving deltas:  26% (853/3278)Resolving deltas:  27% (886/3278)Resolving deltas:  28% (918/3278)Resolving deltas:  29% (952/3278)Resolving deltas:  30% (984/3278)Resolving deltas:  31% (1017/3278)Resolving deltas:  32% (1049/3278)Resolving deltas:  33% (1083/3278)Resolving deltas:  34% (1115/3278)Resolving deltas:  35% (1150/3278)Resolving deltas:  36% (1181/3278)Resolving deltas:  37% (1214/3278)Resolving deltas:  38% (1246/3278)Resolving deltas:  39% (1279/3278)Resolving deltas:  40% (1312/3278)Resolving deltas:  41% (1349/3278)Resolving deltas:  42% (1377/3278)Resolving deltas:  43% (1411/3278)Resolving deltas:  44% (1443/3278)Resolving deltas:  45% (1476/3278)Resolving deltas:  46% (1508/3278)Resolving deltas:  47% (1541/3278)Resolving deltas:  48% (1574/3278)Resolving deltas:  49% (1607/3278)Resolving deltas:  50% (1639/3278)Resolving deltas:  51% (1672/3278)Resolving deltas:  52% (1705/3278)Resolving deltas:  53% (1738/3278)Resolving deltas:  54% (1771/3278)Resolving deltas:  55% (1803/3278)Resolving deltas:  56% (1836/3278)Resolving deltas:  57% (1869/3278)Resolving deltas:  58% (1902/3278)Resolving deltas:  59% (1937/3278)Resolving deltas:  60% (1967/3278)Resolving deltas:  61% (2000/3278)Resolving deltas:  62% (2033/3278)Resolving deltas:  63% (2067/3278)Resolving deltas:  64% (2098/3278)Resolving deltas:  65% (2131/3278)Resolving deltas:  66% (2165/3278)Resolving deltas:  67% (2197/3278)Resolving deltas:  68% (2230/3278)Resolving deltas:  69% (2262/3278)Resolving deltas:  70% (2295/3278)Resolving deltas:  71% (2328/3278)Resolving deltas:  72% (2362/3278)Resolving deltas:  73% (2393/3278)Resolving deltas:  74% (2426/3278)Resolving deltas:  75% (2459/3278)Resolving deltas:  76% (2492/3278)Resolving deltas:  77% (2525/3278)Resolving deltas:  78% (2558/3278)Resolving deltas:  79% (2591/3278)Resolving deltas:  80% (2623/3278)Resolving deltas:  81% (2657/3278)Resolving deltas:  82% (2688/3278)Resolving deltas:  83% (2721/3278)Resolving deltas:  84% (2754/3278)Resolving deltas:  85% (2788/3278)Resolving deltas:  86% (2820/3278)Resolving deltas:  87% (2852/3278)Resolving deltas:  88% (2886/3278)Resolving deltas:  89% (2918/3278)Resolving deltas:  90% (2952/3278)Resolving deltas:  91% (2987/3278)Resolving deltas:  92% (3016/3278)Resolving deltas:  93% (3049/3278)Resolving deltas:  94% (3082/3278)Resolving deltas:  95% (3115/3278)Resolving deltas:  96% (3147/3278)Resolving deltas:  97% (3180/3278)Resolving deltas:  98% (3213/3278)Resolving deltas:  99% (3246/3278)Resolving deltas: 100% (3278/3278)Resolving deltas: 100% (3278/3278), done.
-[2025-12-04 21:15:03] Downloading https://services.gradle.org/distributions/gradle-9.2.1-bin.zip
-[2025-12-04 21:15:17] ............10%.............20%.............30%.............40%.............50%.............60%.............70%.............80%.............90%.............100%
-[2025-12-04 21:15:18] 
-[2025-12-04 21:15:18] Welcome to Gradle 9.2.1!
-[2025-12-04 21:15:18] 
-[2025-12-04 21:15:18] Here are the highlights of this release:
-[2025-12-04 21:15:18]  - Windows ARM support
-[2025-12-04 21:15:18]  - Improved publishing APIs
-[2025-12-04 21:15:18]  - Better guidance for dependency verification failures
-[2025-12-04 21:15:18] 
-[2025-12-04 21:15:18] For more details see https://docs.gradle.org/9.2.1/release-notes.html
-[2025-12-04 21:15:18] 
-[2025-12-04 21:15:18] Starting a Gradle Daemon (subsequent builds will be faster)
-[2025-12-04 21:16:03] 
-[2025-12-04 21:16:03] > Configure project :
-[2025-12-04 21:16:03] Starting build with version 4.3.0-SNAPSHOT (commit id a8b1fb92) using Gradle 9.2.1, Java 21 and Scala 2.13.17
-[2025-12-04 21:16:03] Build properties: ignoreFailures=false, maxParallelForks=16, maxScalacThreads=8, maxTestRetries=0
-[2025-12-04 21:16:09] 
-[2025-12-04 21:16:09] > Task :jmh-benchmarks:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :shell:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :coordinator-common:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :server:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :examples:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :connect:compileJava NO-SOURCE
-[2025-12-04 21:16:09] > Task :storage:storage-api:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :core:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :server-common:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :connect:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :connect:classes UP-TO-DATE
-[2025-12-04 21:16:09] > Task :connect:checkstyleMain NO-SOURCE
-[2025-12-04 21:16:09] > Task :test-common:compileJava NO-SOURCE
-[2025-12-04 21:16:09] > Task :test-common:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :tools:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :test-common:classes UP-TO-DATE
-[2025-12-04 21:16:09] > Task :test-common:checkstyleMain NO-SOURCE
-[2025-12-04 21:16:09] > Task :trogdor:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :clients:clients-integration-tests:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :connect:api:processResources
-[2025-12-04 21:16:09] > Task :raft:processResources
-[2025-12-04 21:16:09] > Task :coordinator-common:processTestResources
-[2025-12-04 21:16:09] > Task :metadata:processResources
-[2025-12-04 21:16:09] > Task :streams:processResources
-[2025-12-04 21:16:09] > Task :storage:storage-api:processTestResources
-[2025-12-04 21:16:09] > Task :core:processTestResources
-[2025-12-04 21:16:09] > Task :storage:processResources
-[2025-12-04 21:16:09] > Task :group-coordinator:processResources
-[2025-12-04 21:16:09] > Task :share-coordinator:processResources
-[2025-12-04 21:16:09] > Task :server-common:processTestResources
-[2025-12-04 21:16:09] > Task :transaction-coordinator:processResources
-[2025-12-04 21:16:09] > Task :server:processTestResources
-[2025-12-04 21:16:09] > Task :connect:mirror-client:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :group-coordinator:group-coordinator-api:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:integration-tests:compileJava NO-SOURCE
-[2025-12-04 21:16:09] > Task :group-coordinator:processTestResources
-[2025-12-04 21:16:09] > Task :metadata:processTestResources
-[2025-12-04 21:16:09] > Task :share-coordinator:processTestResources
-[2025-12-04 21:16:09] > Task :streams:examples:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :connect:runtime:processResources
-[2025-12-04 21:16:09] > Task :connect:basic-auth-extension:processResources
-[2025-12-04 21:16:09] > Task :connect:json:processResources
-[2025-12-04 21:16:09] > Task :raft:processTestResources
-[2025-12-04 21:16:09] > Task :streams:integration-tests:compileScala NO-SOURCE
-[2025-12-04 21:16:09] > Task :connect:transforms:processResources
-[2025-12-04 21:16:09] > Task :connect:test-plugins:processResources
-[2025-12-04 21:16:09] > Task :connect:mirror:processResources
-[2025-12-04 21:16:09] > Task :streams:streams-scala:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:integration-tests:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:integration-tests:classes UP-TO-DATE
-[2025-12-04 21:16:09] > Task :streams:test-utils:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-10:compileJava NO-SOURCE
-[2025-12-04 21:16:09] > Task :connect:file:processResources
-[2025-12-04 21:16:09] > Task :streams:integration-tests:checkstyleMain NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-21:compileJava NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-10:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-21:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-0110:compileJava NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-26:compileJava NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-11:compileJava NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-22:compileJava NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-24:compileJava NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-20:compileJava NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-23:compileJava NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-0110:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-25:compileJava NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-10:classes UP-TO-DATE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-21:classes UP-TO-DATE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-11:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-27:compileJava NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-28:compileJava NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-24:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-26:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-22:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-10:checkstyleMain NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-20:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-28:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-24:classes UP-TO-DATE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-23:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-27:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-25:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-11:classes UP-TO-DATE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-0110:classes UP-TO-DATE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-21:checkstyleMain NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-23:classes UP-TO-DATE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-28:classes UP-TO-DATE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-30:compileJava NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-22:classes UP-TO-DATE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-0110:checkstyleMain NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-20:classes UP-TO-DATE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-27:classes UP-TO-DATE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-25:classes UP-TO-DATE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-23:checkstyleMain NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-24:checkstyleMain NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-28:checkstyleMain NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-22:checkstyleMain NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-26:classes UP-TO-DATE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-11:checkstyleMain NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-30:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-30:classes UP-TO-DATE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-20:checkstyleMain NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-27:checkstyleMain NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-31:compileJava NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-32:compileJava NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-30:checkstyleMain NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-26:checkstyleMain NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-34:compileJava NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-36:compileJava NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-33:compileJava NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-34:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-32:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-25:checkstyleMain NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-36:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-31:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-32:classes UP-TO-DATE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-34:classes UP-TO-DATE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-33:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-39:compileJava NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-33:classes UP-TO-DATE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-37:compileJava NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-38:compileJava NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-34:checkstyleMain NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-32:checkstyleMain NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-35:compileJava NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-40:compileJava NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-36:classes UP-TO-DATE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-33:checkstyleMain NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-41:compileJava NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-31:classes UP-TO-DATE
-[2025-12-04 21:16:09] > Task :test-common:test-common-internal-api:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-39:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-39:classes UP-TO-DATE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-37:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-37:classes UP-TO-DATE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-38:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-35:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-41:processResources NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-31:checkstyleMain NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-39:checkstyleMain NO-SOURCE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-35:classes UP-TO-DATE
-[2025-12-04 21:16:09] > Task :streams:upgrade-system-tests-36:checkstyleMain NO-SOURCE
-[2025-12-04 21:16:10] > Task :streams:upgrade-system-tests-40:processResources NO-SOURCE
-[2025-12-04 21:16:10] > Task :streams:upgrade-system-tests-40:classes UP-TO-DATE
-[2025-12-04 21:16:10] > Task :examples:processTestResources NO-SOURCE
-[2025-12-04 21:16:10] > Task :test-common:test-common-runtime:processResources
-[2025-12-04 21:16:10] > Task :connect:compileTestJava NO-SOURCE
-[2025-12-04 21:16:10] > Task :streams:upgrade-system-tests-37:checkstyleMain NO-SOURCE
-[2025-12-04 21:16:10] > Task :tools:tools-api:processResources NO-SOURCE
-[2025-12-04 21:16:10] > Task :jmh-benchmarks:processTestResources NO-SOURCE
-[2025-12-04 21:16:10] > Task :streams:upgrade-system-tests-41:classes UP-TO-DATE
-[2025-12-04 21:16:10] > Task :streams:upgrade-system-tests-38:classes UP-TO-DATE
-[2025-12-04 21:16:10] > Task :streams:upgrade-system-tests-40:checkstyleMain NO-SOURCE
-[2025-12-04 21:16:10] > Task :streams:upgrade-system-tests-35:checkstyleMain NO-SOURCE
-[2025-12-04 21:16:10] > Task :clients:processResources
-[2025-12-04 21:16:10] > Task :test-common:compileTestJava NO-SOURCE
-[2025-12-04 21:16:10] > Task :storage:processTestResources
-[2025-12-04 21:16:10] > Task :connect:processTestResources NO-SOURCE
-[2025-12-04 21:16:10] > Task :test-common:processTestResources NO-SOURCE
-[2025-12-04 21:16:10] > Task :connect:testClasses UP-TO-DATE
-[2025-12-04 21:16:10] > Task :test-common:testClasses UP-TO-DATE
-[2025-12-04 21:16:10] > Task :streams:upgrade-system-tests-38:checkstyleMain NO-SOURCE
-[2025-12-04 21:16:10] > Task :streams:upgrade-system-tests-41:checkstyleMain NO-SOURCE
-[2025-12-04 21:16:10] > Task :connect:checkstyleTest NO-SOURCE
-[2025-12-04 21:16:10] > Task :connect:basic-auth-extension:processTestResources NO-SOURCE
-[2025-12-04 21:16:10] > Task :test-common:checkstyleTest NO-SOURCE
-[2025-12-04 21:16:10] > Task :transaction-coordinator:processTestResources
-[2025-12-04 21:16:10] > Task :clients:clients-integration-tests:processTestResources
-[2025-12-04 21:16:10] > Task :shell:processTestResources
-[2025-12-04 21:16:10] > Task :streams:integration-tests:processTestResources
-[2025-12-04 21:16:10] > Task :tools:processTestResources
-[2025-12-04 21:16:10] > Task :streams:processTestResources
-[2025-12-04 21:16:10] > Task :connect:mirror-client:processTestResources NO-SOURCE
-[2025-12-04 21:16:10] > Task :group-coordinator:group-coordinator-api:processTestResources NO-SOURCE
-[2025-12-04 21:16:10] > Task :streams:examples:processTestResources NO-SOURCE
-[2025-12-04 21:16:10] > Task :connect:transforms:processTestResources NO-SOURCE
-[2025-12-04 21:16:10] > Task :connect:test-plugins:processTestResources NO-SOURCE
-[2025-12-04 21:16:10] > Task :connect:mirror:processTestResources
-[2025-12-04 21:16:10] > Task :connect:json:processTestResources
-[2025-12-04 21:16:10] > Task :connect:file:processTestResources
-[2025-12-04 21:16:10] > Task :connect:api:processTestResources
-[2025-12-04 21:16:10] > Task :trogdor:processTestResources
-[2025-12-04 21:16:10] > Task :clients:createVersionFile
-[2025-12-04 21:16:10] > Task :streams:streams-scala:processTestResources
-[2025-12-04 21:16:10] > Task :streams:test-utils:processTestResources
-[2025-12-04 21:16:10] > Task :clients:processTestResources
-[2025-12-04 21:16:10] > Task :connect:runtime:processTestResources
-[2025-12-04 21:16:15] > Task :test-common:test-common-util:compileJava
-[2025-12-04 21:16:15] > Task :test-common:test-common-util:processResources
-[2025-12-04 21:16:15] > Task :test-common:test-common-util:classes
-[2025-12-04 21:16:30] > Task :streams:upgrade-system-tests-21:compileTestJava
-[2025-12-04 21:16:30] > Task :streams:upgrade-system-tests-21:processTestResources NO-SOURCE
-[2025-12-04 21:16:30] > Task :streams:upgrade-system-tests-21:testClasses
-[2025-12-04 21:16:30] > Task :streams:upgrade-system-tests-0110:compileTestJava
-[2025-12-04 21:16:30] > Task :streams:upgrade-system-tests-0110:processTestResources NO-SOURCE
-[2025-12-04 21:16:30] > Task :streams:upgrade-system-tests-0110:testClasses
-[2025-12-04 21:16:34] > Task :streams:upgrade-system-tests-10:compileTestJava
-[2025-12-04 21:16:34] > Task :streams:upgrade-system-tests-10:processTestResources NO-SOURCE
-[2025-12-04 21:16:34] > Task :streams:upgrade-system-tests-10:testClasses
-[2025-12-04 21:16:35] > Task :streams:upgrade-system-tests-11:compileTestJava
-[2025-12-04 21:16:35] > Task :streams:upgrade-system-tests-11:processTestResources NO-SOURCE
-[2025-12-04 21:16:35] > Task :streams:upgrade-system-tests-11:testClasses
-[2025-12-04 21:16:35] > Task :streams:upgrade-system-tests-20:compileTestJava
-[2025-12-04 21:16:35] > Task :streams:upgrade-system-tests-20:processTestResources NO-SOURCE
-[2025-12-04 21:16:35] > Task :streams:upgrade-system-tests-20:testClasses
-[2025-12-04 21:16:35] > Task :test-common:test-common-util:checkstyleMain
-[2025-12-04 21:16:35] > Task :streams:upgrade-system-tests-0110:checkstyleTest
-[2025-12-04 21:16:36] > Task :streams:upgrade-system-tests-21:checkstyleTest
-[2025-12-04 21:16:37] > Task :streams:upgrade-system-tests-22:compileTestJava
-[2025-12-04 21:16:37] > Task :streams:upgrade-system-tests-22:processTestResources NO-SOURCE
-[2025-12-04 21:16:37] > Task :streams:upgrade-system-tests-22:testClasses
-[2025-12-04 21:16:37] > Task :streams:upgrade-system-tests-23:compileTestJava
-[2025-12-04 21:16:37] > Task :streams:upgrade-system-tests-23:processTestResources NO-SOURCE
-[2025-12-04 21:16:37] > Task :streams:upgrade-system-tests-10:checkstyleTest
-[2025-12-04 21:16:37] > Task :streams:upgrade-system-tests-23:testClasses
-[2025-12-04 21:16:37] > Task :streams:upgrade-system-tests-24:compileTestJava
-[2025-12-04 21:16:37] > Task :streams:upgrade-system-tests-24:processTestResources NO-SOURCE
-[2025-12-04 21:16:37] > Task :streams:upgrade-system-tests-24:testClasses
-[2025-12-04 21:16:37] > Task :streams:upgrade-system-tests-28:compileTestJava
-[2025-12-04 21:16:37] > Task :streams:upgrade-system-tests-28:processTestResources NO-SOURCE
-[2025-12-04 21:16:37] > Task :streams:upgrade-system-tests-28:testClasses
-[2025-12-04 21:16:37] > Task :streams:upgrade-system-tests-26:compileTestJava
-[2025-12-04 21:16:37] > Task :streams:upgrade-system-tests-26:processTestResources NO-SOURCE
-[2025-12-04 21:16:37] > Task :streams:upgrade-system-tests-26:testClasses
-[2025-12-04 21:16:37] > Task :streams:upgrade-system-tests-27:compileTestJava
-[2025-12-04 21:16:37] > Task :streams:upgrade-system-tests-27:processTestResources NO-SOURCE
-[2025-12-04 21:16:37] > Task :streams:upgrade-system-tests-27:testClasses
-[2025-12-04 21:16:37] > Task :streams:upgrade-system-tests-25:compileTestJava
-[2025-12-04 21:16:37] > Task :streams:upgrade-system-tests-25:processTestResources NO-SOURCE
-[2025-12-04 21:16:37] > Task :streams:upgrade-system-tests-25:testClasses
-[2025-12-04 21:16:40] > Task :generator:compileJava
-[2025-12-04 21:16:40] > Task :streams:upgrade-system-tests-30:compileTestJava
-[2025-12-04 21:16:40] > Task :streams:upgrade-system-tests-24:checkstyleTest
-[2025-12-04 21:16:40] > Task :streams:upgrade-system-tests-31:compileTestJava
-[2025-12-04 21:16:40] > Task :generator:processResources NO-SOURCE
-[2025-12-04 21:16:40] > Task :generator:classes
-[2025-12-04 21:16:40] > Task :streams:upgrade-system-tests-22:checkstyleTest
-[2025-12-04 21:16:40] > Task :generator:jar
-[2025-12-04 21:16:40] > Task :streams:upgrade-system-tests-23:checkstyleTest
-[2025-12-04 21:16:41] > Task :streams:upgrade-system-tests-27:checkstyleTest
-[2025-12-04 21:16:41] > Task :streams:upgrade-system-tests-26:checkstyleTest
-[2025-12-04 21:16:41] > Task :streams:upgrade-system-tests-11:checkstyleTest
-[2025-12-04 21:16:41] > Task :streams:upgrade-system-tests-28:checkstyleTest
-[2025-12-04 21:16:42] 
-[2025-12-04 21:16:42] > Task :raft:processMessages
-[2025-12-04 21:16:42] MessageGenerator: processed 1 Kafka message JSON file(s).
-[2025-12-04 21:16:42] 
-[2025-12-04 21:16:42] > Task :metadata:processMessages
-[2025-12-04 21:16:42] MessageGenerator: processed 26 Kafka message JSON file(s).
-[2025-12-04 21:16:42] 
-[2025-12-04 21:16:42] > Task :streams:upgrade-system-tests-20:checkstyleTest
-[2025-12-04 21:16:42] 
-[2025-12-04 21:16:42] > Task :share-coordinator:processMessages
-[2025-12-04 21:16:42] MessageGenerator: processed 4 Kafka message JSON file(s).
-[2025-12-04 21:16:42] 
-[2025-12-04 21:16:42] > Task :storage:processMessages
-[2025-12-04 21:16:42] MessageGenerator: processed 5 Kafka message JSON file(s).
-[2025-12-04 21:16:42] 
-[2025-12-04 21:16:42] > Task :group-coordinator:processMessages
-[2025-12-04 21:16:42] MessageGenerator: processed 44 Kafka message JSON file(s).
-[2025-12-04 21:16:43] 
-[2025-12-04 21:16:43] > Task :transaction-coordinator:processMessages
-[2025-12-04 21:16:43] MessageGenerator: processed 2 Kafka message JSON file(s).
-[2025-12-04 21:16:43] 
-[2025-12-04 21:16:43] > Task :clients:processMessages
-[2025-12-04 21:16:43] MessageGenerator: processed 197 Kafka message JSON file(s).
-[2025-12-04 21:16:43] 
-[2025-12-04 21:16:43] > Task :streams:processMessages
-[2025-12-04 21:16:43] MessageGenerator: processed 1 Kafka message JSON file(s).
-[2025-12-04 21:16:44] 
-[2025-12-04 21:16:44] > Task :streams:upgrade-system-tests-25:checkstyleTest
-[2025-12-04 21:16:44] > Task :test-common:test-common-internal-api:processTestResources
-[2025-12-04 21:16:44] > Task :test-common:test-common-runtime:processTestResources
-[2025-12-04 21:16:45] > Task :generator:checkstyleMain
-[2025-12-04 21:16:45] > Task :tools:tools-api:processTestResources
-[2025-12-04 21:16:45] > Task :generator:compileTestJava
-[2025-12-04 21:16:45] > Task :generator:processTestResources NO-SOURCE
-[2025-12-04 21:16:45] > Task :generator:testClasses
-[2025-12-04 21:16:46] > Task :generator:checkstyleTest
-[2025-12-04 21:16:51] > Task :test-common:test-common-util:compileTestJava
-[2025-12-04 21:16:51] > Task :test-common:test-common-util:processTestResources
-[2025-12-04 21:16:51] > Task :test-common:test-common-util:testClasses
-[2025-12-04 21:16:51] > Task :test-common:test-common-util:checkstyleTest
-[2025-12-04 21:16:54] > Task :clients:compileJava
-[2025-12-04 21:16:54] > Task :clients:classes
-[2025-12-04 21:16:55] > Task :tools:tools-api:compileJava
-[2025-12-04 21:16:55] > Task :group-coordinator:group-coordinator-api:compileJava
-[2025-12-04 21:16:55] > Task :examples:compileJava
-[2025-12-04 21:16:55] > Task :examples:classes
-[2025-12-04 21:16:56] > Task :connect:mirror-client:compileJava
-[2025-12-04 21:16:56] > Task :connect:mirror-client:classes
-[2025-12-04 21:16:56] > Task :examples:checkstyleMain
-[2025-12-04 21:16:56] > Task :group-coordinator:group-coordinator-api:classes
-[2025-12-04 21:16:56] > Task :connect:api:compileJava
-[2025-12-04 21:16:56] > Task :connect:mirror-client:checkstyleMain
-[2025-12-04 21:16:56] > Task :group-coordinator:group-coordinator-api:checkstyleMain
-[2025-12-04 21:16:56] > Task :connect:api:classes
-[2025-12-04 21:16:56] 
-[2025-12-04 21:16:56] > Task :clients:processTestMessages
-[2025-12-04 21:16:56] MessageGenerator: processed 5 Kafka message JSON file(s).
-[2025-12-04 21:16:57] 
-[2025-12-04 21:16:57] > Task :server-common:compileJava
-[2025-12-04 21:16:57] > Task :connect:transforms:compileJava
-[2025-12-04 21:16:57] > Task :storage:storage-api:compileJava
-[2025-12-04 21:16:57] > Task :server-common:classes
-[2025-12-04 21:16:57] > Task :storage:storage-api:classes
-[2025-12-04 21:16:57] > Task :connect:json:compileJava
-[2025-12-04 21:16:57] > Task :test-common:test-common-internal-api:compileJava
-[2025-12-04 21:16:58] > Task :raft:compileJava
-[2025-12-04 21:16:58] > Task :connect:api:checkstyleMain
-[2025-12-04 21:16:58] > Task :raft:classes
-[2025-12-04 21:17:00] > Task :metadata:compileJava
-[2025-12-04 21:17:00] > Task :server-common:checkstyleMain
-[2025-12-04 21:17:00] > Task :metadata:classes
-[2025-12-04 21:17:01] > Task :raft:checkstyleMain
-[2025-12-04 21:17:02] > Task :connect:basic-auth-extension:compileJava
-[2025-12-04 21:17:02] > Task :connect:basic-auth-extension:classes
-[2025-12-04 21:17:02] > Task :connect:basic-auth-extension:checkstyleMain
-[2025-12-04 21:17:03] > Task :connect:file:compileJava
-[2025-12-04 21:17:03] > Task :connect:file:classes
-[2025-12-04 21:17:03] > Task :connect:file:checkstyleMain
-[2025-12-04 21:17:03] > Task :connect:json:classes
-[2025-12-04 21:17:04] > Task :connect:json:checkstyleMain
-[2025-12-04 21:17:04] 
-[2025-12-04 21:17:04] > Task :metadata:checkstyleMain
-[2025-12-04 21:17:04] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/metadata/src/main/java/org/apache/kafka/controller/DelegationTokenControlManager.java:103:15: 'new' child has incorrect indentation level 14, expected level should be 16. [Indentation]
-[2025-12-04 21:17:04] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/metadata/src/main/java/org/apache/kafka/controller/DelegationTokenControlManager.java:104:15: 'new' child has incorrect indentation level 14, expected level should be 16. [Indentation]
-[2025-12-04 21:17:04] 
-[2025-12-04 21:17:04] > Task :connect:test-plugins:compileJava
-[2025-12-04 21:17:04] > Task :connect:test-plugins:classes
-[2025-12-04 21:17:04] > Task :storage:compileJava
-[2025-12-04 21:17:04] > Task :connect:test-plugins:checkstyleMain
-[2025-12-04 21:17:04] > Task :storage:classes
-[2025-12-04 21:17:05] > Task :streams:upgrade-system-tests-32:compileTestJava
-[2025-12-04 21:17:05] > Task :streams:upgrade-system-tests-33:compileTestJava
-[2025-12-04 21:17:05] > Task :coordinator-common:compileJava
-[2025-12-04 21:17:05] > Task :coordinator-common:classes
-[2025-12-04 21:17:06] > Task :streams:upgrade-system-tests-34:compileTestJava
-[2025-12-04 21:17:07] > Task :streams:upgrade-system-tests-35:compileTestJava
-[2025-12-04 21:17:07] > Task :connect:runtime:compileJava
-[2025-12-04 21:17:07] 
-[2025-12-04 21:17:07] > Task :metadata:checkstyleMain
-[2025-12-04 21:17:07] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/metadata/src/main/java/org/apache/kafka/controller/DelegationTokenControlManager.java:105:15: 'new' child has incorrect indentation level 14, expected level should be 16. [Indentation]
-[2025-12-04 21:17:07] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/metadata/src/main/java/org/apache/kafka/controller/DelegationTokenControlManager.java:106:15: 'new' child has incorrect indentation level 14, expected level should be 16. [Indentation]
-[2025-12-04 21:17:07] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/metadata/src/main/java/org/apache/kafka/controller/DelegationTokenControlManager.java:107:15: 'new' child has incorrect indentation level 14, expected level should be 16. [Indentation]
-[2025-12-04 21:17:07] 
-[2025-12-04 21:17:07] > Task :coordinator-common:checkstyleMain
-[2025-12-04 21:17:07] > Task :metadata:checkstyleMain FAILED
-[2025-12-04 21:17:08] > Task :share-coordinator:compileJava
-[2025-12-04 21:17:09] > Task :storage:checkstyleMain
-[2025-12-04 21:17:10] > Task :streams:upgrade-system-tests-36:compileTestJava
-[2025-12-04 21:17:10] > Task :streams:upgrade-system-tests-37:compileTestJava
-[2025-12-04 21:17:10] > Task :group-coordinator:compileJava
-[2025-12-04 21:17:12] > Task :streams:upgrade-system-tests-38:compileTestJava
-[2025-12-04 21:17:12] > Task :streams:upgrade-system-tests-39:compileTestJava
-[2025-12-04 21:17:12] > Task :streams:upgrade-system-tests-40:compileTestJava
-[2025-12-04 21:17:13] > Task :streams:upgrade-system-tests-41:compileTestJava
-[2025-12-04 21:17:17] 
-[2025-12-04 21:17:17] > Task :clients:compileTestJava
-[2025-12-04 21:17:17] Note: Some input files use or override a deprecated API.
-[2025-12-04 21:17:17] Note: Recompile with -Xlint:deprecation for details.
-[2025-12-04 21:17:24] 
-[2025-12-04 21:17:24] > Task :clients:checkstyleMain
-[2025-12-04 21:17:29] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/clients/src/main/java/org/apache/kafka/common/requests/TxnOffsetCommitRequest.java:99:17: 'new' child has incorrect indentation level 16, expected level should be 20. [Indentation]
-[2025-12-04 21:17:29] 
-[2025-12-04 21:17:29] > Task :clients:checkstyleMain FAILED
-[2025-12-04 21:17:29] 
-[2025-12-04 21:17:29] [Incubating] Problems report is available at: file:///home/circleci/project/.ci-temp/kafka/build/reports/problems/problems-report.html
-[2025-12-04 21:17:29] 
-[2025-12-04 21:17:29] FAILURE: Build completed with 2 failures.
-[2025-12-04 21:17:29] 
-[2025-12-04 21:17:29] 1: Task failed with an exception.
-[2025-12-04 21:17:29] -----------
-[2025-12-04 21:17:29] * What went wrong:
-[2025-12-04 21:17:29] Execution failed for task ':metadata:checkstyleMain'.
-[2025-12-04 21:17:29] > A failure occurred while executing org.gradle.api.plugins.quality.internal.CheckstyleAction
-[2025-12-04 21:17:29]    > Checkstyle rule violations were found. See the report at: file:///home/circleci/project/.ci-temp/kafka/metadata/build/reports/checkstyle/main.html
-[2025-12-04 21:17:29]      Checkstyle files with violations: 1
-[2025-12-04 21:17:29]      Checkstyle violations by severity: [error:5]
-[2025-12-04 21:17:29] 
-[2025-12-04 21:17:29] ==============================================================================
-[2025-12-04 21:17:29] 
-[2025-12-04 21:17:29] 2: Task failed with an exception.
-[2025-12-04 21:17:29] -----------
-[2025-12-04 21:17:29] * What went wrong:
-[2025-12-04 21:17:29] Execution failed for task ':clients:checkstyleMain'.
-[2025-12-04 21:17:29] > A failure occurred while executing org.gradle.api.plugins.quality.internal.CheckstyleAction
-[2025-12-04 21:17:29]    > Checkstyle rule violations were found. See the report at: file:///home/circleci/project/.ci-temp/kafka/clients/build/reports/checkstyle/main.html
-[2025-12-04 21:17:29]      Checkstyle files with violations: 1
-[2025-12-04 21:17:29]      Checkstyle violations by severity: [error:1]
-[2025-12-04 21:17:29] 
-[2025-12-04 21:17:29] ==============================================================================
-[2025-12-04 21:17:29] 
-[2025-12-04 21:17:29] Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
-[2025-12-04 21:17:29] 
-[2025-12-04 21:17:29] You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
-[2025-12-04 21:17:29] 
-[2025-12-04 21:17:29] For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
-[2025-12-04 21:17:29] 
-[2025-12-04 21:17:29] BUILD FAILED in 2m 26s
-[2025-12-04 21:17:29] 138 actionable tasks: 138 executed
-[2025-12-04 21:17:30] Error: 
-[2025-12-04 21:17:30] Exited with code exit status 1
-[2025-12-04 21:17:30] 
-[2025-12-04 21:17:30] Step failed
-[2025-12-04 21:17:30] Error: runner failed (exited with 101)
-[2025-12-04 21:17:30] Task failed
-[2025-12-04 21:17:32] Error: task failed

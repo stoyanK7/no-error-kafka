@@ -2,15 +2,25 @@ version: 2
 jobs:
   no-error-kafka:
     docker:
-    - image: cimg/openjdk:21.0.6
+    - image: cimg/openjdk:25.0
     steps:
     - checkout
+    - restore_cache:
+        name: Restore Maven repo and wrapper cache
+        keys:
+        - mvn-cache-{{ checksum "pom.xml" }}
     - run:
-        command: ./.ci/no-error-kafka.sh
+        command: ./.ci/validation.sh no-error-kafka
     - run:
         command: |
           ./.ci/validation.sh git-diff
           ./.ci/validation.sh ci-temp-check
+    - save_cache:
+        name: Save Maven repo and wrapper cache
+        key: mvn-cache-{{ checksum "pom.xml" }}
+        paths:
+        - .m2
+        - .mvn/wrapper
 workflows:
   test:
     jobs:

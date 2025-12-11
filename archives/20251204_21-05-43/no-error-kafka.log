@@ -1,483 +1,0 @@
-[2025-12-04 21:05:43] Fetching latest build environment...
-[2025-12-04 21:05:43] Docker image digest: sha256:008ba7f4223f1e26c11df9575283491b620074fa96da6961e0dcde47fb757014
-[2025-12-04 21:05:45] ====>> Spin up environment
-[2025-12-04 21:05:45] Build-agent version  ()
-[2025-12-04 21:05:45] System information:
-[2025-12-04 21:05:45]  Server Version: 28.3.3
-[2025-12-04 21:05:45]  Storage Driver: overlay2
-[2025-12-04 21:05:45]   Backing Filesystem: extfs
-[2025-12-04 21:05:45]  Cgroup Driver: systemd
-[2025-12-04 21:05:45]  Cgroup Version: 2
-[2025-12-04 21:05:45]  Kernel Version: 6.11.0-29-generic
-[2025-12-04 21:05:45]  Operating System: Ubuntu 24.04.2 LTS
-[2025-12-04 21:05:45]  OSType: linux
-[2025-12-04 21:05:45]  Architecture: x86_64
-[2025-12-04 21:05:45] 
-[2025-12-04 21:05:45] Starting container cimg/openjdk:21.0.6
-[2025-12-04 21:05:46] Warning: No authentication provided, using CircleCI credentials for pulls from Docker Hub.
-[2025-12-04 21:05:46]   image is cached as cimg/openjdk:21.0.6, but refreshing...
-[2025-12-04 21:05:46] 21.0.6: Pulling from cimg/openjdk
-[2025-12-04 21:05:46] Digest: sha256:14ffa54987ca7dd86fc656614c0a287854712e9eb533b26bc5c27dfef7f66b61
-[2025-12-04 21:05:46] Status: Image is up to date for cimg/openjdk:21.0.6
-[2025-12-04 21:05:46] cimg/openjdk:21.0.6:
-[2025-12-04 21:05:46]   using image cimg/openjdk@sha256:14ffa54987ca7dd86fc656614c0a287854712e9eb533b26bc5c27dfef7f66b61
-[2025-12-04 21:05:46]   pull stats: Image was already available so the image was not pulled
-[2025-12-04 21:05:46]   time to create container: 84ms
-[2025-12-04 21:05:46] Creating Docker containers in parallel 
-[2025-12-04 21:05:46] Time to upload agent and config: 233.066029ms
-[2025-12-04 21:05:47] Time to start containers: 184.001763ms
-[2025-12-04 21:05:47] ====>> Preparing environment variables
-[2025-12-04 21:05:47] Using build environment variables:
-[2025-12-04 21:05:47]   BASH_ENV=/tmp/.bash_env-localbuild-1764878744
-[2025-12-04 21:05:47]   CI=true
-[2025-12-04 21:05:47]   CIRCLECI=true
-[2025-12-04 21:05:47]   CIRCLE_BRANCH=
-[2025-12-04 21:05:47]   CIRCLE_BUILD_NUM=
-[2025-12-04 21:05:47]   CIRCLE_JOB=no-error-kafka
-[2025-12-04 21:05:47]   CIRCLE_NODE_INDEX=0
-[2025-12-04 21:05:47]   CIRCLE_NODE_TOTAL=1
-[2025-12-04 21:05:47]   CIRCLE_REPOSITORY_URL=
-[2025-12-04 21:05:47]   CIRCLE_SHA1=
-[2025-12-04 21:05:47]   CIRCLE_SHELL_ENV=/tmp/.bash_env-localbuild-1764878744
-[2025-12-04 21:05:47]   CIRCLE_WORKING_DIRECTORY=~/project
-[2025-12-04 21:05:47] 
-[2025-12-04 21:05:47] 
-[2025-12-04 21:05:47] The redacted variables listed above will be masked in run step output.====>> Checkout code
-[2025-12-04 21:05:47] Making checkout directory "/home/circleci/project"
-[2025-12-04 21:05:47] Copying files from "/tmp/_circleci_local_build_repo" to "/home/circleci/project"
-[2025-12-04 21:05:48] ====>> ./.ci/no-error-kafka.sh
-[2025-12-04 21:05:48]   #!/bin/bash -eo pipefail
-[2025-12-04 21:05:48] ./.ci/no-error-kafka.sh
-[2025-12-04 21:06:38] [0mCS_version: 12.2.1-SNAPSHOT
-[2025-12-04 21:06:39] [[1;34mINFO[m] Error stacktraces are turned on.
-[2025-12-04 21:06:39] [[1;34mINFO[m] Scanning for projects...
-[2025-12-04 21:06:39] [[1;34mINFO[m] Inspecting build with total of 1 modules
-[2025-12-04 21:06:39] [[1;34mINFO[m] Installing Central Publishing features
-[2025-12-04 21:06:39] [[1;34mINFO[m] 
-[2025-12-04 21:06:39] [[1;34mINFO[m] [1m------------------< [0;36mcom.puppycrawl.tools:checkstyle[0;1m >-------------------[m
-[2025-12-04 21:06:39] [[1;34mINFO[m] [1mBuilding checkstyle 12.2.1-SNAPSHOT[m
-[2025-12-04 21:06:39] [[1;34mINFO[m]   from pom.xml
-[2025-12-04 21:06:39] [[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
-[2025-12-04 21:06:48] [[1;34mINFO[m] 
-[2025-12-04 21:06:48] [[1;34mINFO[m] [1m--- [0;32mclean:3.5.0:clean[m [1m(default-clean)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:06:49] [[1;34mINFO[m] 
-[2025-12-04 21:06:49] [[1;34mINFO[m] [1m--- [0;32mtidy:1.4.0:check[m [1m(validate)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:06:50] [[1;34mINFO[m] Tidy is skipped.
-[2025-12-04 21:06:50] [[1;34mINFO[m] 
-[2025-12-04 21:06:50] [[1;34mINFO[m] [1m--- [0;32menforcer:3.6.2:enforce[m [1m(enforce-maven)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:06:52] [[1;34mINFO[m] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
-[2025-12-04 21:06:52] [[1;34mINFO[m] 
-[2025-12-04 21:06:52] [[1;34mINFO[m] [1m--- [0;32menforcer:3.6.2:enforce[m [1m(enforce-versions)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:06:52] [[1;34mINFO[m] Rule 0: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
-[2025-12-04 21:06:52] [[1;34mINFO[m] Rule 1: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
-[2025-12-04 21:06:52] [[1;34mINFO[m] Rule 2: org.apache.maven.enforcer.rules.dependency.DependencyConvergence passed
-[2025-12-04 21:06:52] [[1;34mINFO[m] 
-[2025-12-04 21:06:52] [[1;34mINFO[m] [1m--- [0;32mxml:1.2.0:check-format[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:06:53] [[1;34mINFO[m] 
-[2025-12-04 21:06:53] [[1;34mINFO[m] [1m--- [0;32mantlr4:4.13.2:antlr4[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:06:58] [[1;34mINFO[m] ANTLR 4: Processing source directory /home/circleci/project/src/main/resources
-[2025-12-04 21:06:58] [[1;34mINFO[m] Processing grammar: com/puppycrawl/tools/checkstyle/grammar/javadoc/JavadocCommentsLexer.g4
-[2025-12-04 21:06:58] [[1;34mINFO[m] Processing grammar: com/puppycrawl/tools/checkstyle/grammar/javadoc/JavadocCommentsParser.g4
-[2025-12-04 21:06:58] [[1;34mINFO[m] Processing grammar: com/puppycrawl/tools/checkstyle/grammar/java/JavaLanguageLexer.g4
-[2025-12-04 21:06:58] [[1;34mINFO[m] Processing grammar: com/puppycrawl/tools/checkstyle/grammar/java/JavaLanguageParser.g4
-[2025-12-04 21:06:59] [[1;34mINFO[m] 
-[2025-12-04 21:06:59] [[1;34mINFO[m] [1m--- [0;32mbuild-helper:3.6.1:add-source[m [1m(add-source)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:00] [[1;34mINFO[m] Source directory: /home/circleci/project/target/generated-sources/antlr added.
-[2025-12-04 21:07:00] [[1;34mINFO[m] 
-[2025-12-04 21:07:00] [[1;34mINFO[m] [1m--- [0;32mresources:3.4.0:resources[m [1m(default-resources)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:01] [[1;34mINFO[m] Copying 400 resources from src/main/resources to target/classes
-[2025-12-04 21:07:01] [[1;34mINFO[m] 
-[2025-12-04 21:07:01] [[1;34mINFO[m] [1m--- [0;32mbuild-helper:3.6.1:add-test-source[m [1m(add-test-source)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:01] [[1;34mINFO[m] Skipping plugin execution!
-[2025-12-04 21:07:01] [[1;34mINFO[m] 
-[2025-12-04 21:07:01] [[1;34mINFO[m] [1m--- [0;32mbuild-helper:3.6.1:add-test-source[m [1m(add-it-test-source)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:01] [[1;34mINFO[m] Test Source directory: /home/circleci/project/src/it/java added.
-[2025-12-04 21:07:01] [[1;34mINFO[m] 
-[2025-12-04 21:07:01] [[1;34mINFO[m] [1m--- [0;32mbuild-helper:3.6.1:add-test-source[m [1m(add-it-test-resource)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:01] [[1;34mINFO[m] Skipping plugin execution!
-[2025-12-04 21:07:01] [[1;34mINFO[m] 
-[2025-12-04 21:07:01] [[1;34mINFO[m] [1m--- [0;32mbuild-helper:3.6.1:add-test-source[m [1m(add-xdocs-examples-source)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:01] [[1;34mINFO[m] Test Source directory: /home/circleci/project/src/xdocs-examples/java added.
-[2025-12-04 21:07:01] [[1;34mINFO[m] 
-[2025-12-04 21:07:01] [[1;34mINFO[m] [1m--- [0;32mbuild-helper:3.6.1:add-test-source[m [1m(add-xdocs-examples-resource)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:01] [[1;34mINFO[m] Skipping plugin execution!
-[2025-12-04 21:07:01] [[1;34mINFO[m] 
-[2025-12-04 21:07:01] [[1;34mINFO[m] [1m--- [0;32mcompiler:3.14.1:compile[m [1m(default-compile)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:05] [[1;34mINFO[m] Recompiling the module because of [1mchanged source code[m.
-[2025-12-04 21:07:05] [[1;34mINFO[m] Compiling 471 source files with javac [debug release 17] to target/classes
-[2025-12-04 21:07:09] [[1;34mINFO[m] /home/circleci/project/src/main/java/com/puppycrawl/tools/checkstyle/DefaultConfiguration.java: Some input files use or override a deprecated API.
-[2025-12-04 21:07:09] [[1;34mINFO[m] /home/circleci/project/src/main/java/com/puppycrawl/tools/checkstyle/DefaultConfiguration.java: Recompile with -Xlint:deprecation for details.
-[2025-12-04 21:07:09] [[1;34mINFO[m] /home/circleci/project/src/main/java/com/puppycrawl/tools/checkstyle/AbstractAutomaticBean.java: /home/circleci/project/src/main/java/com/puppycrawl/tools/checkstyle/AbstractAutomaticBean.java uses unchecked or unsafe operations.
-[2025-12-04 21:07:09] [[1;34mINFO[m] /home/circleci/project/src/main/java/com/puppycrawl/tools/checkstyle/AbstractAutomaticBean.java: Recompile with -Xlint:unchecked for details.
-[2025-12-04 21:07:09] [[1;34mINFO[m] 
-[2025-12-04 21:07:09] [[1;34mINFO[m] [1m--- [0;32mplexus-component-metadata:2.2.0:generate-metadata[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:12] [[1;34mINFO[m] Discovered 10 component descriptor(s)
-[2025-12-04 21:07:12] [[1;34mINFO[m] 
-[2025-12-04 21:07:12] [[1;34mINFO[m] [1m--- [0;32mexec:3.6.2:java[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:14] [[1;34mINFO[m] 
-[2025-12-04 21:07:14] [[1;34mINFO[m] [1m--- [0;32mresources:3.4.0:testResources[m [1m(default-testResources)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:14] [[1;34mINFO[m] Copying 3281 resources from src/test/resources to target/test-classes
-[2025-12-04 21:07:15] [[1;34mINFO[m] 
-[2025-12-04 21:07:15] [[1;34mINFO[m] [1m--- [0;32mcompiler:3.14.1:testCompile[m [1m(default-testCompile)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:15] [[1;34mINFO[m] Recompiling the module because of [1mchanged dependency[m.
-[2025-12-04 21:07:15] [[1;34mINFO[m] Compiling 826 source files with javac [debug release 17] to target/test-classes
-[2025-12-04 21:07:19] [[1;34mINFO[m] /home/circleci/project/src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java: Some input files use or override a deprecated API.
-[2025-12-04 21:07:19] [[1;34mINFO[m] /home/circleci/project/src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java: Recompile with -Xlint:deprecation for details.
-[2025-12-04 21:07:19] [[1;34mINFO[m] /home/circleci/project/src/test/java/com/puppycrawl/tools/checkstyle/AbstractGuiTestSupport.java: Some input files use unchecked or unsafe operations.
-[2025-12-04 21:07:19] [[1;34mINFO[m] /home/circleci/project/src/test/java/com/puppycrawl/tools/checkstyle/AbstractGuiTestSupport.java: Recompile with -Xlint:unchecked for details.
-[2025-12-04 21:07:19] [[1;34mINFO[m] 
-[2025-12-04 21:07:19] [[1;34mINFO[m] [1m--- [0;32mjacoco:0.8.14:instrument[m [1m(default-instrument)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:20] [[1;34mINFO[m] Skipping JaCoCo execution because property jacoco.skip is set.
-[2025-12-04 21:07:20] [[1;34mINFO[m] 
-[2025-12-04 21:07:20] [[1;34mINFO[m] [1m--- [0;32msurefire:3.5.4:test[m [1m(default-test)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:23] [[1;34mINFO[m] Tests are skipped.
-[2025-12-04 21:07:23] [[1;34mINFO[m] 
-[2025-12-04 21:07:23] [[1;34mINFO[m] [1m--- [0;32mxml:1.2.0:validate[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:23] [[1;34mINFO[m] 
-[2025-12-04 21:07:23] [[1;34mINFO[m] [1m--- [0;32mjacoco:0.8.14:restore-instrumented-classes[m [1m(default-restore-instrumented-classes)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:23] [[1;34mINFO[m] Skipping JaCoCo execution because property jacoco.skip is set.
-[2025-12-04 21:07:23] [[1;34mINFO[m] 
-[2025-12-04 21:07:23] [[1;34mINFO[m] [1m--- [0;32mjar:3.5.0:jar[m [1m(default-jar)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:26] [[1;34mINFO[m] Building jar: /home/circleci/project/target/checkstyle-12.2.1-SNAPSHOT.jar
-[2025-12-04 21:07:26] [[1;34mINFO[m] 
-[2025-12-04 21:07:26] [[1;34mINFO[m] [1m--- [0;32mjar:3.5.0:test-jar[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:26] [[1;34mINFO[m] Building jar: /home/circleci/project/target/checkstyle-12.2.1-SNAPSHOT-tests.jar
-[2025-12-04 21:07:27] [[1;34mINFO[m] 
-[2025-12-04 21:07:27] [[1;34mINFO[m] [1m>>> [0;32msource:3.4.0:test-jar[m [1m(attach-sources)[0;1m > [0;1mgenerate-sources[m @ [36mcheckstyle[0;1m >>>[m
-[2025-12-04 21:07:27] [[1;34mINFO[m] 
-[2025-12-04 21:07:27] [[1;34mINFO[m] [1m--- [0;32mtidy:1.4.0:check[m [1m(validate)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:27] [[1;34mINFO[m] Tidy is skipped.
-[2025-12-04 21:07:27] [[1;34mINFO[m] 
-[2025-12-04 21:07:27] [[1;34mINFO[m] [1m--- [0;32menforcer:3.6.2:enforce[m [1m(enforce-maven)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:27] [[1;34mINFO[m] 
-[2025-12-04 21:07:27] [[1;34mINFO[m] [1m--- [0;32menforcer:3.6.2:enforce[m [1m(enforce-versions)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:27] [[1;34mINFO[m] Rule 2: org.apache.maven.enforcer.rules.dependency.DependencyConvergence passed
-[2025-12-04 21:07:27] [[1;34mINFO[m] 
-[2025-12-04 21:07:27] [[1;34mINFO[m] [1m--- [0;32mxml:1.2.0:check-format[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:27] [[1;34mINFO[m] 
-[2025-12-04 21:07:27] [[1;34mINFO[m] [1m--- [0;32mantlr4:4.13.2:antlr4[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:27] [[1;34mINFO[m] No grammars to process
-[2025-12-04 21:07:27] [[1;34mINFO[m] ANTLR 4: Processing source directory /home/circleci/project/src/main/resources
-[2025-12-04 21:07:27] [[1;34mINFO[m] 
-[2025-12-04 21:07:27] [[1;34mINFO[m] [1m--- [0;32mbuild-helper:3.6.1:add-source[m [1m(add-source)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:27] [[1;34mINFO[m] Source directory: /home/circleci/project/target/generated-sources/antlr added.
-[2025-12-04 21:07:27] [[1;34mINFO[m] 
-[2025-12-04 21:07:27] [[1;34mINFO[m] [1m<<< [0;32msource:3.4.0:test-jar[m [1m(attach-sources)[0;1m < [0;1mgenerate-sources[m @ [36mcheckstyle[0;1m <<<[m
-[2025-12-04 21:07:27] [[1;34mINFO[m] 
-[2025-12-04 21:07:27] [[1;34mINFO[m] 
-[2025-12-04 21:07:27] [[1;34mINFO[m] [1m--- [0;32msource:3.4.0:test-jar[m [1m(attach-sources)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:27] [[1;34mINFO[m] Building jar: /home/circleci/project/target/checkstyle-12.2.1-SNAPSHOT-test-sources.jar
-[2025-12-04 21:07:27] [[1;34mINFO[m] 
-[2025-12-04 21:07:27] [[1;34mINFO[m] [1m>>> [0;32msource:3.4.0:jar[m [1m(attach-sources)[0;1m > [0;1mgenerate-sources[m @ [36mcheckstyle[0;1m >>>[m
-[2025-12-04 21:07:27] [[1;34mINFO[m] 
-[2025-12-04 21:07:27] [[1;34mINFO[m] [1m--- [0;32mtidy:1.4.0:check[m [1m(validate)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:27] [[1;34mINFO[m] Tidy is skipped.
-[2025-12-04 21:07:27] [[1;34mINFO[m] 
-[2025-12-04 21:07:27] [[1;34mINFO[m] [1m--- [0;32menforcer:3.6.2:enforce[m [1m(enforce-maven)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:27] [[1;34mINFO[m] 
-[2025-12-04 21:07:27] [[1;34mINFO[m] [1m--- [0;32menforcer:3.6.2:enforce[m [1m(enforce-versions)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:27] [[1;34mINFO[m] Rule 2: org.apache.maven.enforcer.rules.dependency.DependencyConvergence passed
-[2025-12-04 21:07:27] [[1;34mINFO[m] 
-[2025-12-04 21:07:27] [[1;34mINFO[m] [1m--- [0;32mxml:1.2.0:check-format[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:27] [[1;34mINFO[m] 
-[2025-12-04 21:07:27] [[1;34mINFO[m] [1m--- [0;32mantlr4:4.13.2:antlr4[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:27] [[1;34mINFO[m] No grammars to process
-[2025-12-04 21:07:27] [[1;34mINFO[m] ANTLR 4: Processing source directory /home/circleci/project/src/main/resources
-[2025-12-04 21:07:27] [[1;34mINFO[m] 
-[2025-12-04 21:07:27] [[1;34mINFO[m] [1m--- [0;32mbuild-helper:3.6.1:add-source[m [1m(add-source)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:27] [[1;34mINFO[m] Source directory: /home/circleci/project/target/generated-sources/antlr added.
-[2025-12-04 21:07:27] [[1;34mINFO[m] 
-[2025-12-04 21:07:27] [[1;34mINFO[m] [1m<<< [0;32msource:3.4.0:jar[m [1m(attach-sources)[0;1m < [0;1mgenerate-sources[m @ [36mcheckstyle[0;1m <<<[m
-[2025-12-04 21:07:27] [[1;34mINFO[m] 
-[2025-12-04 21:07:27] [[1;34mINFO[m] 
-[2025-12-04 21:07:27] [[1;34mINFO[m] [1m--- [0;32msource:3.4.0:jar[m [1m(attach-sources)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:27] [[1;34mINFO[m] Building jar: /home/circleci/project/target/checkstyle-12.2.1-SNAPSHOT-sources.jar
-[2025-12-04 21:07:27] [[1;34mINFO[m] 
-[2025-12-04 21:07:27] [[1;34mINFO[m] [1m--- [0;32mfailsafe:3.5.4:integration-test[m [1m(integration-test)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:27] [[1;34mINFO[m] Tests are skipped.
-[2025-12-04 21:07:27] [[1;34mINFO[m] 
-[2025-12-04 21:07:27] [[1;34mINFO[m] [1m--- [0;32mmodernizer:3.2.0:modernizer[m [1m(modernizer)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:28] [[1;34mINFO[m] Skipping modernizer execution!
-[2025-12-04 21:07:28] [[1;34mINFO[m] 
-[2025-12-04 21:07:28] [[1;34mINFO[m] [1m--- [0;32mjacoco:0.8.14:check[m [1m(default-check)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:28] [[1;34mINFO[m] Skipping JaCoCo execution because property jacoco.skip is set.
-[2025-12-04 21:07:28] [[1;34mINFO[m] 
-[2025-12-04 21:07:28] [[1;34mINFO[m] [1m--- [0;32mfailsafe:3.5.4:verify[m [1m(verify)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:28] [[1;34mINFO[m] Tests are skipped.
-[2025-12-04 21:07:28] [[1;34mINFO[m] 
-[2025-12-04 21:07:28] [[1;34mINFO[m] [1m--- [0;32mantrun:3.2.0:run[m [1m(ant-phase-verify)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:29] [[1;34mINFO[m] Executing tasks
-[2025-12-04 21:07:29] [[1;34mINFO[m] Executed tasks
-[2025-12-04 21:07:29] [[1;34mINFO[m] 
-[2025-12-04 21:07:29] [[1;34mINFO[m] [1m>>> [0;32mpmd:3.28.0:check[m [1m(default)[0;1m > [0;1m:pmd[m @ [36mcheckstyle[0;1m >>>[m
-[2025-12-04 21:07:29] [[1;34mINFO[m] 
-[2025-12-04 21:07:29] [[1;34mINFO[m] [1m--- [0;32mpmd:3.28.0:pmd[m [1m(pmd)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:43] [[1;34mINFO[m] Skipping org.apache.maven.plugins:maven-pmd-plugin:3.28.0:pmd report goal
-[2025-12-04 21:07:43] [[1;34mINFO[m] 
-[2025-12-04 21:07:43] [[1;34mINFO[m] [1m<<< [0;32mpmd:3.28.0:check[m [1m(default)[0;1m < [0;1m:pmd[m @ [36mcheckstyle[0;1m <<<[m
-[2025-12-04 21:07:43] [[1;34mINFO[m] 
-[2025-12-04 21:07:43] [[1;34mINFO[m] 
-[2025-12-04 21:07:43] [[1;34mINFO[m] [1m--- [0;32mpmd:3.28.0:check[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:43] [[1;34mINFO[m] Skipping PMD execution
-[2025-12-04 21:07:43] [[1;34mINFO[m] 
-[2025-12-04 21:07:43] [[1;34mINFO[m] [1m>>> [0;32mspotbugs:4.9.8.2:check[m [1m(default)[0;1m > [0;1m:spotbugs[m @ [36mcheckstyle[0;1m >>>[m
-[2025-12-04 21:07:43] [[1;34mINFO[m] 
-[2025-12-04 21:07:43] [[1;34mINFO[m] [1m--- [0;32mspotbugs:4.9.8.2:spotbugs[m [1m(spotbugs)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:52] [[1;34mINFO[m] Spotbugs plugin skipped
-[2025-12-04 21:07:52] [[1;34mINFO[m] Skipping com.github.spotbugs:spotbugs-maven-plugin:4.9.8.2:spotbugs report goal
-[2025-12-04 21:07:52] [[1;34mINFO[m] 
-[2025-12-04 21:07:52] [[1;34mINFO[m] [1m<<< [0;32mspotbugs:4.9.8.2:check[m [1m(default)[0;1m < [0;1m:spotbugs[m @ [36mcheckstyle[0;1m <<<[m
-[2025-12-04 21:07:52] [[1;34mINFO[m] 
-[2025-12-04 21:07:52] [[1;34mINFO[m] 
-[2025-12-04 21:07:52] [[1;34mINFO[m] [1m--- [0;32mspotbugs:4.9.8.2:check[m [1m(default)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:52] [[1;34mINFO[m] Spotbugs plugin skipped
-[2025-12-04 21:07:52] [[1;34mINFO[m] 
-[2025-12-04 21:07:52] [[1;34mINFO[m] [1m--- [0;32mforbiddenapis:3.10:check[m [1m(forbiddenapis-main)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:52] [[1;34mINFO[m] Skipping forbidden-apis checks.
-[2025-12-04 21:07:52] [[1;34mINFO[m] 
-[2025-12-04 21:07:52] [[1;34mINFO[m] [1m--- [0;32mforbiddenapis:3.10:testCheck[m [1m(forbiddenapis-test)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:52] [[1;34mINFO[m] Skipping forbidden-apis checks.
-[2025-12-04 21:07:52] [[1;34mINFO[m] 
-[2025-12-04 21:07:52] [[1;34mINFO[m] [1m--- [0;32minstall:3.1.4:install[m [1m(default-install)[m @ [36mcheckstyle[0;1m ---[m
-[2025-12-04 21:07:52] [[1;34mINFO[m] Installing /home/circleci/project/pom.xml to /home/circleci/.m2/repository/com/puppycrawl/tools/checkstyle/12.2.1-SNAPSHOT/checkstyle-12.2.1-SNAPSHOT.pom
-[2025-12-04 21:07:52] [[1;34mINFO[m] Installing /home/circleci/project/target/checkstyle-12.2.1-SNAPSHOT.jar to /home/circleci/.m2/repository/com/puppycrawl/tools/checkstyle/12.2.1-SNAPSHOT/checkstyle-12.2.1-SNAPSHOT.jar
-[2025-12-04 21:07:52] [[1;34mINFO[m] Installing /home/circleci/project/target/checkstyle-12.2.1-SNAPSHOT-tests.jar to /home/circleci/.m2/repository/com/puppycrawl/tools/checkstyle/12.2.1-SNAPSHOT/checkstyle-12.2.1-SNAPSHOT-tests.jar
-[2025-12-04 21:07:52] [[1;34mINFO[m] Installing /home/circleci/project/target/checkstyle-12.2.1-SNAPSHOT-test-sources.jar to /home/circleci/.m2/repository/com/puppycrawl/tools/checkstyle/12.2.1-SNAPSHOT/checkstyle-12.2.1-SNAPSHOT-test-sources.jar
-[2025-12-04 21:07:52] [[1;34mINFO[m] Installing /home/circleci/project/target/checkstyle-12.2.1-SNAPSHOT-sources.jar to /home/circleci/.m2/repository/com/puppycrawl/tools/checkstyle/12.2.1-SNAPSHOT/checkstyle-12.2.1-SNAPSHOT-sources.jar
-[2025-12-04 21:07:52] [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[2025-12-04 21:07:52] [[1;34mINFO[m] [1;32mBUILD SUCCESS[m
-[2025-12-04 21:07:52] [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[2025-12-04 21:07:52] [[1;34mINFO[m] Total time:  01:13 min
-[2025-12-04 21:07:52] [[1;34mINFO[m] Finished at: 2025-12-04T20:07:52Z
-[2025-12-04 21:07:52] [[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[2025-12-04 21:07:52] [0m[0mCheckout Apache Kafka sources ...
-[2025-12-04 21:07:52] Cloning into 'kafka'...
-[2025-12-04 21:07:53] remote: Enumerating objects: 8531, done.        
-[2025-12-04 21:07:53] remote: Counting objects:   0% (1/8531)        remote: Counting objects:   1% (86/8531)        remote: Counting objects:   2% (171/8531)        remote: Counting objects:   3% (256/8531)        remote: Counting objects:   4% (342/8531)        remote: Counting objects:   5% (427/8531)        remote: Counting objects:   6% (512/8531)        remote: Counting objects:   7% (598/8531)        remote: Counting objects:   8% (683/8531)        remote: Counting objects:   9% (768/8531)        remote: Counting objects:  10% (854/8531)        remote: Counting objects:  11% (939/8531)        remote: Counting objects:  12% (1024/8531)        remote: Counting objects:  13% (1110/8531)        remote: Counting objects:  14% (1195/8531)        remote: Counting objects:  15% (1280/8531)        remote: Counting objects:  16% (1365/8531)        remote: Counting objects:  17% (1451/8531)        remote: Counting objects:  18% (1536/8531)        remote: Counting objects:  19% (1621/8531)        remote: Counting objects:  20% (1707/8531)        remote: Counting objects:  21% (1792/8531)        remote: Counting objects:  22% (1877/8531)        remote: Counting objects:  23% (1963/8531)        remote: Counting objects:  24% (2048/8531)        remote: Counting objects:  25% (2133/8531)        remote: Counting objects:  26% (2219/8531)        remote: Counting objects:  27% (2304/8531)        remote: Counting objects:  28% (2389/8531)        remote: Counting objects:  29% (2474/8531)        remote: Counting objects:  30% (2560/8531)        remote: Counting objects:  31% (2645/8531)        remote: Counting objects:  32% (2730/8531)        remote: Counting objects:  33% (2816/8531)        remote: Counting objects:  34% (2901/8531)        remote: Counting objects:  35% (2986/8531)        remote: Counting objects:  36% (3072/8531)        remote: Counting objects:  37% (3157/8531)        remote: Counting objects:  38% (3242/8531)        remote: Counting objects:  39% (3328/8531)        remote: Counting objects:  40% (3413/8531)        remote: Counting objects:  41% (3498/8531)        remote: Counting objects:  42% (3584/8531)        remote: Counting objects:  43% (3669/8531)        remote: Counting objects:  44% (3754/8531)        remote: Counting objects:  45% (3839/8531)        remote: Counting objects:  46% (3925/8531)        remote: Counting objects:  47% (4010/8531)        remote: Counting objects:  48% (4095/8531)        remote: Counting objects:  49% (4181/8531)        remote: Counting objects:  50% (4266/8531)        remote: Counting objects:  51% (4351/8531)        remote: Counting objects:  52% (4437/8531)        remote: Counting objects:  53% (4522/8531)        remote: Counting objects:  54% (4607/8531)        remote: Counting objects:  55% (4693/8531)        remote: Counting objects:  56% (4778/8531)        remote: Counting objects:  57% (4863/8531)        remote: Counting objects:  58% (4948/8531)        remote: Counting objects:  59% (5034/8531)        remote: Counting objects:  60% (5119/8531)        remote: Counting objects:  61% (5204/8531)        remote: Counting objects:  62% (5290/8531)        remote: Counting objects:  63% (5375/8531)        remote: Counting objects:  64% (5460/8531)        remote: Counting objects:  65% (5546/8531)        remote: Counting objects:  66% (5631/8531)        remote: Counting objects:  67% (5716/8531)        remote: Counting objects:  68% (5802/8531)        remote: Counting objects:  69% (5887/8531)        remote: Counting objects:  70% (5972/8531)        remote: Counting objects:  71% (6058/8531)        remote: Counting objects:  72% (6143/8531)        remote: Counting objects:  73% (6228/8531)        remote: Counting objects:  74% (6313/8531)        remote: Counting objects:  75% (6399/8531)        remote: Counting objects:  76% (6484/8531)        remote: Counting objects:  77% (6569/8531)        remote: Counting objects:  78% (6655/8531)        remote: Counting objects:  79% (6740/8531)        remote: Counting objects:  80% (6825/8531)        remote: Counting objects:  81% (6911/8531)        remote: Counting objects:  82% (6996/8531)        remote: Counting objects:  83% (7081/8531)        remote: Counting objects:  84% (7167/8531)        remote: Counting objects:  85% (7252/8531)        remote: Counting objects:  86% (7337/8531)        remote: Counting objects:  87% (7422/8531)        remote: Counting objects:  88% (7508/8531)        remote: Counting objects:  89% (7593/8531)        remote: Counting objects:  90% (7678/8531)        remote: Counting objects:  91% (7764/8531)        remote: Counting objects:  92% (7849/8531)        remote: Counting objects:  93% (7934/8531)        remote: Counting objects:  94% (8020/8531)        remote: Counting objects:  95% (8105/8531)        remote: Counting objects:  96% (8190/8531)        remote: Counting objects:  97% (8276/8531)        remote: Counting objects:  98% (8361/8531)        remote: Counting objects:  99% (8446/8531)        remote: Counting objects: 100% (8531/8531)        remote: Counting objects: 100% (8531/8531), done.        
-[2025-12-04 21:07:56] remote: Compressing objects:   0% (1/6413)        remote: Compressing objects:   1% (65/6413)        remote: Compressing objects:   2% (129/6413)        remote: Compressing objects:   3% (193/6413)        remote: Compressing objects:   4% (257/6413)        remote: Compressing objects:   5% (321/6413)        remote: Compressing objects:   6% (385/6413)        remote: Compressing objects:   7% (449/6413)        remote: Compressing objects:   8% (514/6413)        remote: Compressing objects:   9% (578/6413)        remote: Compressing objects:  10% (642/6413)        remote: Compressing objects:  11% (706/6413)        remote: Compressing objects:  12% (770/6413)        remote: Compressing objects:  13% (834/6413)        remote: Compressing objects:  14% (898/6413)        remote: Compressing objects:  15% (962/6413)        remote: Compressing objects:  16% (1027/6413)        remote: Compressing objects:  17% (1091/6413)        remote: Compressing objects:  18% (1155/6413)        remote: Compressing objects:  19% (1219/6413)        remote: Compressing objects:  20% (1283/6413)        remote: Compressing objects:  21% (1347/6413)        remote: Compressing objects:  22% (1411/6413)        remote: Compressing objects:  23% (1475/6413)        remote: Compressing objects:  24% (1540/6413)        remote: Compressing objects:  25% (1604/6413)        remote: Compressing objects:  26% (1668/6413)        remote: Compressing objects:  27% (1732/6413)        remote: Compressing objects:  27% (1742/6413)        remote: Compressing objects:  28% (1796/6413)        remote: Compressing objects:  29% (1860/6413)        remote: Compressing objects:  30% (1924/6413)        remote: Compressing objects:  31% (1989/6413)        remote: Compressing objects:  32% (2053/6413)        remote: Compressing objects:  33% (2117/6413)        remote: Compressing objects:  34% (2181/6413)        remote: Compressing objects:  35% (2245/6413)        remote: Compressing objects:  36% (2309/6413)        remote: Compressing objects:  37% (2373/6413)        remote: Compressing objects:  38% (2437/6413)        remote: Compressing objects:  39% (2502/6413)        remote: Compressing objects:  40% (2566/6413)        remote: Compressing objects:  41% (2630/6413)        remote: Compressing objects:  42% (2694/6413)        remote: Compressing objects:  43% (2758/6413)        remote: Compressing objects:  44% (2822/6413)        remote: Compressing objects:  45% (2886/6413)        remote: Compressing objects:  46% (2950/6413)        remote: Compressing objects:  47% (3015/6413)        remote: Compressing objects:  48% (3079/6413)        remote: Compressing objects:  49% (3143/6413)        remote: Compressing objects:  50% (3207/6413)        remote: Compressing objects:  51% (3271/6413)        remote: Compressing objects:  52% (3335/6413)        remote: Compressing objects:  53% (3399/6413)        remote: Compressing objects:  54% (3464/6413)        remote: Compressing objects:  55% (3528/6413)        remote: Compressing objects:  56% (3592/6413)        remote: Compressing objects:  56% (3644/6413)        remote: Compressing objects:  57% (3656/6413)        remote: Compressing objects:  58% (3720/6413)        remote: Compressing objects:  59% (3784/6413)        remote: Compressing objects:  60% (3848/6413)        remote: Compressing objects:  61% (3912/6413)        remote: Compressing objects:  62% (3977/6413)        remote: Compressing objects:  63% (4041/6413)        remote: Compressing objects:  64% (4105/6413)        remote: Compressing objects:  65% (4169/6413)        remote: Compressing objects:  66% (4233/6413)        remote: Compressing objects:  67% (4297/6413)        remote: Compressing objects:  68% (4361/6413)        remote: Compressing objects:  69% (4425/6413)        remote: Compressing objects:  70% (4490/6413)        remote: Compressing objects:  71% (4554/6413)        remote: Compressing objects:  72% (4618/6413)        remote: Compressing objects:  73% (4682/6413)        remote: Compressing objects:  74% (4746/6413)        remote: Compressing objects:  75% (4810/6413)        remote: Compressing objects:  76% (4874/6413)        remote: Compressing objects:  77% (4939/6413)        remote: Compressing objects:  78% (5003/6413)        remote: Compressing objects:  79% (5067/6413)        remote: Compressing objects:  80% (5131/6413)        remote: Compressing objects:  81% (5195/6413)        remote: Compressing objects:  82% (5259/6413)        remote: Compressing objects:  83% (5323/6413)        remote: Compressing objects:  84% (5387/6413)        remote: Compressing objects:  85% (5452/6413)        remote: Compressing objects:  86% (5516/6413)        remote: Compressing objects:  87% (5580/6413)        remote: Compressing objects:  88% (5644/6413)        remote: Compressing objects:  89% (5708/6413)        remote: Compressing objects:  90% (5772/6413)        remote: Compressing objects:  91% (5836/6413)        remote: Compressing objects:  92% (5900/6413)        remote: Compressing objects:  93% (5965/6413)        remote: Compressing objects:  94% (6029/6413)        remote: Compressing objects:  95% (6093/6413)        remote: Compressing objects:  96% (6157/6413)        remote: Compressing objects:  97% (6221/6413)        remote: Compressing objects:  98% (6285/6413)        remote: Compressing objects:  99% (6349/6413)        remote: Compressing objects: 100% (6413/6413)        remote: Compressing objects: 100% (6413/6413), done.        
-[2025-12-04 21:07:58] Receiving objects:   0% (1/8531)Receiving objects:   1% (86/8531)Receiving objects:   2% (171/8531)Receiving objects:   3% (256/8531)Receiving objects:   4% (342/8531)Receiving objects:   5% (427/8531)Receiving objects:   6% (512/8531)Receiving objects:   7% (598/8531)Receiving objects:   8% (683/8531)Receiving objects:   9% (768/8531)Receiving objects:  10% (854/8531)Receiving objects:  11% (939/8531)Receiving objects:  12% (1024/8531)Receiving objects:  13% (1110/8531)Receiving objects:  14% (1195/8531)Receiving objects:  15% (1280/8531)Receiving objects:  16% (1365/8531)Receiving objects:  17% (1451/8531)Receiving objects:  18% (1536/8531), 1.94 MiB | 3.87 MiB/sReceiving objects:  19% (1621/8531), 1.94 MiB | 3.87 MiB/sReceiving objects:  20% (1707/8531), 1.94 MiB | 3.87 MiB/sReceiving objects:  21% (1792/8531), 1.94 MiB | 3.87 MiB/sReceiving objects:  22% (1877/8531), 1.94 MiB | 3.87 MiB/sReceiving objects:  23% (1963/8531), 1.94 MiB | 3.87 MiB/sReceiving objects:  24% (2048/8531), 1.94 MiB | 3.87 MiB/sReceiving objects:  25% (2133/8531), 1.94 MiB | 3.87 MiB/sReceiving objects:  26% (2219/8531), 1.94 MiB | 3.87 MiB/sReceiving objects:  27% (2304/8531), 1.94 MiB | 3.87 MiB/sReceiving objects:  28% (2389/8531), 1.94 MiB | 3.87 MiB/sReceiving objects:  29% (2474/8531), 1.94 MiB | 3.87 MiB/sReceiving objects:  30% (2560/8531), 1.94 MiB | 3.87 MiB/sReceiving objects:  31% (2645/8531), 1.94 MiB | 3.87 MiB/sReceiving objects:  32% (2730/8531), 1.94 MiB | 3.87 MiB/sReceiving objects:  33% (2816/8531), 1.94 MiB | 3.87 MiB/sReceiving objects:  34% (2901/8531), 1.94 MiB | 3.87 MiB/sReceiving objects:  35% (2986/8531), 1.94 MiB | 3.87 MiB/sReceiving objects:  36% (3072/8531), 1.94 MiB | 3.87 MiB/sReceiving objects:  37% (3157/8531), 1.94 MiB | 3.87 MiB/sReceiving objects:  37% (3213/8531), 4.61 MiB | 4.60 MiB/sReceiving objects:  38% (3242/8531), 4.61 MiB | 4.60 MiB/sReceiving objects:  39% (3328/8531), 4.61 MiB | 4.60 MiB/sReceiving objects:  40% (3413/8531), 4.61 MiB | 4.60 MiB/sReceiving objects:  41% (3498/8531), 4.61 MiB | 4.60 MiB/sReceiving objects:  42% (3584/8531), 4.61 MiB | 4.60 MiB/sReceiving objects:  43% (3669/8531), 4.61 MiB | 4.60 MiB/sReceiving objects:  44% (3754/8531), 4.61 MiB | 4.60 MiB/sReceiving objects:  45% (3839/8531), 4.61 MiB | 4.60 MiB/sReceiving objects:  46% (3925/8531), 4.61 MiB | 4.60 MiB/sReceiving objects:  47% (4010/8531), 4.61 MiB | 4.60 MiB/sReceiving objects:  48% (4095/8531), 4.61 MiB | 4.60 MiB/sReceiving objects:  49% (4181/8531), 4.61 MiB | 4.60 MiB/sReceiving objects:  50% (4266/8531), 8.15 MiB | 5.42 MiB/sReceiving objects:  51% (4351/8531), 8.15 MiB | 5.42 MiB/sReceiving objects:  52% (4437/8531), 8.15 MiB | 5.42 MiB/sReceiving objects:  53% (4522/8531), 8.15 MiB | 5.42 MiB/sReceiving objects:  54% (4607/8531), 8.15 MiB | 5.42 MiB/sReceiving objects:  55% (4693/8531), 8.15 MiB | 5.42 MiB/sReceiving objects:  56% (4778/8531), 8.15 MiB | 5.42 MiB/sReceiving objects:  57% (4863/8531), 8.15 MiB | 5.42 MiB/sReceiving objects:  58% (4948/8531), 8.15 MiB | 5.42 MiB/sReceiving objects:  59% (5034/8531), 8.15 MiB | 5.42 MiB/sReceiving objects:  60% (5119/8531), 8.15 MiB | 5.42 MiB/sReceiving objects:  61% (5204/8531), 8.15 MiB | 5.42 MiB/sReceiving objects:  62% (5290/8531), 8.15 MiB | 5.42 MiB/sReceiving objects:  63% (5375/8531), 8.15 MiB | 5.42 MiB/sReceiving objects:  64% (5460/8531), 8.15 MiB | 5.42 MiB/sReceiving objects:  65% (5546/8531), 8.15 MiB | 5.42 MiB/sReceiving objects:  66% (5631/8531), 8.15 MiB | 5.42 MiB/sReceiving objects:  66% (5705/8531), 8.15 MiB | 5.42 MiB/sReceiving objects:  67% (5716/8531), 8.15 MiB | 5.42 MiB/sReceiving objects:  68% (5802/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  69% (5887/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  70% (5972/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  71% (6058/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  72% (6143/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  73% (6228/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  74% (6313/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  75% (6399/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  76% (6484/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  77% (6569/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  78% (6655/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  79% (6740/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  80% (6825/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  81% (6911/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  82% (6996/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  83% (7081/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  84% (7167/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  85% (7252/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  86% (7337/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  87% (7422/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  88% (7508/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  89% (7593/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  90% (7678/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  91% (7764/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  92% (7849/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  93% (7934/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  94% (8020/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  95% (8105/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  96% (8190/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  97% (8276/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  98% (8361/8531), 12.04 MiB | 6.00 MiB/sReceiving objects:  99% (8446/8531), 12.04 MiB | 6.00 MiB/sremote: Total 8531 (delta 3278), reused 3018 (delta 1374), pack-reused 0 (from 0)        
-[2025-12-04 21:07:58] Receiving objects: 100% (8531/8531), 12.04 MiB | 6.00 MiB/sReceiving objects: 100% (8531/8531), 15.80 MiB | 6.64 MiB/s, done.
-[2025-12-04 21:07:58] Resolving deltas:   0% (0/3278)Resolving deltas:   1% (33/3278)Resolving deltas:   2% (66/3278)Resolving deltas:   3% (99/3278)Resolving deltas:   4% (132/3278)Resolving deltas:   5% (164/3278)Resolving deltas:   6% (197/3278)Resolving deltas:   7% (230/3278)Resolving deltas:   8% (265/3278)Resolving deltas:   9% (296/3278)Resolving deltas:  10% (328/3278)Resolving deltas:  11% (361/3278)Resolving deltas:  12% (394/3278)Resolving deltas:  13% (427/3278)Resolving deltas:  14% (459/3278)Resolving deltas:  15% (492/3278)Resolving deltas:  16% (525/3278)Resolving deltas:  17% (558/3278)Resolving deltas:  18% (591/3278)Resolving deltas:  19% (623/3278)Resolving deltas:  20% (656/3278)Resolving deltas:  21% (689/3278)Resolving deltas:  22% (722/3278)Resolving deltas:  23% (754/3278)Resolving deltas:  24% (787/3278)Resolving deltas:  25% (821/3278)Resolving deltas:  26% (853/3278)Resolving deltas:  27% (886/3278)Resolving deltas:  28% (918/3278)Resolving deltas:  29% (951/3278)Resolving deltas:  30% (984/3278)Resolving deltas:  31% (1017/3278)Resolving deltas:  32% (1049/3278)Resolving deltas:  33% (1082/3278)Resolving deltas:  34% (1115/3278)Resolving deltas:  35% (1148/3278)Resolving deltas:  36% (1181/3278)Resolving deltas:  37% (1214/3278)Resolving deltas:  38% (1246/3278)Resolving deltas:  39% (1279/3278)Resolving deltas:  40% (1312/3278)Resolving deltas:  41% (1347/3278)Resolving deltas:  42% (1378/3278)Resolving deltas:  43% (1410/3278)Resolving deltas:  44% (1443/3278)Resolving deltas:  45% (1476/3278)Resolving deltas:  46% (1509/3278)Resolving deltas:  47% (1542/3278)Resolving deltas:  48% (1574/3278)Resolving deltas:  49% (1607/3278)Resolving deltas:  50% (1639/3278)Resolving deltas:  51% (1672/3278)Resolving deltas:  52% (1705/3278)Resolving deltas:  53% (1738/3278)Resolving deltas:  54% (1771/3278)Resolving deltas:  55% (1803/3278)Resolving deltas:  56% (1836/3278)Resolving deltas:  57% (1869/3278)Resolving deltas:  58% (1902/3278)Resolving deltas:  59% (1936/3278)Resolving deltas:  60% (1967/3278)Resolving deltas:  61% (2000/3278)Resolving deltas:  62% (2033/3278)Resolving deltas:  63% (2066/3278)Resolving deltas:  64% (2098/3278)Resolving deltas:  65% (2131/3278)Resolving deltas:  66% (2165/3278)Resolving deltas:  67% (2197/3278)Resolving deltas:  68% (2230/3278)Resolving deltas:  69% (2262/3278)Resolving deltas:  70% (2295/3278)Resolving deltas:  71% (2328/3278)Resolving deltas:  72% (2361/3278)Resolving deltas:  73% (2393/3278)Resolving deltas:  74% (2426/3278)Resolving deltas:  75% (2460/3278)Resolving deltas:  76% (2492/3278)Resolving deltas:  77% (2526/3278)Resolving deltas:  78% (2557/3278)Resolving deltas:  79% (2590/3278)Resolving deltas:  80% (2624/3278)Resolving deltas:  81% (2656/3278)Resolving deltas:  82% (2688/3278)Resolving deltas:  83% (2721/3278)Resolving deltas:  84% (2754/3278)Resolving deltas:  85% (2788/3278)Resolving deltas:  86% (2820/3278)Resolving deltas:  87% (2852/3278)Resolving deltas:  88% (2889/3278)Resolving deltas:  89% (2918/3278)Resolving deltas:  90% (2951/3278)Resolving deltas:  91% (2983/3278)Resolving deltas:  92% (3016/3278)Resolving deltas:  93% (3049/3278)Resolving deltas:  94% (3082/3278)Resolving deltas:  95% (3115/3278)Resolving deltas:  96% (3147/3278)Resolving deltas:  97% (3180/3278)Resolving deltas:  98% (3213/3278)Resolving deltas:  99% (3246/3278)Resolving deltas: 100% (3278/3278)Resolving deltas: 100% (3278/3278), done.
-[2025-12-04 21:07:59] Downloading https://services.gradle.org/distributions/gradle-9.2.1-bin.zip
-[2025-12-04 21:08:13] ............10%.............20%.............30%.............40%.............50%.............60%.............70%.............80%.............90%.............100%
-[2025-12-04 21:08:14] 
-[2025-12-04 21:08:14] Welcome to Gradle 9.2.1!
-[2025-12-04 21:08:14] 
-[2025-12-04 21:08:14] Here are the highlights of this release:
-[2025-12-04 21:08:14]  - Windows ARM support
-[2025-12-04 21:08:14]  - Improved publishing APIs
-[2025-12-04 21:08:14]  - Better guidance for dependency verification failures
-[2025-12-04 21:08:14] 
-[2025-12-04 21:08:14] For more details see https://docs.gradle.org/9.2.1/release-notes.html
-[2025-12-04 21:08:14] 
-[2025-12-04 21:08:14] Starting a Gradle Daemon (subsequent builds will be faster)
-[2025-12-04 21:09:03] 
-[2025-12-04 21:09:03] > Configure project :
-[2025-12-04 21:09:03] Starting build with version 4.3.0-SNAPSHOT (commit id a8b1fb92) using Gradle 9.2.1, Java 21 and Scala 2.13.17
-[2025-12-04 21:09:03] Build properties: ignoreFailures=false, maxParallelForks=16, maxScalacThreads=8, maxTestRetries=0
-[2025-12-04 21:09:07] 
-[2025-12-04 21:09:07] > Task :connect:checkstyleMain NO-SOURCE
-[2025-12-04 21:09:07] > Task :test-common:checkstyleMain NO-SOURCE
-[2025-12-04 21:09:27] > Task :examples:checkstyleMain
-[2025-12-04 21:09:28] > Task :coordinator-common:checkstyleMain
-[2025-12-04 21:09:29] > Task :shell:checkstyleMain
-[2025-12-04 21:09:29] > Task :clients:clients-integration-tests:checkstyleMain NO-SOURCE
-[2025-12-04 21:09:30] 
-[2025-12-04 21:09:30] > Task :streams:checkstyleMain
-[2025-12-04 21:09:30] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/streams/src/main/java/org/apache/kafka/streams/processor/BatchingStateRestoreCallback.java:42:33: Variable 'key' should be declared final. [FinalLocalVariable]
-[2025-12-04 21:09:30] 
-[2025-12-04 21:09:30] > Task :transaction-coordinator:checkstyleMain
-[2025-12-04 21:09:31] > Task :jmh-benchmarks:checkstyleMain
-[2025-12-04 21:09:31] > Task :connect:basic-auth-extension:checkstyleMain
-[2025-12-04 21:09:32] > Task :share-coordinator:checkstyleMain
-[2025-12-04 21:09:33] > Task :generator:checkstyleMain
-[2025-12-04 21:09:33] > Task :connect:file:checkstyleMain
-[2025-12-04 21:09:33] > Task :core:checkstyleMain
-[2025-12-04 21:09:34] > Task :connect:json:checkstyleMain
-[2025-12-04 21:09:34] > Task :server:checkstyleMain
-[2025-12-04 21:09:35] > Task :connect:api:checkstyleMain
-[2025-12-04 21:09:35] > Task :connect:mirror-client:checkstyleMain
-[2025-12-04 21:09:36] > Task :group-coordinator:group-coordinator-api:checkstyleMain
-[2025-12-04 21:09:36] > Task :streams:integration-tests:checkstyleMain NO-SOURCE
-[2025-12-04 21:09:36] > Task :streams:streams-scala:checkstyleMain NO-SOURCE
-[2025-12-04 21:09:36] > Task :connect:test-plugins:checkstyleMain
-[2025-12-04 21:09:36] > Task :streams:upgrade-system-tests-0110:checkstyleMain NO-SOURCE
-[2025-12-04 21:09:36] > Task :streams:upgrade-system-tests-10:checkstyleMain NO-SOURCE
-[2025-12-04 21:09:36] > Task :streams:upgrade-system-tests-11:checkstyleMain NO-SOURCE
-[2025-12-04 21:09:36] > Task :streams:upgrade-system-tests-20:checkstyleMain NO-SOURCE
-[2025-12-04 21:09:36] > Task :streams:upgrade-system-tests-21:checkstyleMain NO-SOURCE
-[2025-12-04 21:09:36] > Task :streams:upgrade-system-tests-22:checkstyleMain NO-SOURCE
-[2025-12-04 21:09:36] > Task :streams:upgrade-system-tests-23:checkstyleMain NO-SOURCE
-[2025-12-04 21:09:36] > Task :streams:upgrade-system-tests-24:checkstyleMain NO-SOURCE
-[2025-12-04 21:09:36] > Task :streams:upgrade-system-tests-25:checkstyleMain NO-SOURCE
-[2025-12-04 21:09:36] > Task :streams:upgrade-system-tests-26:checkstyleMain NO-SOURCE
-[2025-12-04 21:09:36] > Task :streams:upgrade-system-tests-27:checkstyleMain NO-SOURCE
-[2025-12-04 21:09:36] > Task :raft:checkstyleMain
-[2025-12-04 21:09:36] > Task :streams:upgrade-system-tests-28:checkstyleMain NO-SOURCE
-[2025-12-04 21:09:36] > Task :streams:upgrade-system-tests-30:checkstyleMain NO-SOURCE
-[2025-12-04 21:09:36] > Task :streams:upgrade-system-tests-32:checkstyleMain NO-SOURCE
-[2025-12-04 21:09:36] > Task :streams:upgrade-system-tests-31:checkstyleMain NO-SOURCE
-[2025-12-04 21:09:36] > Task :streams:upgrade-system-tests-33:checkstyleMain NO-SOURCE
-[2025-12-04 21:09:36] > Task :streams:upgrade-system-tests-34:checkstyleMain NO-SOURCE
-[2025-12-04 21:09:37] > Task :streams:upgrade-system-tests-35:checkstyleMain NO-SOURCE
-[2025-12-04 21:09:37] > Task :streams:upgrade-system-tests-36:checkstyleMain NO-SOURCE
-[2025-12-04 21:09:37] > Task :streams:upgrade-system-tests-37:checkstyleMain NO-SOURCE
-[2025-12-04 21:09:37] > Task :streams:upgrade-system-tests-38:checkstyleMain NO-SOURCE
-[2025-12-04 21:09:37] > Task :streams:upgrade-system-tests-39:checkstyleMain NO-SOURCE
-[2025-12-04 21:09:37] > Task :streams:upgrade-system-tests-40:checkstyleMain NO-SOURCE
-[2025-12-04 21:09:37] > Task :streams:upgrade-system-tests-41:checkstyleMain NO-SOURCE
-[2025-12-04 21:09:37] > Task :storage:checkstyleMain
-[2025-12-04 21:09:37] > Task :metadata:checkstyleMain
-[2025-12-04 21:09:37] > Task :clients:checkstyleMain
-[2025-12-04 21:09:37] > Task :group-coordinator:checkstyleMain
-[2025-12-04 21:09:37] > Task :server-common:checkstyleMain
-[2025-12-04 21:09:37] > Task :tools:checkstyleMain
-[2025-12-04 21:09:37] > Task :storage:storage-api:checkstyleMain
-[2025-12-04 21:09:38] > Task :connect:transforms:checkstyleMain
-[2025-12-04 21:09:38] > Task :streams:examples:checkstyleMain
-[2025-12-04 21:09:38] > Task :streams:test-utils:checkstyleMain
-[2025-12-04 21:09:38] > Task :connect:checkstyleTest NO-SOURCE
-[2025-12-04 21:09:38] > Task :test-common:test-common-internal-api:checkstyleMain
-[2025-12-04 21:09:38] > Task :examples:checkstyleTest NO-SOURCE
-[2025-12-04 21:09:39] > Task :test-common:test-common-util:checkstyleMain
-[2025-12-04 21:09:39] 
-[2025-12-04 21:09:39] > Task :metadata:checkstyleMain
-[2025-12-04 21:09:39] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/metadata/src/main/java/org/apache/kafka/controller/DelegationTokenControlManager.java:103:15: 'new' child has incorrect indentation level 14, expected level should be 16. [Indentation]
-[2025-12-04 21:09:39] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/metadata/src/main/java/org/apache/kafka/controller/DelegationTokenControlManager.java:104:15: 'new' child has incorrect indentation level 14, expected level should be 16. [Indentation]
-[2025-12-04 21:09:39] 
-[2025-12-04 21:09:39] > Task :tools:tools-api:checkstyleMain
-[2025-12-04 21:09:39] > Task :jmh-benchmarks:checkstyleTest NO-SOURCE
-[2025-12-04 21:09:40] > Task :generator:checkstyleTest
-[2025-12-04 21:09:41] > Task :test-common:test-common-runtime:checkstyleMain
-[2025-12-04 21:09:41] > Task :trogdor:checkstyleMain
-[2025-12-04 21:09:42] > Task :connect:mirror:checkstyleMain
-[2025-12-04 21:09:46] 
-[2025-12-04 21:09:46] > Task :metadata:checkstyleMain
-[2025-12-04 21:09:46] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/metadata/src/main/java/org/apache/kafka/controller/DelegationTokenControlManager.java:105:15: 'new' child has incorrect indentation level 14, expected level should be 16. [Indentation]
-[2025-12-04 21:09:46] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/metadata/src/main/java/org/apache/kafka/controller/DelegationTokenControlManager.java:106:15: 'new' child has incorrect indentation level 14, expected level should be 16. [Indentation]
-[2025-12-04 21:09:46] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/metadata/src/main/java/org/apache/kafka/controller/DelegationTokenControlManager.java:107:15: 'new' child has incorrect indentation level 14, expected level should be 16. [Indentation]
-[2025-12-04 21:09:47] 
-[2025-12-04 21:09:47] > Task :share-coordinator:checkstyleTest
-[2025-12-04 21:09:47] > Task :coordinator-common:checkstyleTest
-[2025-12-04 21:09:48] > Task :shell:checkstyleTest
-[2025-12-04 21:09:48] > Task :metadata:checkstyleMain FAILED
-[2025-12-04 21:09:50] > Task :server-common:checkstyleTest
-[2025-12-04 21:09:50] > Task :server:checkstyleTest
-[2025-12-04 21:09:52] > Task :core:checkstyleTest
-[2025-12-04 21:09:53] 
-[2025-12-04 21:09:53] > Task :group-coordinator:checkstyleMain
-[2025-12-04 21:09:53] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/group-coordinator/src/main/java/org/apache/kafka/coordinator/group/GroupCoordinatorService.java:2420:21: 'lambda' child has incorrect indentation level 20, expected level should be 16. [Indentation]
-[2025-12-04 21:09:54] 
-[2025-12-04 21:09:54] > Task :raft:checkstyleTest
-[2025-12-04 21:09:54] 
-[2025-12-04 21:09:54] > Task :streams:checkstyleMain
-[2025-12-04 21:09:54] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/streams/src/main/java/org/apache/kafka/streams/processor/BatchingStateRestoreCallback.java:42:45: Variable 'value' should be declared final. [FinalLocalVariable]
-[2025-12-04 21:09:54] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/streams/src/main/java/org/apache/kafka/streams/processor/assignment/TaskAssignor.java:81:55: Variable 'assignment' should be declared final. [FinalLocalVariable]
-[2025-12-04 21:09:54] 
-[2025-12-04 21:09:54] > Task :group-coordinator:checkstyleMain FAILED
-[2025-12-04 21:09:56] > Task :metadata:checkstyleTest
-[2025-12-04 21:09:56] 
-[2025-12-04 21:09:56] > Task :streams:checkstyleMain
-[2025-12-04 21:09:56] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/streams/src/main/java/org/apache/kafka/streams/processor/assignment/TaskAssignor.java:81:85: Variable 'subscription' should be declared final. [FinalLocalVariable]
-[2025-12-04 21:09:56] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/streams/src/main/java/org/apache/kafka/streams/processor/assignment/TaskAssignor.java:81:115: Variable 'error' should be declared final. [FinalLocalVariable]
-[2025-12-04 21:09:56] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/streams/src/main/java/org/apache/kafka/streams/state/DslStoreSuppliers.java:53:43: Variable 'configs' should be declared final. [FinalLocalVariable]
-[2025-12-04 21:09:57] 
-[2025-12-04 21:09:57] > Task :connect:runtime:checkstyleMain
-[2025-12-04 21:09:58] > Task :storage:checkstyleTest
-[2025-12-04 21:09:58] 
-[2025-12-04 21:09:58] > Task :streams:checkstyleMain
-[2025-12-04 21:09:58] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/streams/src/main/java/org/apache/kafka/streams/state/internals/SegmentedBytesStore.java:170:68: Variable 'timestamp' should be declared final. [FinalLocalVariable]
-[2025-12-04 21:09:58] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/streams/src/main/java/org/apache/kafka/streams/state/ReadOnlyWindowStore.java:121:52: Variable 'key' should be declared final. [FinalLocalVariable]
-[2025-12-04 21:09:58] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/streams/src/main/java/org/apache/kafka/streams/state/ReadOnlyWindowStore.java:121:65: Variable 'timeFrom' should be declared final. [FinalLocalVariable]
-[2025-12-04 21:09:58] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/streams/src/main/java/org/apache/kafka/streams/state/ReadOnlyWindowStore.java:121:83: Variable 'timeTo' should be declared final. [FinalLocalVariable]
-[2025-12-04 21:09:58] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/streams/src/main/java/org/apache/kafka/streams/state/ReadOnlyWindowStore.java:159:62: Variable 'keyFrom' should be declared final. [FinalLocalVariable]
-[2025-12-04 21:09:58] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/streams/src/main/java/org/apache/kafka/streams/state/ReadOnlyWindowStore.java:159:73: Variable 'keyTo' should be declared final. [FinalLocalVariable]
-[2025-12-04 21:09:58] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/streams/src/main/java/org/apache/kafka/streams/state/ReadOnlyWindowStore.java:159:88: Variable 'timeFrom' should be declared final. [FinalLocalVariable]
-[2025-12-04 21:09:58] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/streams/src/main/java/org/apache/kafka/streams/state/ReadOnlyWindowStore.java:159:106: Variable 'timeTo' should be declared final. [FinalLocalVariable]
-[2025-12-04 21:09:58] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/streams/src/main/java/org/apache/kafka/streams/state/ReadOnlyWindowStore.java:207:71: Variable 'timeFrom' should be declared final. [FinalLocalVariable]
-[2025-12-04 21:09:58] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/streams/src/main/java/org/apache/kafka/streams/state/ReadOnlyWindowStore.java:207:89: Variable 'timeTo' should be declared final. [FinalLocalVariable]
-[2025-12-04 21:09:58] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/streams/src/main/java/org/apache/kafka/streams/state/ReadOnlyKeyValueStore.java:75:51: Variable 'from' should be declared final. [FinalLocalVariable]
-[2025-12-04 21:09:58] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/streams/src/main/java/org/apache/kafka/streams/state/ReadOnlyKeyValueStore.java:75:59: Variable 'to' should be declared final. [FinalLocalVariable]
-[2025-12-04 21:09:58] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/streams/src/main/java/org/apache/kafka/streams/state/ReadOnlyKeyValueStore.java:122:79: Variable 'prefix' should be declared final. [FinalLocalVariable]
-[2025-12-04 21:09:59] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/streams/src/main/java/org/apache/kafka/streams/state/ReadOnlyKeyValueStore.java:122:90: Variable 'prefixKeySerializer' should be declared final. [FinalLocalVariable]
-[2025-12-04 21:09:59] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/streams/src/main/java/org/apache/kafka/streams/kstream/internals/foreignkeyjoin/ForeignKeyExtractor.java:41:158: Variable 'function' should be declared final. [FinalLocalVariable]
-[2025-12-04 21:10:00] 
-[2025-12-04 21:10:00] > Task :group-coordinator:checkstyleTest
-[2025-12-04 21:10:02] 
-[2025-12-04 21:10:02] > Task :streams:checkstyleMain
-[2025-12-04 21:10:02] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/streams/src/main/java/org/apache/kafka/streams/kstream/internals/foreignkeyjoin/ForeignKeyExtractor.java:45:177: Variable 'biFunction' should be declared final. [FinalLocalVariable]
-[2025-12-04 21:10:02] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/streams/src/main/java/org/apache/kafka/streams/kstream/internals/KTableValueGetter.java:33:40: Variable 'key' should be declared final. [FinalLocalVariable]
-[2025-12-04 21:10:02] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/streams/src/main/java/org/apache/kafka/streams/kstream/internals/KTableValueGetter.java:33:50: Variable 'asOfTimestamp' should be declared final. [FinalLocalVariable]
-[2025-12-04 21:10:03] 
-[2025-12-04 21:10:03] > Task :streams:checkstyleMain FAILED
-[2025-12-04 21:10:06] > Task :streams:checkstyleTest
-[2025-12-04 21:10:08] > Task :clients:checkstyleTest
-[2025-12-04 21:10:10] 
-[2025-12-04 21:10:10] > Task :clients:checkstyleMain
-[2025-12-04 21:10:10] [ant:checkstyle] [ERROR] /home/circleci/project/.ci-temp/kafka/clients/src/main/java/org/apache/kafka/common/requests/TxnOffsetCommitRequest.java:99:17: 'new' child has incorrect indentation level 16, expected level should be 20. [Indentation]
-[2025-12-04 21:10:10] 
-[2025-12-04 21:10:10] > Task :clients:checkstyleMain FAILED
-[2025-12-04 21:10:10] 
-[2025-12-04 21:10:10] [Incubating] Problems report is available at: file:///home/circleci/project/.ci-temp/kafka/build/reports/problems/problems-report.html
-[2025-12-04 21:10:10] 
-[2025-12-04 21:10:10] FAILURE: Build completed with 4 failures.
-[2025-12-04 21:10:10] 
-[2025-12-04 21:10:10] 1: Task failed with an exception.
-[2025-12-04 21:10:10] -----------
-[2025-12-04 21:10:10] * What went wrong:
-[2025-12-04 21:10:10] Execution failed for task ':metadata:checkstyleMain'.
-[2025-12-04 21:10:10] > A failure occurred while executing org.gradle.api.plugins.quality.internal.CheckstyleAction
-[2025-12-04 21:10:10]    > Checkstyle rule violations were found. See the report at: file:///home/circleci/project/.ci-temp/kafka/metadata/build/reports/checkstyle/main.html
-[2025-12-04 21:10:10]      Checkstyle files with violations: 1
-[2025-12-04 21:10:10]      Checkstyle violations by severity: [error:5]
-[2025-12-04 21:10:10] 
-[2025-12-04 21:10:10] ==============================================================================
-[2025-12-04 21:10:10] 
-[2025-12-04 21:10:10] 2: Task failed with an exception.
-[2025-12-04 21:10:10] -----------
-[2025-12-04 21:10:10] * What went wrong:
-[2025-12-04 21:10:10] Execution failed for task ':group-coordinator:checkstyleMain'.
-[2025-12-04 21:10:10] > A failure occurred while executing org.gradle.api.plugins.quality.internal.CheckstyleAction
-[2025-12-04 21:10:10]    > Checkstyle rule violations were found. See the report at: file:///home/circleci/project/.ci-temp/kafka/group-coordinator/build/reports/checkstyle/main.html
-[2025-12-04 21:10:10]      Checkstyle files with violations: 1
-[2025-12-04 21:10:10]      Checkstyle violations by severity: [error:1]
-[2025-12-04 21:10:10] 
-[2025-12-04 21:10:10] ==============================================================================
-[2025-12-04 21:10:10] 
-[2025-12-04 21:10:10] 3: Task failed with an exception.
-[2025-12-04 21:10:10] -----------
-[2025-12-04 21:10:10] * What went wrong:
-[2025-12-04 21:10:10] Execution failed for task ':streams:checkstyleMain'.
-[2025-12-04 21:10:10] > A failure occurred while executing org.gradle.api.plugins.quality.internal.CheckstyleAction
-[2025-12-04 21:10:10]    > Checkstyle rule violations were found. See the report at: file:///home/circleci/project/.ci-temp/kafka/streams/build/reports/checkstyle/main.html
-[2025-12-04 21:10:10]      Checkstyle files with violations: 8
-[2025-12-04 21:10:10]      Checkstyle violations by severity: [error:24]
-[2025-12-04 21:10:10] 
-[2025-12-04 21:10:10] ==============================================================================
-[2025-12-04 21:10:10] 
-[2025-12-04 21:10:10] 4: Task failed with an exception.
-[2025-12-04 21:10:10] -----------
-[2025-12-04 21:10:10] * What went wrong:
-[2025-12-04 21:10:10] Execution failed for task ':clients:checkstyleMain'.
-[2025-12-04 21:10:10] > A failure occurred while executing org.gradle.api.plugins.quality.internal.CheckstyleAction
-[2025-12-04 21:10:10]    > Checkstyle rule violations were found. See the report at: file:///home/circleci/project/.ci-temp/kafka/clients/build/reports/checkstyle/main.html
-[2025-12-04 21:10:10]      Checkstyle files with violations: 1
-[2025-12-04 21:10:10]      Checkstyle violations by severity: [error:1]
-[2025-12-04 21:10:10] 
-[2025-12-04 21:10:10] ==============================================================================
-[2025-12-04 21:10:10] 
-[2025-12-04 21:10:10] Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
-[2025-12-04 21:10:10] 
-[2025-12-04 21:10:10] You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
-[2025-12-04 21:10:10] 
-[2025-12-04 21:10:10] For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
-[2025-12-04 21:10:10] 
-[2025-12-04 21:10:10] BUILD FAILED in 2m 11s
-[2025-12-04 21:10:10] 48 actionable tasks: 48 executed
-[2025-12-04 21:10:11] Error: 
-[2025-12-04 21:10:11] Exited with code exit status 1
-[2025-12-04 21:10:11] 
-[2025-12-04 21:10:11] Step failed
-[2025-12-04 21:10:11] Error: runner failed (exited with 101)
-[2025-12-04 21:10:11] Task failed
-[2025-12-04 21:10:13] Error: task failed
